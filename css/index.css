@@ -347,11 +347,12 @@ section > .wrap.active {width:1116px; opacity:1;}
 
 	#project {margin-top:0;}
 	#project-my {display:block;}
-
+	
 	.slide-container > .slide > li {overflow:hidden; display:block;}
 	.slide-container > .slide > li:nth-child(4),
 	.slide-container > .slide > li:nth-child(5),
 	.slide-container > .slide > li:nth-child(6) {display:block;}
+	.slide-container > .slide > li:nth-child(6) .info::before {display:none;}
 	.slide-container .img-area .img-tabliet {display:none;}
 	.slide-container .img-area .img-mo {display:block; position:static;}
 	.slide-container .img-area .img-mo img {width:100%; height:100%;}
