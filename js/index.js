@@ -18,7 +18,7 @@ mainShow();
 if(window.innerWidth > 1200){
 	observerPc();
 }else if(window.innerWidth < 1200 && window.innerWidth > 768){
-	observerTabliet();
+	observertablet();
 }else{
 	observerMo();
 }
@@ -27,13 +27,13 @@ window.addEventListener('resize',()=>{
 	if(window.innerWidth > 1200){
 		observerPc();
 	}else if(window.innerWidth < 1200 && window.innerWidth > 768){
-		observerTabliet();
+		observertablet();
 	}else{
 		observerMo();
 	}
 })
 
-function observerTabliet(){ //tabliet버전 api
+function observertablet(){ //tablet버전 api
 	const options = {
 		root: null,
 		rootMargin: "0px",
@@ -458,18 +458,18 @@ function columnGraph(){ //막대 그래프
 }
 
 function deviceShow(){ //이미지 클릭시 해당 디바이스 화면 띄우기
-	const imgTabliet = document.querySelector('.device-type .tabliet');
+	const imgtablet = document.querySelector('.device-type .tablet');
 	const imgMoblie = document.querySelector('.device-type .mobile');
-	const tabliet = document.querySelector('.device .tabliet');
+	const tablet = document.querySelector('.device .tablet');
 	const mobile = document.querySelector('.device .mobile');
 	const body = document.querySelector('body');
 	const div = document.createElement('div');
 	div.setAttribute('class','dimed');
 	body.appendChild(div);
 	
-	imgTabliet.addEventListener('click',(e)=>{
+	imgtablet.addEventListener('click',(e)=>{
 		e.preventDefault();
-		tabliet.classList.add('on');
+		tablet.classList.add('on');
 		div.classList.add('on');
 	})
 
@@ -481,7 +481,7 @@ function deviceShow(){ //이미지 클릭시 해당 디바이스 화면 띄우�
 
 	div.addEventListener('click',(e)=>{
 		e.preventDefault();
-		tabliet.classList.remove('on');
+		tablet.classList.remove('on');
 		mobile.classList.remove('on');
 		div.classList.remove('on');
 	})
