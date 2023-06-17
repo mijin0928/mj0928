@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 | 서비스 소개 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/sy.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">개인정보처리방침</h2>
+
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<div class="word">
+					<p>
+						국민건강보험공단(이하 &quot;공단&quot;)은 국민 여러분의 소중한 개인정보를 수집·이용·제공 등 처리 시 「개인정보 보호법」등 관련 법령상의 개인정보보호 규정을 준수하며, 정보주체의 개인정보를 보호하고 이와 관련된 고충을 신속하게 원활하게 처리할 수 있도록 다음과 같이 &lsquo;개인정보 처리방침&rsquo;을 수립·공개하고 있습니다.<br>
+						이 방침은 공단에서 운영하는 모든 웹사이트에 적용됨을 알려드립니다.
+					</p>
+				</div>
+
+				<ol class="list-privacy">
+					<li>
+						<!-- 
+							to : 개발
+							data-tooltip-content 의 값과 
+							tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+							
+							예)
+							data-tooltip-content="#tooltip-cont-1"
+							<div id="tooltip-cont-1">
+							
+							data-tooltip-content="#tooltip-cont-2"
+							<div id="tooltip-cont-2">
+						-->
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-1">
+							<i class="iconset ico-privacy-big-01"></i>
+							<p class="tit">개인정보 처리항목</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-1">
+								<div class="tit-tool">개인정보 처리항목</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>공단은「개인정보 보호법」제32조에 따라 개인정보파일의 운용하고 있으며, 해당 개인정보의 처리목적, 처리 및 보유기간, 처리하는 개인정보의 항목 및 개인정보 영향평가 수행 결과 등의 세부 항목은 본문을 참고하시기 바랍니다.</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-2">
+							<i class="iconset ico-privacy-big-02"></i>
+							<p class="tit">개인정보 제3자 제공</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-2">
+								<div class="tit-tool">개인정보 제3자 제공</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											공단은「개인정보 보호법」제18조에 따라 원칙적으로 정보주체의 개인정보를 제3자에 제공하지 아니합니다. 다만, 법에서 개인정보를 제공하도록 정하고 있는 예외적인 경우에 한하여 최소한의 범위 내에서 개인정보를 제공하고 있습니다.<br>
+											공단이 제3자에게 제공하는 개인정보의 세부 내역은 본문을 참고하시기 바랍니다.
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-3">
+							<i class="iconset ico-privacy-big-03"></i>
+							<p class="tit">개인정보처리의 위탁</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-3">
+								<div class="tit-tool">개인정보처리의 위탁</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											공단은 개인정보 처리 업무를 위탁하는 경우「개인정보 보호법」제26조에 따라 수탁자 및 위탁하는 업무내용을 공개하고 있습니다.<br>
+											공단의 개인정보처리에 관한 업무 위탁 세부 내역은 본문을 참고하시기 바랍니다.
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-4">
+							<i class="iconset ico-privacy-big-04"></i>
+							<p class="tit">정보주체의 권리의무</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-4">
+								<div class="tit-tool">정보주체의 권리의무</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											정보주체 또는 정보주체의 법정대리인(만14세 미만 아동이 정보주체인 경우 등을 포함)은 아래의 권리·의무를 행사할 수 있으며 그 행사 방법의 세부적인 사항은 본문을 참고하시기 바랍니다.
+
+											<ol>
+												<li>① 개인정보 열람 요구</li>
+												<li>② 개인정보 정정·삭제 요구</li>
+												<li>③ 개인정보 처리정지 요구</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-5">
+							<i class="iconset ico-privacy-big-05"></i>
+							<p class="tit">안전성확보조치</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-5">
+								<div class="tit-tool">개인정보의 안전성 확보 조치</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											공단은「개인정보 보호법」제29조에 따라 개인정보 안전성 확보에 관한 기술적·관리적·물리적 조치를 취하고 있습니다.<br>
+											개인정보 안전성 확보 조치의 세부사항은 본문을 참고하시기 바랍니다.
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-6">
+							<i class="iconset ico-privacy-big-06"></i>
+							<p class="tit">가명정보의 처리</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-6">
+								<div class="tit-tool">가명정보 처리에 관한 사항</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>공단은 통계작성, 과학적 연구, 공익적 기록보전 등의 목적으로 가명정보를 처리하고 있습니다.</li>
+										<li>공단은 수집한 개인정보를 특정 개인을 알아볼 수 없도록 가명처리하고, 처리된 가명정보는 재식별되지 아니하도록 분리하여 별도로 저장·관리하고 필요한 기술적·관리적 보호조치를 취합니다.</li>
+										<li>공단에서 보유·운용하는 가명정보 처리에 관한 세부사항은 본문을 참고하시기 바랍니다.</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-7">
+							<i class="iconset ico-privacy-big-07"></i>
+							<p class="tit">개인정보보호 책임자</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-7">
+								<div class="tit-tool">개인정보보호 책임자 및 담당자 연락처</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											공단은「개인정보 보호법」제31조에 따라 다음과 같이 개인정보보호 책임자 및
+											개인정보보호 담당자를 지정하고 있습니다.
+										
+											<ul class="list-dash">
+												<li>
+													개인정보보호 책임자 : 법무지원실장 엄호윤<br>
+													전화 : 033-736-1240~3
+												</li>
+												<li>
+													개인정보보호 담당자 : 개인정보보호부장 김혜숙<br>
+													전화 : 033-736-1240~3
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-8">
+							<i class="iconset ico-privacy-big-08"></i>
+							<p class="tit">권익침해 구제방법</p>
+						</a>
+
+						<div class="tooltip-contents">
+							<div id="tooltip-cont-8">
+								<div class="tit-tool">고충처리 및 권익침해 구제방법</div>
+								
+								<div class="cont-tool privacy">
+									<ul class="list-dot">
+										<li>
+											정보주체는 개인정보에 관한 권리 또는 이익을 침해받을 경우 침해사실을 공단에 신고하여 처리결과를 통보 받을 수 있습니다.<br>
+											고충처리 및 권익침해에 관한 세부사항은 본문을 참고하시기 바랍니다.
+
+											<ul class="list-dash">
+												<li>
+													고충처리 및 권익침해 신고부서 : 법무지원실 개인정보보호부<br>
+													전화 : 033-736-1240~3
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								
+								<button type="button" class="tooltip-close">툴팁 닫기</button>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="" target="_blank" title="처리방침 변경 새창열림" >
+							<i class="iconset ico-privacy-big-09"></i>
+							<p class="tit">처리방침 변경</p>
+						</a>
+					</li>
+				</ol>
+
+				<div class="board-util">
+					<h3 class="title-3">목차</h3>
+					<button type="button" class="button navy">전체펼치기</button>
+				</div>
+
+				<ol class="list-terms accordion">
+					<li>
+						<!--
+							to : 개발
+							
+							1. 열린 상태 : button 의 aria-expanded="true", 닫힌 상태 : aria-expanded="false"
+							2. button 의 id 와 콘텐츠의 aria-labelledby 동일한 값을 가져야 합니다.
+							3. button 의 aria-controls 와 콘텐츠의 id 와 동일한 값을 가져야 합니다.
+						-->
+						<div class="tit-area">
+							<button type="button" id="acc_01" aria-expanded="true" aria-controls="acc_panel_01" class="tit btn-toggle">
+								<span class="num">01</span>
+								개인정보의 처리목적
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-01"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_01" aria-labelledby="acc_01" class="cont-area">
+							<p class="txt">공단은 소관 업무 수행 및 민원처리 등을 목적으로 최소한의 개인정보를 수집·이용·처리하고 있습니다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_02" aria-expanded="false" aria-controls="acc_panel_02" class="tit btn-toggle">
+								<span class="num">02</span>
+								개인정보의 처리 및 보유기간, 처리하는 개인정보의 항목, 개인정보파일 등록 현황, 개인정보 영향평가 수행결과
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-02"></i>
+									<i class="iconset ico-privacy-03"></i>
+									<i class="iconset ico-privacy-04"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_02" aria-labelledby="acc_02" class="cont-area">
+							<ol>
+								<li>
+									① 공단이 「개인정보 보호법」 제32조에 따라 등록, 공개하는 개인정보파일의 처리목적, 처리 및 보유기간, 처리하는 개인정보의 항목 및「개인정보 보호법」제33조에 따른 개인정보 영향평가 수행 결과는 다음과 같습니다.
+
+									<div class="box-gray-white">
+										<ul class="list-dot has-button">
+											<li>
+												<span>개인정보파일 내역(영향평가 수행결과 포함)</span>
+												<a href="" target="_blank" title="개인정보파일 내역(영향평가 수행결과 포함) 다운로드 새창열림" class="button">다운로드</a>
+											</li>
+		
+											<li>
+												<span>개인정보의 처리목적 및 보유기간</span>
+												<a href="" target="_blank" title="개인정보의 처리목적 및 보유기간 다운로드 새창열림" class="button">다운로드</a>
+											</li>
+		
+											<li>
+												<span>처리하는 개인정보의 항목</span>
+												<a href="" target="_blank" title="처리하는 개인정보의 항목 다운로드 새창열림" class="button">다운로드</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									② 공단의 개인정보파일 현황은 다음의 방법으로 확인하실 수 있습니다.
+
+									<div class="box-gray-white">
+										개인정보보호 포털(<a href="https://www.privacy.go.kr/" target="_blank" title="새창열림">www.privacy.go.kr</a>) → 민원마당 → 개인정보의 열람등 요구 → 개인정보파일 목록 검색 → 기관명에 “국민건강보험공단” 입력 후 조회
+									</div>
+								</li>
+
+								<li>
+									③ 공단은 법령에 따라 수집 목적과 합리적으로 관련된 범위에서는 정보주체의 동의 없이 개인정보를 이용할 수 있으며, 이때 &lsquo;당초 수집 목적과 관련성이 있는지, 수집한 정황 또는 처리 관행에 비추어 볼 때 예측 가능성이 있는지, 정보주체의 이익을 부당하게 침해하는지, 가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지&rsquo;를 종합적으로 고려합니다.
+								</li>
+
+								<li>
+									④ 공단은 수집한 개인정보를 특정 개인을 알아볼 수 없도록 가명처리하여 통계작성, 과학적 연구, 공익적 기록보존 등을 위하여 처리할 수 있습니다. 이 때 가명정보는 재식별되지 않도록 분리하여 별도 저장·관리하고 필요한 기술적·관리적 보호조치를 취합니다.
+								</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_03" aria-expanded="false" aria-controls="acc_panel_03" class="tit btn-toggle">
+								<span class="num">03</span>
+								개인정보의 제3자 제공
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-05"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_03" aria-labelledby="acc_03" class="cont-area">
+							<ol>
+								<li>
+									① 공단은 공단 업무와 관련이 없는 경우 「개인정보 보호법」 제18조에 따라 원칙적으로 정보주체의 개인정보를 제3자에 제공하지 않으며, 법이 허용하는 다음의 예외적인 사항에 한하여 제공하고 있습니다. 이 경우에도 정보주체 또는 제3자의 이익을 부당하게 침해할 우려가 있는 경우 제공을 제한하고 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 정보주체로부터 별도의 동의를 받는 경우</li>
+
+											<li><span>나.</span> 법률에 특별한 규정이 있는 경우</li>
+
+											<li><span>다.</span> 정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</li>
+
+											<li><span>라.</span> 개인정보를 목적 외의 용도로 이용하거나 이를 제3자에게 제공하지 아니하면 다른 법률에서 정하는 소관 업무를 수행할 수 없는 경우로서 보호위원회의 심의·의결을 거친 경우</li>
+
+											<li><span>마.</span> 조약, 그 밖의 국제협정의 이행을 위하여 외국정부 또는 국제기구에 제공하기 위하여 필요한 경우</li>
+
+											<li><span>바.</span> 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우</li>
+
+											<li><span>사.</span> 법원의 재판업무 수행을 위하여 필요한 경우</li>
+
+											<li><span>아.</span> 형(刑) 및 감호, 보호처분의 집행을 위하여 필요한 경우</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>② 공단은 「개인정보 보호법」 제23조의 민감정보 중 공단이 처리하고 있는 개인정보를 &lsquo;건강보험·장기요양보험 민감정보&rsquo; 대상으로 선정하여 엄격하게 제공하고 있습니다.</li>
+
+								<li >
+									③ 공단은 위 법령 및 기타 개별법에 근거하여 제공하는 주요현황을 홈페이지에 공개하고 있습니다.
+									<a href="" target="_blank" title="개인정보 제3자 제공내역 다운로드 새창열림" class="button">개인정보 제3자 제공내역</a>
+								</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_04" aria-expanded="false" aria-controls="acc_panel_04" class="tit btn-toggle">
+								<span class="num">04</span>
+								개인정보 처리 위탁
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-06"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_04" aria-labelledby="acc_04" class="cont-area">
+							<p class="txt">공단은 개인정보 처리 업무를 위탁하는 경우 「개인정보 보호법」 제26조에 따라 다음 내용이 포함된 문서에 의하여 처리하고, 수탁자 및 위탁하는 업무내용을 공개하고 있습니다.</p>
+
+							<div class="box-gray-white">
+								<ol class="list-kor">
+									<li><span>가.</span> 위탁업무 수행 목적 외 개인정보의 처리 금지에 관한 사항</li>
+									<li><span>나.</span> 개인정보의 관리적·기술적 보호조치에 관한 사항</li>
+									<li>
+										<span>다.</span> 개인정보의 안전관리에 관한 사항
+
+										<ul class="list-dash">
+											<li>위탁업무의 목적 및 범위, 재위탁 제한, 개인정보에 대한 접근 제한 등 안전성 확보 조치에 관한 사항, 위탁업무와 관련하여 보유하고 있는 개인정보의 관리 현황 점검 등 감독에 관한 사항, 수탁자가 준수하여야 할 의무를 위반한 경우의 손해배상 등 책임에 관한 사항</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+
+							<a href="" title="수탁자 및 위탁업무 내역 다운로드" class="button">수탁자 및 위탁업무 내역</a>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_05" aria-expanded="false" aria-controls="acc_panel_05" class="tit btn-toggle">
+								<span class="num">05</span>
+								개인정보 파기
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-07"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_05" aria-labelledby="acc_05" class="cont-area">
+							<p class="txt">
+								공단은 개인정보 보유기간이 경과하거나, 처리목적이 달성된 경우에는 지체 없이 해당 개인정보를 파기합니다.<br>
+								다만, 다른 법령에 따라 보존하여야 하는 경우에는 그러하지 않을 수 있습니다. 파기 절차, 기한 및 방법은 다음과 같습니다.
+							</p>
+
+							<div class="box-gray-white">
+								<ol class="list-kor">
+									<li><span>가.</span> <em>파기 절차 :</em> 관련 법령 및 내부 방침에 따라 엄격한 통제절차에 의거 파기</li>
+
+									<li><span>나.</span> <em>파기 기한 :</em> 보존기간이 경과하거나 목적이 달성된 개인정보는 그 개인정보가 불필요하게 되었을 때 즉시</li>
+
+									<li>
+										<span>다.</span> <em>파기 방법 :</em>
+										<ul class="list-dash">
+											<li>종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기</li>
+											<li>전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_06" aria-expanded="false" aria-controls="acc_panel_06" class="tit btn-toggle">
+								<span class="num">06</span>
+								정보주체의 권리·의무 및 행사 방법
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-08"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_06" aria-labelledby="acc_06" class="cont-area">
+							<p class="txt">정보주체 또는 정보주체의 법정대리인(만14세 미만 아동 등의 경우로서 이하 정보주체로 표기)은 개인정보 열람, 정정·삭제, 처리정지 등의 권리를 행사할 수 있습니다.</p>
+
+							<ol>
+								<li>
+									① 개인정보 열람 요구<br>
+									정보주체는「개인정보 보호법」제35조에 따라 공단이 처리하는 정보주체의 개인정보에 대한 열람을 요구할 수 있습니다. 다만, 공단은 정당한 사유가 있을 경우 열람을 연기(사유 소멸 시 즉시 열람가능)할 수 있으며 다음의 경우 개인정보 열람 요구가 거절될 수 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 법률에 따라 열람이 금지되거나 제한되는 경우</li>
+
+											<li><span>나.</span> 다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</li>
+
+											<li>
+												<span>다.</span> 공공기관이 다음 어느 하나에 해당하는 업무를 수행할 때 중대한 지장을 초래하는 경우
+												
+												<ul class="list-dash">
+													<li>조세의 부과·징수 또는 환급에 관한 업무</li>
+													<li>「초·중등교육법」및「고등교육법」에 따른 각급 학교,「평생교육법」에 따른 평생교육시설, 그 밖의 다른 법률에 따라 설치 된 고등교육기관에서의 성적 평가 또는 입학자 선발에 관한 업무</li>
+													<li>학력·기능 및 채용에 관한 시험, 자격 심사에 관한 업무</li>
+													<li>보상금·급부금 산정 등에 대하여 진행 중인 평가 또는 판단에 관한 업무</li>
+													<li>다른 법률에 따라 진행 중인 감사 및 조사에 관한 업무</li>
+												</ul>
+											</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									② 개인정보 정정 · 삭제 요구<br>
+									정보주체는 공단에서 보유하고 있는 개인정보파일에 대하여 「개인정보 보호법」제36조에 따라 자신의 개인정보에 대한 정정·삭제를 요구할 수 있습니다. 다만, 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 정정 : 사실과 다르게 기록된 정보</li>
+											<li><span>나.</span> 삭제 : 정보주체의 정보가 아니거나 보유 불필요한 정보 등</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									③ 개인정보 처리정지 요구<br>
+									정보주체는 공단에서 보유하고 있는 개인정보파일에 대하여 「개인정보 보호법」 제37조에 따라 자신의 개인정보에 대한 처리정지를 요구할 수 있습니다. 다만, 다음의 경우 처리정지 요구가 거절될 수 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우</li>
+											<li><span>나.</span> 다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</li>
+											<li><span>다.</span> 공공기관이 개인정보를 처리하지 아니하면 다른 법률에서 정하는 소관 업무를 수행할 수 없는 경우</li>
+											<li><span>라.</span> 개인정보를 처리하지 아니하면 정보주체와 약정한 서비스를 제공하지 못하는 등 계약의 이행이 곤란한 경우로서 정보주체가 그 계약의 해지 의사를 명확하게 밝히지 아니한 경우</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									④ 정보주체 이외로부터 수집한 개인정보의 수집출처 등 고지 요구<br>
+									정보주체는 공단이 정보주체 이외로부터 수집한 자신의 개인정보의 수집 출처와 처리 목적 등을 요구할 수 있습니다. 다만, 다음의 경우에는 수집 출처 등의 고지 요구가 거절될 수 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 국가 안전, 외교상 비밀, 그 밖에 국가의 중대한 이익에 관한 사항을 기록한 개인정보파일에 포함되어 있는 경우</li>
+											<li><span>나.</span> 범죄의 수사, 공소의 제기 및 유지, 형 및 감호의 집행, 교정처분, 보호처분, 보안관찰처분과 출입국관리에 관한 사항을 기록한 개인정보파일에 포함되어 있는 경우</li>
+											<li><span>다.</span> 「조세범처벌법」에 따른 범칙행위 조사 및「관세법」에 따른 범칙행위 조사에 관한 사항을 기록한 개인정보파일에 포함되어 있는 경우</li>
+											<li><span>라.</span> 공공기관의 내부적 업무처리만을 위하여 사용되는 개인정보파일에 포함되어 있는 경우</li>
+											<li><span>마.</span> 다른 법령에 따라 비밀로 분류된 개인정보파일에 포함되어 있는 경우</li>
+											<li><span>바.</span> 고지로 인하여 다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									⑤ 개인정보 열람, 정정 · 삭제, 처리정지 요구 방법<br>
+									정보주체는 아래의 방법 등을 통해 개인정보 열람, 정정·삭제, 처리정지를 요구할 수 있습니다. 공단은「개인정보 보호법 시행령」제46조제1항에 따라 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li>
+												<span>가.</span> 개인정보보호 포털(<a href="https://www.privacy.go.kr/" target="_blank" title="새창열림">www.privacy.go.kr</a>) 개인정보 열람 등 요구 신청
+												
+												<div class="img">
+													<img src="../../static/images/contents/img-etc-term-01.png" alt="청구인(정보주체 또는 대리인) → 온라인청구 → 개인정보보호위원회 → 이관 → 국민건강보험공단 → 10일 이내 결과 통보">
+												</div>
+
+												<p class="txt-help">개인정보보호 포털 → 민원마당 → 개인정보 열람 등 요구</p>
+											</li>
+											<li>
+												<span>나.</span> 서면, 전자우편, 모사전송(FAX) 등을 통하거나, 공단 지사에 내방하여 본인확인 절차를 거친 후 열람 등 청구
+
+												<div class="img">
+													<img src="../../static/images/contents/img-etc-term-02.png" alt="청구인(정보주체 또는 대리인)이 열람, 정정또는삭제, 처리정지를 청구하면 부서장(지사, 지역본부, 본부 각 실)에서 10일 이내 결과 통보">
+												</div>
+
+												<p class="txt-help">관련서식 :「개인정보 처리 방법에 관한 고시」별지8호~제11호 서식</p>
+											</li>
+										</ol>
+									</div>
+
+									<div class="box-gray-white">
+										<p class="txt">정보주체 본인확인 절차</p>
+
+										<ul class="list-dash">
+											<li>정보주체 본인인 경우에는 신분을 증명할 수 있는 증명서(주민등록증, 운전면허증 등 행정기관에 의해 공인된 것으로 쉽게 변조 및 도용을 할 수 없는 것) 제출</li>
+											<li>정보주체의 법정대리인인 경우에는 법정대리인을 증명할 수 있는 서류 제출</li>
+											<li>정보주체의 위임을 받은 자는 위임장과 위임자와 대리인의 주민등록증 등 신분을 확인할 수 있는 증명서 제출</li>
+											<li>웹사이트나 온라인은 공동인증서(구 공인인증서)를 통한 인증절차로 확인</li>
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									⑥ 개인정보 열람, 정정·삭제, 처리정지 접수·처리부서 안내<br>
+									정보주체는「개인정보 보호법」제35조에 따른 개인정보의 열람, 정정·삭제, 처리정지 등의 청구를 아래의 부서에 할 수 있습니다. 공단은 정보주체의 청구가 신속하게 처리될 수 있도록 노력하겠습니다.
+									
+									<div class="box-gray-white">
+										<p class="txt">개인정보 열람 요구 등을 총괄하는 부서 정보</p>
+
+										<ul class="list-dot">
+											<li>법무지원실 개인정보보호부</li>
+											<li>전화 : 033-736-1240~2</li>
+										</ul>
+
+										<p class="txt">
+											개인정보 열람 청구를 접수·처리하는 공단 지사 세부 현황
+											<a href="" target="_blank" title="새창열림" class="button">바로가기</a>
+										</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_07" aria-expanded="false" aria-controls="acc_panel_07" class="tit btn-toggle">
+								<span class="num">07</span>
+								개인정보의 안전성 확보조치
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-09"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_07" aria-labelledby="acc_07" class="cont-area">
+							<p class="txt">공단은 「개인정보 보호법」 제29조에 따라 다음과 같이 개인정보 안전성 확보에 관한 기술적·관리적·물리적 조치를 취하고 있습니다.</p>
+
+							<ol>
+								<li>
+									① <em>내부 관리계획의 수립·시행</em><br>
+									공단은 다음 사항이 포함된 내부관리계획을 수립·시행하고 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 개인정보 보호책임자의 지정에 관한 사항</li>
+											<li><span>나.</span> 개인정보 보호책임자 및 개인정보취급자의 역할 및 책임에 관한 사항</li>
+											<li><span>다.</span> 개인정보취급자에 대한 교육에 관한 사항</li>
+											<li><span>라.</span> 접근 권한의 관리에 관한 사항</li>
+											<li><span>마.</span> 접근 통제에 관한 사항</li>
+											<li><span>바.</span> 개인정보의 암호화 조치에 관한 사항</li>
+											<li><span>사.</span> 접속기록 보관 및 점검에 관한 사항</li>
+											<li><span>아.</span> 악성프로그램 등 방지에 관한 사항</li>
+											<li><span>자.</span> 물리적 안전조치에 관한 사항</li>
+											<li><span>차.</span> 개인정보 보호조직에 관한 구성 및 운영에 관한 사항</li>
+											<li><span>카.</span> 개인정보 유출사고 대응 계획 수립·시행에 관한 사항</li>
+											<li><span>타.</span> 위험도 분석 및 대응방안 마련에 관한 사항</li>
+											<li><span>파.</span> 재해 및 재난 대비 개인정보처리시스템의 물리적 안전조치에 관한 사항</li>
+											<li><span>하.</span> 수탁자에 대한 관리 및 감독에 관한 사항 및 그 밖에 개인정보 보호를 위하여 필요한 사항</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									② <em>접근권한의 관리</em>
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 개인정보처리시스템에 대한 접근 권한을 업무 수행에 필요한 최소한의 범위로 업무 담당자에 따라 차등 부여하고 있습니다.</li>
+											<li><span>나.</span> 전보, 퇴직 등 인사이동으로 개인정보취급자가 변경되었을 경우 지체없이 개인정보처리시스템의 접근 권한을 변경·말소하고 있으며, 권한 부여·변경·말소에 대한 내역을 기록하고, 그 기록을 최소 3년간 보관하고 있습니다.</li>
+											<li><span>다.</span> 개인정보처리시스템에 접속할 수 있는 사용자계정은 개인정보취급자 별로 발급하고 있으며, 다른 개인정보취급자와 공유되지 않도록 하고 있습니다.</li>
+											<li><span>라.</span> 개인정보취급자 또는 정보주체가 안전한 비밀번호를 설정하여 이행할 수 있도록 비밀번호 작성규칙을 수립·적용하고 있습니다.</li>
+											<li><span>마.</span> 권한 있는 개인정보취급자만이 개인정보처리시스템에 접근할 수 있도록 계정정보 또는 비밀번호를 일정 횟수 이상 잘못 입력한 경우 접근을 제한하는 등 필요한 기술적 조치를 하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									③ <em>접근 통제</em>
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li>
+												<span>가.</span> 공단은 정보통신망을 통한 불법적인 접근 및 침해사고 방지를 위해 다음의 조치를 하고 있습니다.
+												
+												<ul class="list-dash">
+													<li>개인정보처리시스템 접속권한을 IP(Internet Protocol) 주소 등으로 제한하여 인가받지 않은 접근 제한</li>
+													<li>개인정보처리시스템에 접속한 IP 주소 등을 분석하여 불법적인 개인정보 유출 시도 탐지·대응</li>
+												</ul>
+											</li>
+											<li><span>나.</span> 개인정보취급자가 정보통신망을 통해 외부에서 개인정보처리시스템에 접속하려는 경우 가상사설망(VPN : Virtual Private Network) 또는 전용선 등 안전한 접속수단이나 인증수단을 적용하고 있습니다.</li>
+											<li><span>다.</span> 개인정보가 열람권한이 없는 자에게 인터넷 홈페이지, P2P, 공유설정, 공개된 무선망 등을 통하여 공개되거나 유출되지 않도록 개인정보처리시스템, 업무용 컴퓨터, 모바일 기기 및 관리용 단말기 등에 접근 통제 조치를 하고 있습니다.</li>
+											<li><span>라.</span> 공단은 인터넷 홈페이지를 통해 고유식별정보가 유출·변조·훼손되지 않도록 연 2회 취약점을 점검하고 필요한 보완 조치를 하고 있습니다.</li>
+											<li><span>마.</span> 개인정보처리시스템에 대한 불법적인 접근 및 침해사고 방지를 위하여 개인정보취급자가 일정시간 이상 업무처리를 하지 않는 경우에는 자동으로 시스템 접속을 차단하고 있습니다.</li>
+											<li><span>바.</span> 업무용 모바일 기기의 분실·도난 등으로 개인정보가 유출되지 않도록 해당 모바일 기기에 비밀번호 설정 등의 보호조치를 하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									④ <em>개인정보 암호화</em>
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 고유식별정보, 비밀번호, 바이오정보를 정보통신망을 통하여 송신하거나 보조저장매체 등으로 전달하는 경우에는 이를 암호화 하고 있고, 비밀번호 및 바이오정보는 암호화하여 저장하고 있으며, 비밀번호는 복호화되지 않도록 일방향 암호화하여 저장하고 있습니다.</li>
+											<li><span>나.</span> 인터넷 구간 및 인터넷 구간과 내부망의 중간 지점(DMZ: Demilitarized Zone)에 고유식별정보를 저장하는 경우에는 이를 암호화하고 있습니다.</li>
+											<li><span>다.</span> 내부망에 고유식별정보를 저장하는 경우「개인정보 보호법」제33조에 따른 개인정보 영향평가를 실시하고 있습니다.</li>
+											<li><span>라.</span> 개인정보를 안전한 암호알고리즘으로 암호화하여 저장하고 있으며, 암호화된 개인정보를 안전하게 보관하기 위하여 안전한 암호 키 생성, 이용, 보관, 배포 및 파기 등에 관한 절차를 수립․시행하고 있습니다.</li>
+											<li><span>마.</span> 업무용 컴퓨터 또는 모바일 기기에 고유식별정보를 저장하여 관리하는 경우 상용 암호화 소프트웨어 또는 안전한 암호화 알고리즘을 사용하여 암호화한 후 저장하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									<span>⑤</span> <em>접속기록의 보관 및 점검</em>
+									<div class="box-gray-white">
+										<p class="txt">개인정보취급자가 개인정보처리시스템에 접속한 기록을 최소 2년 이상 보관·관리하고 있으며, 접속기록이 위·변조 및 도난, 분실되지 않도록 해당 접속기록을 월 1회 이상 점검하고 있습니다.</p>
+									</div>
+								</li>
+
+								<li>
+									⑥ <em>악성프로그램 등 방지</em><br>
+									악성 프로그램 등을 방지·치료할 수 있는 백신 소프트웨어 등의 보안 프로그램을 설치·운영하고 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 보안 프로그램의 자동 업데이트 기능을 사용하고 있습니다.</li>
+											<li><span>나.</span> 악성프로그램 관련 경보가 발령된 경우 또는 사용 중인 응용 프로그램이나 운영체제 소프트웨어의 제작업체에서 보안 업데이트 공지가 있는 경우 즉시 이에 따른 업데이트를 실시하고 있습니다.</li>
+											<li><span>다.</span> 발견된 악성프로그램 등에 대해 삭제 등 대응 조치를 하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									⑦ <em>관리용 단말기의 안전조치</em><br>
+									개인정보 유출 등 침해사고 방지를 위하여 관리용 단말기에 대해 다음의 안전조치를 취하고 있습니다.
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 인가 받지 않은 사람이 관리용 단말기에 접근하여 임의로 조작하지 못하도록 조치하였으며, 본래 목적 외로 사용되지 않도록 조치하고 있습니다.</li>
+											<li><span>나.</span> 악성프로그램 감염 방지 등을 위한 보안조치 적용을 하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									⑧ <em>물리적 안전조치</em>
+
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 전산실, 자료보관실 등 개인정보를 보관하고 있는 물리적 장소를 별도로 두고 있으며, 이에 대한 출입통제 절차를 수립·운영하고 있습니다.</li>
+											<li><span>나.</span> 개인정보가 포함된 서류, 보조저장매체 등을 잠금장치가 있는 안전한 장소에 보관하고 있으며, 개인정보가 포함된 보조저장매체의 반출·반입 통제를 위한 보안대책을 마련하고 있습니다.</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>
+									⑨ <em>재해·재난 대비 안전조치</em>
+
+									<div class="box-gray-white">
+										<p class="txt">화재, 홍수, 단전 등의 재해․재난 발생 시 개인정보처리시스템 보호를 위한 위기대응 매뉴얼 등 대응절차를 마련하고 정기적으로 점검하고 있으며, 개인정보처리시스템 백업 및 복구를 위한 계획을 마련하고 있습니다.</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_08" aria-expanded="false" aria-controls="acc_panel_08" class="tit btn-toggle">
+								<span class="num">08</span>
+								개인정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-10"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_08" aria-labelledby="acc_08" class="cont-area">
+							<ol>
+								<li>① 공단의 대표 홈페이지에 사용자가 로그인을 할 경우 사용자 인증을 위해 필요한 정보(로그인 일시, IP주소, 인증수단(공동, 금융, 간편 인증서), 그 밖에 사용자 인증을 위해 필요한 자료)를 자동으로 수집하고 있습니다.</li>
+								<li>② 정보주체는 해당 정보의 저장을 거부할 수 있으며, 이 경우 공단 홈페이지 서비스 이용에 어려움이 발생할 수 있습니다.</li>
+								<li>③ 공단의 대표 홈페이지는 원활하고 빠른 서비스를 제공하기 위해 정보주체의 이용정보를 저장하고 수시로 불러오는 &lsquo;쿠키(cookie)&rsquo;를 사용합니다.</li>
+								<li>④ 정보주체는 인터넷 브라우저 옵션 설정을 통해 쿠키(cookie) 정보 수집의 허용 또는 차단 등을 설정 할 수 있습니다.</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_09" aria-expanded="false" aria-controls="acc_panel_09" class="tit btn-toggle">
+								<span class="num">09</span>
+								가명정보 처리에 관한 사항
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-11"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_09" aria-labelledby="acc_09" class="cont-area">
+							<ol>
+								<li>
+									① 공단은 통계작성, 과학적 연구, 공익적 기록보전 등의 목적으로 가명정보를 처리하고 있습니다. 공단이 처리하는 가명정보에 관한 사항은 다음과 같습니다.
+
+									<div class="table-data">
+										<table>
+											<!--
+												to : 개발
+												
+												웹접근성
+												"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+												
+												예)
+												의료이용지표 - 기본특성 표
+												의료이용지표 - 만성질환 및 직무관련질환 표
+											-->
+											<caption>가명정보 처리에 관한 사항 표</caption>
+											<colgroup>
+												<col >
+												<col >
+												<col >
+												<col >
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">가명정보 처리 업무명</th>
+													<th scope="col">처리목적</th>
+													<th scope="col">처리항목</th>
+													<th scope="col">보유 및 이용기간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>국민건강정보DB제공</td>
+													<td>과학적연구</td>
+													<td>자격 및 보험료, 진료상세, 건강검진, 요양기관, 장기요양 정보 등</td>
+													<td>준영구</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+
+								<li>
+									② 공단은 수집한 개인정보를 특정 개인을 알아볼 수 없도록 가명 처리하며, 처리된 가명정보는 재식별되지 아니하도록 분리하여 별도로 저장·관리하고 필요한 기술적·관리적 보호조치를 취합니다.
+
+									<div class="table-data">
+										<table>
+											<caption>기술적·관리적 보호조치에 관한 사항 표</caption>
+											<colgroup>
+												<col >
+												<col >
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">관리적 조치</th>
+													<th scope="col">기술적 조치</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="a-l">
+														<ul class="list-dot">
+															<li>내부관리계획 수립 및 이행</li>
+															<li>가명정보 처리 관련 지침 운영</li>
+														</ul>
+													</td>
+													<td class="a-l">
+														<ul class="list-dot">
+															<li>가명정보 처리 기준에 따른 비식별화</li>
+															<li>폐쇄망 구축 및 자료이용 권한·접근 관리</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+
+								<li>
+									③ 공단은 업무 처리 목적 등 필요한 경우 제3자에게 가명정보를 제공합니다. 이 경우 가명정보 재식별 금지, 가명정보 및 추가 정보의 분리 보관, 임직원 교육 등 안정성 확보를 위한 준수사항이 반영된 계약서를 사용하는 등의 조치를 취합니다.
+
+									<div class="table-data">
+										<table>
+											<caption>제3자에게 가명정보 제공하는 경우에 관한 조취 표</caption>
+											<colgroup>
+												<col >
+												<col >
+												<col >
+												<col >
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">제공받는 자</th>
+													<th scope="col">이용목적</th>
+													<th scope="col">제공하는 항목</th>
+													<th scope="col">보유 및 이용기간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>한국보건사회연구원 등 1,785 기관(*)</td>
+													<td>연구분석</td>
+													<td>자격 및 보험료, 진료상세, 건강검진, 요양기관, 장기요양 정보 등</td>
+													<td>자료이용 승인기간</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="txt-annotation">연구기관의 연구정보 보호를 위해 세부적인 기관명을 공개하지 아니함</p>
+								</li>
+
+								<li>
+									④ 공단은 가명정보 처리를 제3자에게 위탁하지 아니하며, 가명정보를 처리하는 목적이 달성되거나 가명정보 처리 과정에서 특정 개인을 알아볼 수 있는 정보가 생성된 경우 지체 없이 해당 정보를 파기조치 합니다.
+
+									<div class="box-gray-white">
+										<p class="txt">가명정보 담당부서 : 빅데이터운영실 결합개방부</p>
+										<p class="txt">전화: 033-736-3405~3410~3412</p>
+									</div>
+								</li>
+							</ol>
+
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_10" aria-expanded="false" aria-controls="acc_panel_10" class="tit btn-toggle">
+								<span class="num">10</span>
+								개인정보보호 책임자 및 담당자
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-12"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_10" aria-labelledby="acc_10" class="cont-area">
+							<p class="txt">「개인정보 보호법」 제31조 제1항에 따른 공단의 개인정보보호 책임자를 지정하고 있으며, 개인정보 보호담당자는 다음과 같습니다.</p>
+
+							<div class="box-gray-white">
+								<p class="tit">개인정보보호 책임자</p>
+								<ul class="list-dash">
+									<li>직위 및 성명 : 법무지원실장 엄호윤</li>
+									<li>전화 : 033-736-1240~1243</li>
+									<li>팩스 : 033-749-6308</li>
+								</ul>
+							</div>
+
+							<div class="box-gray-white">
+								<p class="tit">개인정보보호 담당자</p>
+								<ul class="list-dash">
+									<li>직위 및 성명 : 개인정보보호부장 김혜숙</li>
+									<li>전화 : 033-736-1240~1243</li>
+									<li>팩스 : 033-749-6307</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_11" aria-expanded="false" aria-controls="acc_panel_11" class="tit btn-toggle">
+								<span class="num">11</span>
+								권익침해 구제방법
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-13"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_11" aria-labelledby="acc_11" class="cont-area">
+							<ol>
+								<li>① 정보주체는 개인정보에 관한 권리 또는 이익을 침해받은 경우 공단 「개인정보 보호규정」이 정하는 바에 따라 침해사실을 공단에 신고하여 처리결과를 통보받을 수 있습니다.</li>
+
+								<li>
+									② 공단에 신고와는 별도로 개인정보 침해로 인한 피해를 구제 받기 위하여 개인정보 침해신고센터, 개인정보분쟁조정위원회 등에 분쟁해결이나 피해구제, 상담 등을 신청할 수 있습니다.
+									
+									<div class="box-gray-white">
+										<ol class="list-kor">
+											<li><span>가.</span> 개인정보 분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" title="새창열림">www.kopico.go.kr</a>)</li>
+											<li><span>나.</span> 개인정보 침해신고센터: (국번 없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank" title="새창열림">privacy.kisa.or.kr</a>)</li>
+											<li><span>다.</span> 대검찰청 사이버수사과: (국번 없이) 1301 (<a href="https://www.spo.go.kr" target="_blank" title="새창열림">www.spo.go.kr</a>)</li>
+											<li><span>라.</span> 경찰청 사이버수사국: (국번 없이) 182 (<a href="https://ecrm.police.go.kr" target="_blank" title="새창열림">ecrm.police.go.kr</a>)</li>
+										</ol>
+									</div>
+								</li>
+
+								<li>③ 개인정보의 열람, 정정·삭제, 처리정지 등에 대한 정보주체의 요구에 대하여 공공기관의 장이 행한 처분 또는 부작위로 인하여 권리 또는 이익의 침해를 받은 정보주체는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</li>
+							</ol>
+
+							<p class="txt-help">행정심판에 대해 자세한 사항은 행정심판위원회(<a href="http://www.simpan.go.kr/nsph/index.html" target="_blank" title="새창열림">http://www.simpan.go.kr</a>) 홈페이지를 참고하시기 바랍니다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_12" aria-expanded="false" aria-controls="acc_panel_12" class="tit btn-toggle">
+								<span class="num">12</span>
+								개인정보 관리수준 진단 결과
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-14"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_12" aria-labelledby="acc_12" class="cont-area">
+							<ol>
+								<li>① 공단은 정보주체의 개인정보를 안전하게 관리하기 위해「개인정보 보호법」제11조에 따라 매년 개인정보보회위원회에서 실시하는 &lsquo;공공기관 개인정보 관리수준진단&rsquo;을 받고 있습니다.</li>
+								<li>② 2021년도 개인정보 관리수준 진단 평가에서 &lsquo;양호&rsquo; 등급을 획득하여 8년 연속 최고등급을 획득하였습니다.</li>
+							</ol>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_13" aria-expanded="false" aria-controls="acc_panel_13" class="tit btn-toggle">
+								<span class="num">13</span>
+								개인정보 보호 인증
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-15"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_13" aria-labelledby="acc_13" class="cont-area">
+							<p class="txt">공단은 「개인정보 보호법」제32조의2에 따라 &lsquo;정보보호 및 개인정보보호 관리체계(ISMS-P)&rsquo;인증 및 &lsquo;개인정보보호 우수웹사이트마크(ePRIVACY PLUS)&rsquo; 취득 등 국민의 소중한 개인정보를 최고 수준으로 보호하기 위해 노력하고 있습니다.</p>
+
+							<div class="box-gray-white icon">
+								<i class="iconset ico-privacy-mark-01"></i>
+								<em>정보보호 및 개인정보보호 관리체계 인증</em>
+							</div>
+
+							<div class="box-gray-white icon">
+								<i class="iconset ico-privacy-mark-02"></i>
+								<em>개인정보보호 우수웹사이트 인증</em>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="tit-area">
+							<button type="button" id="acc_14" aria-expanded="false" aria-controls="acc_panel_14" class="tit btn-toggle">
+								<span class="num">14</span>
+								개인정보 처리방침의 변경에 관한 사항
+
+								<span class="wrap-ico-privacy">
+									<i class="iconset ico-privacy-16"></i>
+								</span>
+
+								<i class="iconset ico-toggle-arr"></i>
+							</button>
+						</div>
+				
+						<div role="region" id="acc_panel_14" aria-labelledby="acc_14" class="cont-area">
+							<p class="txt">본 방침은 2023년 1월 11일부터 시행되며, 「개인정보 보호법」 제30조에 따라개인정보 처리방침을 변경하는 경우 정보주체가 쉽게 확인할 수 있도록 홈페이지에 공개하고, 변경이력을 관리하고 있습니다.</p>
+						</div>
+					</li>
+
+				</ol>
+			</div>
+			<!-- // inner-wrap -->
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

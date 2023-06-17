@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | LAYPER MODAL</title>
+
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all">
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all">
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+
+		<h2 class="tit-guide">MODAL</h2>
+
+		<h3 class="tit-guide">버튼 + layer</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="layer-modal-wrap">
+					<div class="bg-dim"></div>
+						
+					<div class="layer-modal">
+						<p class="modal-tit">매장상세정보
+							<i class="iconset ico-close">닫기</i>
+						</p>
+
+						<div class="modal-info-wrap">
+							<div class="modal-info">
+								<p class="place">서울시 / OOO호점
+									
+									<span class="modal-badge bg-yellow float-r">오픈</span>
+								</p>
+								<p class="store-name">오픈매장이름</p>
+								<p class="store-address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</p>
+								<div class="map">지도영역</div>
+							</div>
+	
+							<p class="layer-txt nanum">매장사진</p>
+							<!-- swiper -->
+							<div class="swiper-container gallery-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+								</div>
+							</div>
+							
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide on">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+									<div class="swiper-slide">
+										<img src="../../static/images/images/layerpopup-store01.png" alt="매장사진01">
+									</div>
+								</div>
+							</div>
+							<!-- // swper -->
+						</div>
+						<button type="button" class="btn close-bt max bottom-round black">닫기</button>
+					</div>
+				</div>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+				<button type="button" class="btn modal-bt max round black">상세보기</button>
+
+			</div>
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+
+		<!-- Select Popup -->
+		<!-- <h3 class="tit-guide">Select popup</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="select-box">
+					<button type="button" class="select-open">선택해주세요</button>
+
+					<div class="bg-dim"></div>
+					<div class="select-wrap">
+						
+						<p class="select-title">시·도 선택
+							<i class="iconset ico-close"></i>
+						</p>
+						<ul class="select-list">
+							<li><button type="button">서울특별시</button></li>
+							<li><button type="button">인천광역시</button></li>
+							<li><button type="button">경기도</button></li>
+							<li><button type="button">부산광역시</button></li>
+							<li><button type="button">대전광역시</button></li>
+						</ul>
+					</div>
+				</button>
+				</div>
+			</div>
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div> -->
+		<!-- // Select Popup -->
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>

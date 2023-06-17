@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>온라인 설문조사 목록 |   | 국민건강보험 건강보험 의료지도</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		<a href="#gnb">주 메뉴 바로가기</a>
+		<a href="#contents">내용 바로가기</a>
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layer.html 참조
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<div id="contents">
+		
+			<h2>온라인 설문조사</h2>
+			
+			<p>
+				국민의 의견을 수렴하여 더  좋은 서비스를 만들어 가겠습니다. 많은 참여 바랍니다.
+			</p>
+			
+			<div class="list-util">
+				<p class="count">
+					총 999,999 건
+				</p>
+				
+				<div class="list-search">
+					<input type="search" title="검색어 입력" class="input-text">
+					<button type="button" class="btn-list-search">검색</button>
+				</div>
+			</div>
+			
+			<div class="survey-list">
+				<ul>
+					<li>
+						<figure>
+							<div class="img">
+								<img src="" alt="" />
+							</div>
+							
+							<figcaption class="wrap-title">
+								<p class="tit">설문조사 제목 출력</p>
+								<p class="period">2023-01-01 ~ 2023.12.12</p>
+								<p class="count">
+									참여 : 99,999,999
+								</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div class="img">
+								<img src="" alt="" />
+							</div>
+							
+							<figcaption class="wrap-title">
+								<p class="tit">설문조사 제목 출력 설문조사 제목 출력 설문조사 제목 출력 설문조사 제목 출력  설문조사 제목 출력 </p>
+								<p class="period">2023-01-01 ~ 2023.12.12</p>
+								<p class="count">
+									참여 : 99,999,999
+								</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="pagination">
+				<a href="" class="btn-page first">처음으로</a>
+				<a href="" class="btn-page">이전으로</a>
+				<strong title="현재 페이지" class="active">1</strong>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="">9</a>
+				<a href="">10</a>
+				<a href="" class="btn-page next">다음으로</a>
+				<a href="" class="btn-page last">마지막으로</a>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layer.html 참조
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

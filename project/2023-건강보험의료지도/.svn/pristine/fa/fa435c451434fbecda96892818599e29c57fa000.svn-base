@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>회원정보수정 | 마이페이지 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu" tabindex="0">
+		<a href="">홈</a>
+		
+		<p class="name"><strong>홍길동</strong>님 안녕하세요!</p>
+	
+		<nav id="gnb">
+			<ul>
+				<li><a href=""><span>서비스 소개</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">의료이용지표 개요</a></li>
+							<li><a href="">전체 지표목록</a></li>
+							<li><a href="">지표 이용현황</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>의료이용지표</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지역 지표</a>
+								<ul class="depth-3">
+									<li><a href="">지역 내 지표 조회</a></li>
+									<li><a href="">지역 간 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">지역 간 지표 순위</a></li>
+								</ul>
+							</li>
+							<li><a href="">사업장 지표</a>
+								<ul class="depth-3">
+									<li><a href="">사업장 지표 조회</a></li>
+									<li><a href="">사업장 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">사업장 지표 순위</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>이용 가이드</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지표 이용 가이드</a></li>
+							<li><a href="">지표 활용 우수사례</a></li>
+							<li><a href="">오픈 API</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>고객센터</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">공지사항</a></li>
+							<li><a href="">자주하는 질문</a></li>
+							<li><a href="">온라인 설문조사</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<div id="contents">
+
+			<div class="box-profile">
+				<p class="txt">
+					<span>아이디</span>
+					<strong>kkj0871</strong>
+				</p>
+				<p class="txt">
+					<span>이름</span>
+					<strong>홍길동</strong>
+				</p>
+			</div>
+
+			<div class="board-form">
+				<!--
+							to : 개발
+							
+							경고문구 없을 때 <p class="txt-alert"> 를 아에 안나오게 해주세요.
+				-->
+				<p class="tit">비밀번호</p>
+				<input type="text" class="input-text" title="비밀번호 입력">
+				<p class="txt-alert">비밀번호는 9자리 이상입니다.</p>
+				<p class="txt-help">9~20자리 이내, 특수문자, 숫자, 영문조합만 가능합니다.</p>
+
+				<p class="tit">비밀번호확인</p>
+				<input type="text" class="input-text" title="비밀번호 확인 입력">
+				<p class="txt-alert">비밀번호가 일치하지 않습니다.</p>
+
+				<p class="tit">휴대전화번호 <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="tel" class="input-text" placeholder="‘-’없이 입력해주세요" title="‘-’없이 휴대전화번호 입력">
+					<button type="button" class="button">인증</button>
+				</div>
+
+				<p class="tit">이메일 <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="email" class="input-text" placeholder="이메일을 입력하세요." title="이메일 입력">
+
+					<div class="button-group">
+						<button type="button" class="button">인증</button>]
+
+						<!--
+									to : 개발
+									
+									인증번호 입력 오류 및 제한시간초과 시 재발송 버튼으로 변경
+						-->
+						<button type="button" class="button navy">재발송</button>
+					</div>
+				</div>
+				<p class="txt-help">
+					반드시 <em class="color-red">소속기관이나 회사 계정</em>의 <em class="color-red">본인 이메일</em>을 입력해 주세요. 예) nhiss@nhis.or.kr
+				</p>
+
+				<p class="tit">이메일 인증번호 <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<div class="wrap-limit">
+						<input type="text" class="input-text" placeholder="인증번호를 입력" title="인증번호 입력">
+						<p class="time-limit">00:00:59</p>
+					</div>
+
+					<button type="button" class="button">확인</button>
+				</div>
+
+				<p class="tit">소속구분</p>
+				<p class="txt">국민건강보험공단</p>
+
+				<p class="tit">소속기관</p>
+				<p class="txt">서울특별시 강남구</p>
+
+				<p class="tit">소속부서</p>
+				<p class="txt">업무혁신지원부</p>
+
+				<p class="tit">담당자 전화번호</p>
+				<p class="txt">053-1234-5678</p>
+
+				<p class="tit">이용목적</p>
+				<p class="txt">보건계획 수립 및 평가</p>
+			</div>
+
+			<div class="button-group">
+				<button type="button" class="button large">취소</button>
+				<button type="button" class="button large red">회원정보수정</button>
+			</div>
+
+			<div class="box-bg-gray">
+				<ul class="list-dot">
+					<li>회원가입 시 등록한 이메일로 임시 비밀번호를 발송해 드립니다.</li>
+					<li>인증메일 미수신 시 스팸메일함이나 차단된 메일함을 확인해주세요.</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

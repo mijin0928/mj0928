@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi">
+<meta name="format-detection" content="telephone=no">
+<title>자주하는 질문 | 고객센터 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/sy.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		<a href="#gnb">주 메뉴 바로가기</a>
+		<a href="#contents">본문 바로가기</a>
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu" tabindex="0">
+		layout.html 참고
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<!-- id : contents -->
+		<div id="contents">
+			<div class="box-search">
+				<div class="util">
+					<input type="search" title="자주하는 질문 검색어 입력" class="input-text">
+					<button type="button" class="button navy">검색</button>
+				</div>
+			</div>
+			
+			<p class="counting"><b>100</b> 건</p>
+			<!-- faq-list -->
+			<ul class="faq-list accordion">
+				<li>
+					<!--
+						to : 개발
+						
+						1. 열린 상태 : button 의 aria-expanded="true", 닫힌 상태 : aria-expanded="false"
+						2. button 의 id 와 콘텐츠의 aria-labelledby 동일한 값을 가져야 합니다.
+						3. button 의 aria-controls 와 콘텐츠의 id 와 동일한 값을 가져야 합니다.
+					-->
+					<div class="tit-area">
+						<button type="button" id="acc_01" aria-expanded="true" aria-controls="acc_panel_01" class="tit btn-toggle">
+							<i class="iconset ico-faq-q">질문</i>
+							<span>질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.
+							질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.질문영역 문항 유형입니다.</span>
+							<i class="iconset ico-toggle-arr"></i>
+						</button>
+					</div>
+
+					<div role="region" id="acc_panel_01" aria-labelledby="acc_01" class="cont-area">
+						<i class="iconset ico-faq-a">답변</i>
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 
+					</div>
+				</li>
+				<li>
+					<div class="tit-area">
+						<button type="button" id="acc_02" aria-expanded="false" aria-controls="acc_panel_02" class="tit btn-toggle">
+							<i class="iconset ico-faq-q">질문</i>
+							<span>질문영역 문항 유형입니다.</span>
+							<i class="iconset ico-toggle-arr"></i>
+						</button>
+					</div>
+
+					<div role="region" id="acc_panel_02" aria-labelledby="acc_02" class="cont-area">
+						<i class="iconset ico-faq-a">답변</i>
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠
+					</div>
+				</li>
+				<li>
+					<div class="tit-area">
+						<button type="button" id="acc_03" aria-expanded="false" aria-controls="acc_panel_03" class="tit btn-toggle">
+							<i class="iconset ico-faq-q">질문</i>
+							<span>질문영역 문항 유형입니다.</span>
+							<i class="iconset ico-toggle-arr"></i>
+						</button>
+					</div>
+
+					<div role="region" id="acc_panel_03" aria-labelledby="acc_03" class="cont-area">
+						<i class="iconset ico-faq-a">답변</i>
+						콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠
+					</div>
+				</li>
+			</ul>
+			<!-- //faq-list -->
+
+			<div class="button-group">
+				<button type="button" class="button round more">더보기</button>
+			</div>
+		</div>
+		<!--// id : contents -->
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

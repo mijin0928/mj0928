@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지표 이용 가이드 | 이용가이드 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">지표 이용 가이드</h2>
+			
+			<div class="inner-wrap">
+				<ul class="indicator-guide-list">
+					<li>
+						<p class="tit">지역/사업장 지표 조회<br>이용가이드</p>
+						<button type="button" class="button navy open-modal" aria-controls="layer_indicatorGuide">상세보기</button>
+						<i class="iconset ico-indicator-guide01"></i>
+					</li>
+					<li>
+						<p class="tit">지역/사업장 지표 비교<br>이용가이드</p>
+						<button type="button" class="button navy open-modal" aria-controls="layer_indicatorGuide">상세보기</button>
+						<i class="iconset ico-indicator-guide02"></i>
+					</li>
+					<li>
+						<p class="tit">연도별 지표추이<br>이용가이드</p>
+						<button type="button" class="button navy open-modal" aria-controls="layer_indicatorGuide">상세보기</button>
+						<i class="iconset ico-indicator-guide03"></i>
+					</li>
+					<li>
+						<p class="tit">지역/사업장 지표 순위<br>이용가이드</p>
+						<button type="button" class="button navy open-modal" aria-controls="layer_indicatorGuide">상세보기</button>
+						<i class="iconset ico-indicator-guide04"></i>
+					</li>
+				</ul>
+
+				<div class="layer-modal" id="layer_indicatorGuide" role="dialog" aria-modal="true">
+					<div class="wrap" tabindex="0">
+						<p class="tit">지역(사업장) 지표 조회 이용가이드</p>
+						
+						<div class="cont">
+							<p>내용</p>
+
+							<div class="button-group mgt30">
+								<button type="button" class="button navy close-layer">닫기</button>
+							</div>
+						</div>
+						
+						<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

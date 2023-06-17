@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | TAB</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all">
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all">
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">TAB</h2>
+
+		<h3 class="desc-guide">@@@@@@1. 탭 사용시 탭 활성화시 해당 탭의 li 에 class active 추가<br />1-1. 탭 활성화시 해당 탭 버튼 aria-selected true 설정, 비활성화시 aria-selected false 설정<br />1-2. 탭 버튼의 aria-controls와 탭콘텐츠(tab-contents) 의 id 값을 일치시켜주세요<br />1-3. 탭 버튼의 id값과 탭콘텐츠의 aria-labelledby 값을 일치시켜주세요.@@@@@@<br />2. 탭 링크타입 사용시 tab-area 에 class type-link 추가<br />3. 콘텐츠 내부에 있는 스와이프 탭 사용시 tab-area에 class swipe 추가해주세요</h3>
+
+		<h3 class="tit-guide">상단 고정 탭(스와이프)</h3>
+		<h4 class="tit-guide">버튼형</h4>
+		<div class="source">
+			<div class="copy">
+	
+				<!-- tab-area -->
+				<div class="container-util tab-area">
+					<!-- tab-nav -->
+					<ul class="tab-nav" role="tablist">
+						<li><!-- 활성화시 class active 추가 -->
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-1" id="tab01-1">홈</button><!-- 활성화시 aria-selected true / 비활성화시 aria-selected false 를 넣어주세요 -->
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-2" id="tab01-2">경쟁력</button>
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-3" id="tab01-3">창업솔루션</button>
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-4" id="tab01-4">오픈매출</button>
+						</li>
+						<li  class="active">
+							<button type="button" role="tab" aria-selected="true" aria-controls="tab-panel1-5" id="tab01-5">오픈매출</button>
+						</li>
+					</ul>
+					<!-- //tab-nav -->
+				</div>
+				<!-- //tab-area -->
+	
+				<div class="contents">
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-1" id="tab-panel1-1">
+						contents1
+					</div>
+					<!-- //tab-contents -->
+	
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-2" id="tab-panel1-2">
+						contents2
+					</div>
+					<!-- //tab-contents -->
+	
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-3" id="tab-panel1-3">
+						contents3
+					</div>
+					<!-- //tab-contents -->
+	
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-4" id="tab-panel1-4">
+						contents4
+					</div>
+					<!-- //tab-contents -->
+	
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-5" id="tab-panel1-5">
+						contents5
+					</div>
+					<!-- //tab-contents -->
+
+				</div>
+
+			</div>
+
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+	
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				
+				<!-- tab-area -->
+				<div class="container-util tab-area type-link">
+					<!-- tab-nav -->
+					<ul class="tab-nav">
+						<li class="active"><!-- 활성화시 class active 추가 -->
+							<a href="" class="tab01">MENU 01</a>
+						</li>
+						<li>
+							<a href="" class="tab02">MENU 02</a>
+						</li>
+						<li>
+							<a href="" class="tab03">MENU 03</a>
+						</li>
+						<li>
+							<a href="" class="tab04">MENU 04</a>
+						</li>
+						<li>
+							<a href="" class="tab05">MENU 05</a>
+						</li>
+					</ul>
+					<!-- //tab-nav -->
+				</div>
+				<!-- //tab-area -->
+				<div class="contents">
+					콘텐츠 영역
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide">콘텐츠 내부 탭</h3>
+		<h4 class="tit-guide">타입1 (스와이프 X)</h4>
+		<div class="source">
+			<div class="copy">
+				<div class=""><!-- 사용시 class 추가해서 css 설정해주세용 -->
+					<!-- tab-area -->
+					<div class="tab-area">
+						<!-- tab-nav -->
+						<ul class="tab-nav" role="tablist">
+							<li class="active"><!-- 활성화시 class active 추가 -->
+								<button type="button"  role="tab" aria-selected="true" aria-controls="tab-panel2-1" id="tab02-1">탭1</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel2-2" id="tab02-2">탭2</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel2-3" id="tab02-3">탭3</button>
+							</li>
+						</ul>
+						<!-- //tab-nav -->
+					</div>
+					<!-- //tab-area -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab02-1" id="tab-panel2-1">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab02-2" id="tab-panel2-2">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab02-3" id="tab-panel2-3">
+						콘텐츠3
+					</div>
+					<!-- //tab-cont -->
+
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h4 class="tit-guide">타입2 (스와이프)</h4>
+		<div class="source">
+			<div class="copy">
+				<div class=""><!-- 사용시 class 추가해서 css 설정해주세용 -->
+					<!-- tab-area -->
+					<div class="swipe tab-area"><!-- class swipe 추가 -->
+						<!-- tab-nav -->
+						<ul class="tab-nav" role="tablist">
+							<li class="active"><!-- 활성화시 class active 추가 -->
+								<button type="button"  role="tab" aria-selected="true" aria-controls="tab-panel3-1" id="tab03-1">탭1</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel3-2" id="tab03-2">탭2</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel3-3" id="tab03-3">탭3</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel3-4" id="tab03-4">탭4</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel3-5" id="tab03-5">탭5</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel3-6" id="tab03-6">탭6</button>
+							</li>
+						</ul>
+						<!-- //tab-nav -->
+					</div>
+					<!-- //tab-area -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-1" id="tab-panel3-1">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-2" id="tab-panel3-2">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-3" id="tab-panel3-3">
+						콘텐츠3
+					</div>
+					<!-- //tab-cont -->
+
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-4" id="tab-panel3-4">
+						콘텐츠4
+					</div>
+					<!-- //tab-cont -->
+
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-5" id="tab-panel3-5">
+						콘텐츠5
+					</div>
+					<!-- //tab-cont -->
+
+					
+					<!-- tab-cont -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab03-6" id="tab-panel3-6">
+						콘텐츠6
+					</div>
+					<!-- //tab-cont -->
+
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+
+		<h4 class="tit-guide">타입3 (box + 스와이프)</h4>
+		<div class="source">
+			<div class="copy">
+				<div class="box full blue">
+					
+					<!-- tab-area -->
+					<div class="swipe tab-area"><!-- class swipe 추가 -->
+						<!-- tab-nav -->
+						<ul class="tab-nav" role="tablist">
+							<li class="active"><!-- 활성화시 class active 추가 -->
+								<button type="button"  role="tab" aria-selected="true" aria-controls="tab-panel4-1" id="tab04-1">탭1</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel4-2" id="tab04-2">탭2</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel4-3" id="tab04-3">탭3</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel4-4" id="tab04-4">탭4</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel4-5" id="tab04-5">탭5</button>
+							</li>
+							<li>
+								<button type="button"  role="tab" aria-selected="false" aria-controls="tab-panel4-6" id="tab04-6">탭6</button>
+							</li>
+						</ul>
+						<!-- //tab-nav -->
+					</div>
+					<!-- //tab-area -->
+				</div>
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-1" id="tab-panel4-1">
+					콘텐츠1
+				</div>
+				<!-- //tab-cont -->
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-2" id="tab-panel4-2">
+					콘텐츠2
+				</div>
+				<!-- //tab-cont -->
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-3" id="tab-panel4-3">
+					콘텐츠3
+				</div>
+				<!-- //tab-cont -->
+
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-4" id="tab-panel4-4">
+					콘텐츠4
+				</div>
+				<!-- //tab-cont -->
+
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-5" id="tab-panel4-5">
+					콘텐츠5
+				</div>
+				<!-- //tab-cont -->
+
+				
+				<!-- tab-cont -->
+				<div class="tab-contents" role="tabpanel" aria-labelledby="tab04-6" id="tab-panel4-6">
+					콘텐츠6
+				</div>
+				<!-- //tab-cont -->
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source').find('.xmp').html(_html);
+		});
+
+		$(function() {
+			// @@@@가이드 확인용 탭 js입니다 @@@@
+			$('.copy .tab-area').each(function() {
+				var tabSwipe = $(this),
+					tabNav = tabSwipe.children('.tab-nav'),
+					tabList = tabSwipe.find('li'),
+					_scrollTarget = tabSwipe.find('li.active'),
+					tabBtn = tabList.children('[role="tab"]'),
+					tabCont = [],
+					paddingGuide = parseInt($('.source').css('padding-left')) + parseInt($('.cont-guide').css('padding-left'))
+
+
+				// 활성화 탭 공통(버튼형+링크형) 좌우 스크롤 고정(처음 보이는 화면)
+				function tabSwipingHandle(_active) {
+					if (tabSwipe.outerWidth(true) < tabNav.prop('clientWidth')) {
+						tabSwipe.scrollLeft(0)
+						tabSwipe.hasClass('container-util') ? tabSwipe.scrollLeft(_active.offset().left - parseInt(tabSwipe.css('padding-left')) - paddingGuide) : tabSwipe.scrollLeft(_active.offset().left - paddingGuide);
+					}
+				}
+				tabSwipingHandle(_scrollTarget)
+				
+				// 디바이스 사이즈 변경시 좌우 스크롤 위치 고정
+				$(window).resize(function() {
+					let _scrollTarget = tabSwipe.find('li.active');
+					tabSwipingHandle(_scrollTarget)
+				})
+						
+				// 버튼형 탭 기능 
+				// @@ 링크형 탭은 기능이 들어가지 않습니다.(해당 탭에 class active 만 추가되는 형태입니다) @@
+				tabBtn.each(function() {
+					let _this = $(this),
+							_scrollTarget = _this.parent('li');
+
+					if (tabSwipe.hasClass('container-util')) { // 상단 고정 탭인 경우
+						tabCont = tabSwipe.siblings('.contents').children('.tab-contents');
+						tabClickHandle(tabCont);
+					}  else { // 콘텐츠 내부 탭
+						if (tabSwipe.parents('.box').length) { // 박스밖에 탭 콘텐츠가 있는 경우
+							tabCont = tabSwipe.parent('.box').siblings('.tab-contents');
+							tabClickHandle(tabCont)
+						} else { // 한곳에 탭네비게이션, 콘텐츠가 있는 경우
+							tabCont = tabSwipe.siblings('.tab-contents');
+							tabClickHandle(tabCont)
+						}
+					}
+
+					function tabClickHandle(cont) {
+						let activeTarget = tabList.find('[aria-selected="true"]')
+						cont.filter('#'+activeTarget.attr('aria-controls')).fadeIn().siblings('.tab-contents').css('display','none');
+
+						_this.on('click', function() {
+							let targetId = $(this).attr('aria-controls');
+							$(this).attr('aria-selected','true').parent().addClass('active').siblings().removeClass('active').children().attr('aria-selected','false');
+							cont.filter('#'+targetId).fadeIn().siblings('.tab-contents').css('display','none');
+
+							tabSwipingHandle(_scrollTarget)
+						});
+					};
+				});
+			})
+		})
+	</script>
+</body>
+</html>

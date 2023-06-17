@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>넥스에이전트 퍼블리싱 가이드 | icon</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">icon</h2>
+		<div class="desc-guide">
+			
+		</div>
+
+		<h3 class="tit-guide">location</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-home">HOME</i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">화살표</h3>
+		<div class="source">
+			<div class="copy" style="background-color:#ccc;">
+				<i class="iconset ico-arr-black"></i>
+				<i class="iconset ico-arr-white"></i>
+				<i class="iconset ico-arr-blue"></i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">SNS</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-ft-blog">네이버블로그 바로가기</i>
+				<i class="iconset ico-ft-instagram">인스타그램 바로가기</i>
+				<i class="iconset ico-ft-facebook">페이스북 바로가기</i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">성공사례</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-interview"></i>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">가입절차</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-form"></i>
+				<i class="iconset ico-review"></i>
+				<i class="iconset ico-call"></i>
+				<i class="iconset ico-contract"></i>
+				<i class="iconset ico-business"></i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">가입누적 현황</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-join"></i>
+				<i class="iconset ico-sum"></i>
+				<i class="iconset ico-customer"></i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">상품</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-product-01"></i>
+				<i class="iconset ico-product-02"></i>
+				<i class="iconset ico-product-03"></i>
+				<i class="iconset ico-product-04"></i>
+				<i class="iconset ico-product-05"></i>
+				<i class="iconset ico-product-06"></i>
+				<i class="iconset ico-product-07"></i>
+				<i class="iconset ico-product-08"></i>
+				<i class="iconset ico-product-09"></i>
+				<i class="iconset ico-product-10"></i>
+				<i class="iconset ico-product-11"></i>
+				<i class="iconset ico-product-12"></i>
+				<i class="iconset ico-product-13"></i>
+				<i class="iconset ico-product-14"></i>
+				<i class="iconset ico-product-15"></i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">오늘 배송 서비스</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-delivery-01"></i>
+				<i class="iconset ico-delivery-02"></i>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">주문시스템</h3>
+		<div class="source">
+			<div class="copy" style="background-color:#666;">
+				<i class="iconset ico-order-01"></i>
+				<i class="iconset ico-order-02"></i>
+				<i class="iconset ico-order-03"></i>
+				<i class="iconset ico-order-04"></i>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

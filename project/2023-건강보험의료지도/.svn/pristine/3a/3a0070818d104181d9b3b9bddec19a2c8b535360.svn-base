@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전체 지표목록 | 서비스 소개 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		<a href="#gnb">주 메뉴 바로가기</a>
+		<a href="#contents">본문 바로가기</a>
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		<!--
+			to : 개발
+			
+			
+			1. 메인페이지 일때
+			h1 태그 만 있고 class 는 logo 만 있습니다.
+			
+			<h1 class="logo"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+			
+			
+			2. 서브페이지 일때
+			h1 에 다중 클래스 hidden 이 들어가며
+			이전 페이지 이동인 a 태그와 h2 태그(페이지 타이틀)가 추가로 들어갑니다.
+			
+			<h1 class="logo hidden"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+			<a href="" class="btn-back">이전 페이지 이동</a>
+			<h2 class="title-2">페이지 타이틀</h2>
+			
+			
+			1) 메인 페이지
+			<div class="wrap">
+				<h1 class="logo"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+				
+				<div class="header-util">
+					<a href="" class="btn"><i class="iconset ico-profile">로그인</i></a>
+					<button type="button" class="btn btn-open-all-menu"><i class="iconset ico-all-menu">전체 메뉴</i></button>
+				</div>
+			</div>
+			
+			
+			2) 서브 페이지
+			<div class="wrap">
+				<h1 class="logo hidden"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+				<a href="" class="btn-back"><i class="iconset ico-back">이전 페이지 이동</i></a>
+				<h2 class="title-2">페이지 타이틀</h2>
+				
+				<div class="header-util">
+					<a href="" class="btn"><i class="iconset ico-profile">로그인</i></a>
+					<button type="button" class="btn btn-open-all-menu"><i class="iconset ico-all-menu">전체 메뉴</i></button>
+				</div>
+			</div>
+		-->
+		<div class="wrap">
+			<h1 class="logo hidden"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+			<a href="" class="btn-back"><i class="iconset ico-back">이전 페이지 이동</i></a>
+			<h2 class="title-2">페이지 타이틀</h2>
+			
+			<div class="header-util">
+				<!-- 로그인 전 -->
+				<a href="" class="btn"><i class="iconset ico-profile">로그인</i></a>
+				<!--// 로그인 전 -->
+				
+				<!-- 로그인 후 -->
+				<!-- <a href="" class="btn"><i class="iconset ico-profile-my">마이페이지</i></a> -->
+				<!--// 로그인 후 -->
+				
+				<button type="button" class="btn btn-open-all-menu"><i class="iconset ico-all-menu">전체 메뉴</i></button>
+			</div>
+		</div>
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu" tabindex="0">
+		<a href="">홈</a>
+		
+		<p class="name"><strong>홍길동</strong>님 안녕하세요!</p>
+	
+		<nav id="gnb">
+			<ul>
+				<li><a href=""><span>서비스 소개</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">의료이용지표 개요</a></li>
+							<li><a href="">전체 지표목록</a></li>
+							<li><a href="">지표 이용현황</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>의료이용지표</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지역 지표</a>
+								<ul class="depth-3">
+									<li><a href="">지역 내 지표 조회</a></li>
+									<li><a href="">지역 간 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">지역 간 지표 순위</a></li>
+								</ul>
+							</li>
+							<li><a href="">사업장 지표</a>
+								<ul class="depth-3">
+									<li><a href="">사업장 지표 조회</a></li>
+									<li><a href="">사업장 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">사업장 지표 순위</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>이용 가이드</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지표 이용 가이드</a></li>
+							<li><a href="">지표 활용 우수사례</a></li>
+							<li><a href="">오픈 API</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>고객센터</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">공지사항</a></li>
+							<li><a href="">자주하는 질문</a></li>
+							<li><a href="">온라인 설문조사</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+	
+	
+	<!-- container -->
+	<div class="container">
+		<!-- id contents -->
+		<div id="contents">
+		
+			<p class="txt-page">
+				의료이용지표는 크게 기본특성, 의료자원, 의료이용,  건강검진, 만성질환 및 직무관련질환, 환경성질환, 건강결과, 장기요양의 8가지 영역으로 구성되어 있습니다.<br />
+				자세한 지표 설명은 <i class="iconset ico-tooltip small">레이어</i> 버튼을 클릭하여 확인하실 수 있습니다.
+			</p>
+			
+			<div class="hr-scroll">
+				<ul class="tab-list filter">
+					<!--
+						활성화
+						<li class="on">
+						
+						비활성화
+						<li>
+					-->
+					<li class="on"><button type="button">전체</button></li>
+					<li><button type="button">기본특성</button></li>
+					<li><button type="button">의료지원</button></li>
+					<li><button type="button">의료이용</button></li>
+					<li><button type="button">건강검진</button></li>
+					<li><button type="button">만성질환 및 직무관련질환</button></li>
+					<li><button type="button">환경성질환</button></li>
+					<li><button type="button">건강결과</button></li>
+					<li><button type="button">장기요양</button></li>
+				</ul>
+				
+				<button type="button" aria-expanded="false" class="btn-hr-toggle">카테고리<span>펼치기</span></button>
+			</div>
+			
+			<!--
+				filter 해서 보일때
+				<div class="bundle-indicators" style="display:block;">
+				
+				안보일때
+				<div class="bundle-indicators" style="display:none;">
+			-->
+			<div class="bundle-indicators" style="display:block;">
+				<h3 class="title-3">기본특성</h3>
+				
+				<div class="table-data">
+					<table>
+						<!--
+							to : 개발
+							
+							웹접근성
+							"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+							
+							예)
+							의료이용지표 - 기본특성 표
+							의료이용지표 - 만성질환 및 직무관련질환 표
+						-->
+						<caption>의료이용지표 - 기본특성 표</caption>
+						<colgroup>
+							<col />
+							<col />
+							<col style="width:80px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">중분류</th>
+								<th scope="col">소분류</th>
+								<th scope="col">지표설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>인구</td>
+								<td>인구수</td>
+								<td>
+									<!--
+										to 개발 : 
+										
+										1. pc 버전하고는 다르게 레이어 창으로 변경.
+										2. pc 에서는 각각의 툴팁 레이어가 있었지만 모바일에선 하나의 레이어로 변경.
+										3. 레이어 오픈시 해당되는 데이터 출력
+									-->
+									<button type="button" class="reset open-modal" aria-controls="layerModal_list"><i class="iconset ico-tooltip">레이어 열기</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<!-- bundle-indicators -->
+			<div class="bundle-indicators" style="display:block;">
+				<h3 class="title-3">의료자원</h3>
+				
+				<div class="table-data">
+					<table>
+						<!--
+							to : 개발
+							
+							웹접근성
+							"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+							
+							예)
+							의료이용지표 - 기본특성 표
+							의료이용지표 - 만성질환 및 직무관련질환 표
+						-->
+						<caption>의료이용지표 - 의료자원 표</caption>
+						<colgroup>
+							<col />
+							<col />
+							<col style="width:80px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">중분류</th>
+								<th scope="col">소분류</th>
+								<th scope="col">지표설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>요양기관</td>
+								<td>요양기관수</td>
+								<td>
+									<!--
+										to 개발 : 
+										
+										1. pc 버전하고는 다르게 레이어 창으로 변경.
+										2. pc 에서는 각각의 툴팁 레이어가 있었지만 모바일에선 하나의 레이어로 변경.
+										3. 레이어 오픈시 해당되는 데이터 출력
+									-->
+									<button type="button" class="reset open-modal" aria-controls="layerModal_list"><i class="iconset ico-tooltip">레이어 열기</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2">주요시설</td>
+								<td>전문병상수</td>
+								<td>
+									<!--
+										to 개발 : 
+										
+										1. pc 버전하고는 다르게 레이어 창으로 변경.
+										2. pc 에서는 각각의 툴팁 레이어가 있었지만 모바일에선 하나의 레이어로 변경.
+										3. 레이어 오픈시 해당되는 데이터 출력
+									-->
+									<button type="button" class="reset open-modal" aria-controls="layerModal_list"><i class="iconset ico-tooltip">레이어 열기</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>허가병상수</td>
+								<td>
+									<!--
+										to 개발 : 
+										
+										1. pc 버전하고는 다르게 레이어 창으로 변경.
+										2. pc 에서는 각각의 툴팁 레이어가 있었지만 모바일에선 하나의 레이어로 변경.
+										3. 레이어 오픈시 해당되는 데이터 출력
+									-->
+									<button type="button" class="reset open-modal" aria-controls="layerModal_list"><i class="iconset ico-tooltip">레이어 열기</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--// bundle-indicators -->
+			
+			<!-- bundle-indicators -->
+			<div class="bundle-indicators" style="display:none;">
+				<h3 class="title-3">의료이용</h3>
+				
+				<div class="table-data">
+					<table>
+						<!--
+							to : 개발
+							
+							웹접근성
+							"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+							
+							예)
+							의료이용지표 - 기본특성 표
+							의료이용지표 - 만성질환 및 직무관련질환 표
+						-->
+						<caption>의료이용지표 - 의료이용 표</caption>
+						<colgroup>
+							<col />
+							<col />
+							<col style="width:80px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">중분류</th>
+								<th scope="col">소분류</th>
+								<th scope="col">지표설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>의료이용1</td>
+								<td>의료이용2</td>
+								<td>
+									<!--
+										to 개발 : 
+										
+										1. pc 버전하고는 다르게 레이어 창으로 변경.
+										2. pc 에서는 각각의 툴팁 레이어가 있었지만 모바일에선 하나의 레이어로 변경.
+										3. 레이어 오픈시 해당되는 데이터 출력
+									-->
+									<button type="button" class="reset open-modal" aria-controls="layerModal_list"><i class="iconset ico-tooltip">레이어 열기</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--// bundle-indicators -->
+			
+			
+			<!-- 지표정보 레이어 -->
+			<div class="layer-modal" id="layerModal_list" role="dialog" aria-modal="true">
+				<div class="wrap" tabindex="0">
+					<p class="tit">[1차 일반생애건강검진] 지표 정보</p>
+					
+					<div class="cont">
+						<ul class="list-dot">
+							<li>
+								<p class="tit">내용</p>
+								
+								<div class="cont">
+									일반 생애 1차 검진 수검자의 비율
+								</div>
+							</li>
+							<li>
+								<p class="tit">산출 단위</p>
+								
+								<div class="cont">
+									산출단위 출력
+								</div>
+							</li>
+							<li>
+								<p>내용</p>
+								<div>
+									일반 생애 1차 검진 수검자의 비율
+								</div>
+							</li>
+							<li>
+								<p>내용</p>
+								<div>
+									일반 생애 1차 검진 수검자의 비율
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+				</div>
+			</div>
+			<!--// 지표정보 레이어 -->
+		</div>
+		<!--// id contents -->
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<p class="logo-footer">국민건강보험</p>
+		
+		<nav class="footer-link">
+			<ul>
+				<li class="privacy"><a href="">개인정보처리방침</a></li>
+				<li><a href="">이용약관</a></li>
+			</ul>
+		</nav>
+		
+		<address class="address">(26464) 강원도 원주시 건강로 32(반곡동) <span>국민건강보험공단</span></address>
+		
+		<p class="tel">고객상담문의 : <a href="tel:1577-1000">1577-1000</a></p>
+		<p class="copy">&copy; 2023 National Health Insurance Service All rights reserved.</p>
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

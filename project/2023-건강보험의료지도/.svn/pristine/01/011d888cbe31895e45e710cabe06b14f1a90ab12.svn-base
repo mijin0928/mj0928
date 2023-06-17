@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지표 활용 우수사례 | 이용가이드 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">지표 활용 우수사례</h2>
+			
+			<div class="inner-wrap">
+				<div class="board-util">
+					<div class="count">
+						총 <strong>450</strong>건
+					</div>
+					
+					<div class="util">
+						<select title="분류 선택">
+							<option>전체</option>
+							<option>지역 지표</option>
+							<option>사업장 지표</option>
+						</select>
+						
+						<input type="search" title="검색어 입력" placeholder="제목을 검색하세요" class="input-text">
+						<button type="button" class="button navy">검색</button>
+					</div>
+				</div>
+				
+				<!-- 데이터 있는 경우 -->
+				<div class="thumbs-list">
+					<ul>
+						<li>
+							<a href="">
+								<p class="thumbs-area"><img src="../../static/images/contents/thumb01.jpg" alt=""></p>
+								<p class="subject">2023년 ATLAS 활용 우수사례 공모작으로 주요 만성질환의 발생전 위험요인 뿐 아니라 2023년 ATLAS 활용 우수사례 공모작으로 주요 만성질환의 발생전 위험요인 뿐 아니라</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="thumbs-area"><img src="../../static/images/contents/thumb02.jpg" alt=""></p>
+								<p class="subject">제목이 노출됩니다</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						
+						<!-- 이미지 없을때  -->
+						<li class="no-img">
+							<a href="">
+								<p class="thumbs-area">NO IMAGE</p>
+								<p class="subject">제목이 노출됩니다</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						<li class="no-img">
+							<a href="">
+								<p class="thumbs-area">NO IMAGE</p>
+								<p class="subject">제목이 노출됩니다 제목이 노출됩니다 제목이 노출됩니다 제목이 노출됩니다 제목이 노출됩니다</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						<li class="no-img">
+							<a href="">
+								<p class="thumbs-area">NO IMAGE</p>
+								<p class="subject">제목이 노출됩니다</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						<li class="no-img">
+							<a href="">
+								<p class="thumbs-area">NO IMAGE</p>
+								<p class="subject">제목이 노출됩니다</p>
+								<p class="data">
+									<span>2023-01-09</span>
+									<span>출처 : SNS 홍보자료</span>
+								</p>
+							</a>
+						</li>
+						<!-- 이미지 없을때  -->
+					</ul>
+				</div>
+
+				<div class="pagination">
+					<a href="" class="control first">처음으로</a>
+					<a href="" class="control prev">이전으로</a>
+					<strong title="현재 페이지" class="active">1</strong>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<a href="" class="control next">다음으로</a>
+					<a href="" class="control last">마지막으로</a>
+				</div>
+				<!--// 데이터 있는 경우 -->
+
+				<!-- 데이터 없는 경우 -->
+				<div class="no-data">
+					등록된 게시물이 없습니다.
+				</div>
+				<!--// 데이터 없는 경우 -->
+
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

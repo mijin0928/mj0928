@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>우리, 빵꾸똥꾸에서 만나! 빵꾸똥꾸 문구야｜오픈 비용 계산기</title>
+
+<link rel="stylesheet" href="../../../static/css/import.css" media="all" />
+
+<script src="../../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../../static/js/slick.js"></script>
+<script src="../../../static/js/swiper.min.js"></script>
+<script src="../../../static/js/aos.js"></script>
+<script src="../../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<header id="header">
+		<div class="inner-wrap">
+			<p class="color-red">layout.html 참고</p>
+		</div>
+	</header>
+
+	<div class="container">
+		<!-- container-util -->
+		<div class="container-util">
+			<div class="inner-wrap">
+				<ul class="location">
+					<li class="depth home"><a href="" class="btn-indent btn-home">HOME</a></li>
+					<li id="mainDepth2" class="depth"><a href="" class="active"><!-- 활성화시 class active 추가 -->창업비용 계산기</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container-util -->
+
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="title mgb10">창업비용을 계산해보세요!</h2>
+
+			<div class="inner-wrap">
+				<div class="calculate mgb40">
+					<input type="text" title="매장평수를 입력하세요" placeholder="매장평수를 입력하세요" class="input-text font18">
+					<button type="button" class="btn round black medium">계산하기</button>
+				</div>
+
+				<div class="table-area cal">
+					<p class="unit float-r mgb23"><span class="color-red">*10평</span> 기준(단위 : 원, 부가세 별도)</p>
+					<table class="a-c">
+						<caption>항목, 세부항목, 금액, 비고 값이 있는 창업비용 계산하기 표</caption>
+						<colgroup>
+							<col style="width:21.42%">
+							<col style="width:21.42%">
+							<col style="width:21.42%">
+							<col style="width:35.75%">
+						</colgroup>
+						
+						<!-- 01-30 TV 항목 위치 변경 -->
+						<tbody>
+							<tr>
+								<th scope="col">항목</th>
+								<th scope="col">세부항목</th>
+								<th scope="col">금액</th>
+								<th scope="col">비고</th>
+							</tr>
+							<tr>
+								<td rowspan="4">계약</td>
+								<td>가맹비</td>
+								<td class="a-r color-red">-</td>
+								<td class="color-red">500만원 면제</td>
+							</tr>
+							<tr>
+								<td>보증금</td>
+								<td class="a-r color-red">-</td>
+								<td class="color-red">500만원 면제</td>
+							</tr>
+							<tr>
+								<td>교육비</td>
+								<td class="a-r color-red">1,000,000</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>출장비</td>
+								<td class="a-r color-red">2,000,000</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td rowspan="4">인테리어</td>
+								<td>기초공사비</td>
+								<td class="a-r color-blue">실비</td>
+								<td>바닥, 천장, 벽체, 철거 공사 등</td>
+							</tr>
+							<tr>
+								<td>조명</td>
+								<td class="a-r color-red">2,500,000</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>냉난방기</td>
+								<td class="a-r color-red">2,500,000</td>
+								<td>시스템냉난방기 기준</td>
+							</tr>
+							<tr>
+								<td>자동문</td>
+								<td class="a-r color-red">2,500,000</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td rowspan="2">진열매대</td>
+								<td>철제매대</td>
+								<td class="a-r color-red">8,000,000</td>
+								<td>800,000원/평당</td>
+							</tr>
+							<tr>
+								<td>아크릴매대</td>
+								<td class="a-r color-red">1,000,000</td>
+								<td>필기구 매대 선택 사항</td>
+							</tr>
+							<tr>
+								<td rowspan="2">간판</td>
+								<td>간판, 어닝, 실사</td>
+								<td class="a-r color-red">5,000,000</td>
+								<td>가로 3,600mm 기준</td>
+							</tr>
+							<tr>
+								<td>포인트간판</td>
+								<td class="a-r color-red">300,000</td>
+								<td>점주 선택 가능</td>
+							</tr>
+							<tr>
+								<td rowspan="6">상품 및 설비</td>
+								<td>초도상품</td>
+								<td class="a-r color-red">18,000,000</td>
+								<td>1,800,000원/평당</td>
+							</tr>
+							<tr>
+								<td>뽑기기계</td>
+								<td class="a-r color-red">2,100,000</td>
+								<td>머신 6대, 동전교환기 1대, 캡슐 260개</td>
+							</tr>
+							<tr>
+								<td>키오스크</td>
+								<td class="a-r color-red">4,500,000</td>
+								<td>키오스크+매대+분리수거함</td>
+							</tr>
+							<tr>
+								<td>TV</td>
+								<td class="a-r color-red">600,000</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>모바일 프린터기</td>
+								<td class="a-r color-red">500,000</td>
+								<td>가격표 출력용</td>
+							</tr>
+							<tr>
+								<td>오픈 소모품</td>
+								<td class="a-r color-red">400,000</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="box yellow">
+					<div class="info-area">
+						<p class="info-tit font30">합계<em class="fw600 pdl30">50,900,000원</em></p>
+					</div>
+				</div>
+				<!-- !! 2023-03-03 퍼블리싱 수정 
+				to 개발 : 뽑기기계 금액, 비고 / 합계 값 수정되었습니다-->
+
+				<p class="alert-txt">상기 금액은 참고용 금액이며 매장의 상황에 따라 다를 수 있습니다.</p>
+				<p class="alert-txt">인테리어 점주 직접 시공 시 감리비가 발생됩니다(10만원/평)</p>
+				
+				<div class="table-tit mgt80">
+					<p class="float-l font20 bold">매월 고정 비용</p>
+					<p class="unit float-r mgb25">(단위 : 원, 부가세 별도)</p>
+				</div>
+				
+				<div class="table-area cal">
+					<table class="a-c">
+						<caption>항목, 금액, 비고 값이 있는 매월 고정 비용 표</caption>
+						<colgroup>
+							<col style="width:21.42%">
+							<col style="width:21.42%">
+							<col style="width:57.17%">
+						</colgroup>
+	
+						<tbody>
+							<tr>
+								<th scope="col">항목</th>
+								<th scope="col">금액</th>
+								<th scope="col">비고</th>
+							</tr>
+							<tr>
+								<td>로열티</td>
+								<td class="a-r color-red">200,000</td>
+								<td rowspan="2">계약 후 매월 납입</td>
+							</tr>
+							<tr>
+								<td>시스템 사용료</td>
+								<td class="a-r color-red">100,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+
+	<!-- <aside class="quick-area">
+		<p class="color-red">layout.html 참고</p>
+	</aside> -->
+
+	<footer id="footer">
+		<p class="color-red">layout.html 참고</p>
+	</footer>
+
+</body>
+</html>

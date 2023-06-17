@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>layer modal | 건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">layer modal</h2>
+		
+		<div class="guide-block">
+			<div class="copy">
+<button type="button" class="button navy open-modal" aria-controls="layerModal_01">레이어 모달 오픈</button>
+
+<div class="layer-modal" id="layerModal_01" role="dialog" aria-modal="true">
+	<div class="wrap" tabindex="0">
+		<div class="tit-area">
+			<p class="tit">제목 출력</p>
+		</div>
+		
+		<div class="cont-area">
+			내용
+			
+			<div class="button-group mgt30">
+				<button type="button" class="button navy close-layer">닫기</button>
+			</div>
+		</div>
+		
+		<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+	</div>
+</div>
+			</div>
+		</div>
+		
+		<div class="desc-guide">
+		</div>
+	</div>
+</body>
+</html>

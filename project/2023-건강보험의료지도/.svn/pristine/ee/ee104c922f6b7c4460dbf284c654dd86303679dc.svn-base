@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 신청현황 | 마이페이지 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<div id="contents">
+			<h3 class="title-3">신청상태</h3>
+
+			<div class="board-view list-type line">
+				<ul>
+					<li>
+						<p class="tit">신청일</p>
+						<span class="txt">2023-06-24</span>
+					</li>
+					<li>
+						<p class="tit">처리결과</p>
+						<span class="txt">
+							<i class="iconset ico-companion"></i>반려
+						</span>
+					</li>
+					<li>
+						<span class="tit">반려사유</span>
+						<p class="txt">사업장 담당자는 '사업장' 권한을 선택하셔야 하며, 사업자등록증을 첨부하여 주시기 바랍니다.</p>
+					</li>
+				</ul>
+			</div>
+
+			<h3 class="title-3">신청정보</h3>
+
+			<div class="board-view list-type line">
+				<ul>
+					<li>
+						<p class="tit">이름</p>
+						<span class="txt">홍길동</span>
+					</li>
+					<li>
+						<p class="tit">이메일</p>
+						<span class="txt">kkj0871@ableu.com</span>
+					</li>
+					<li>
+						<p class="tit">휴대전화번호</p>
+						<span class="txt">010-1234-5678</span>
+					</li>
+					<li>
+						<p class="tit">기관 전화번호</p>
+						<span class="txt">02-1234-5678</span>
+					</li>
+					<li>
+						<p class="tit">소속구분</p>
+						<span class="txt">사업장</span>
+					</li>
+					<li>
+						<p class="tit">소속기관</p>
+						<span class="txt">OOOOO회사 OOOOO회사 OOOOO회사 내용이 길어질 경우 내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우</span>
+					</li>
+					<li>
+						<p class="tit">소속부서</p>
+						<span class="txt">OOOOO부</span>
+					</li>
+					<li>
+						<span class="tit">사업자등록증</span>
+						<p class="txt"><i class="iconset ico-file-img">이미지 파일</i> 에이블유컴즈 사업자등록증.pdf </p>
+					</li>
+					<li>
+						<span class="tit">이용목적</span>
+						<p class="txt">
+							보건계획 수립 및 평가, 만성질환 예방 및 관리 내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우내용이 길어질 경우
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="button-group">
+				<a href="" class="button large">목록</a>
+				<a href="" class="button red large">재신청</a>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

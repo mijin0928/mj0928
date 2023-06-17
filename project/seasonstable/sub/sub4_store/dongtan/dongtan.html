@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동탄점</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/dongtan.css">
+    <link rel="shortcut icon" href="images/favicon_icon.ico">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function auto() { 
+            $("#slide").animate({"left":"-1280px"},500,function(){ 
+                $("#slide").append($("#slide li:first-child")).css({"left" : "0"});
+            });
+        }
+
+        var timer = setInterval("auto()", 5000);
+        $(".coexImg").on("mouseover", function(){ 
+            clearInterval(timer);
+        });
+        $(".coexImg").on("mouseleave", function(){ 
+            timer = setInterval("auto()", 5000);
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="logoMenu confix">
+                <div class="headerLogo">
+                    <h1><a href="../../../index.html"><img src="images/main/logo.png" alt="headerLogo"></a></h1>
+                </div><!-- headerLogo -->
+
+                <div class="menuBox">
+                    <nav class="mainMenu">
+                        <ul class="gnb">
+                            <li><a href="../../sub1_intro/story.html">계절밥상</a></li>
+                            <li><a href="../../sub2_food/food1.html">차림메뉴</a></li>
+                            <li><a href="../../sub3_news/notice.html">계절소식</a></li>
+                            <li><a href="../../sub4_store/coexmall/coexmall.html">매장안내</a></li>
+                            <li><a href="../../sub5_benefit/affiliatecard/affiliatecard.html">제휴혜택</a></li>
+                        </ul>
+                    </nav><!-- mainMenu -->
+    
+                    <div class="rightMenu">
+                        <ul>
+                            <li><a href="../../login/login.html">로그인</a></li>
+                            <li><a href="../../register/join.html">회원가입</a></li>
+                            <li><a href="../../cscenter/cscenter.html">고객센터</a></li>
+                        </ul>
+                    </div><!-- rightMenu -->
+                </div><!-- menuBox -->
+
+                <div class="mobileMenuBtn">
+                    <a href="#" class="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div><!-- mobileMenuBtn -->
+            </div><!-- logoMenu -->
+            
+            <div class="mobileSideMenu">
+                <ul class="mainMenuList">
+                    <li>
+                        <a href="#">계절밥상<span>&gt;</span></a>
+                        <ul class="subMenu1 sm">
+                            <li><a href="../../sub1_intro/story.html">계절이야기</a></li>
+                            <li><a href="../../sub1_intro/introduce.html">밥상 소개</a></li>
+                            <li><a href="../../sub1_intro/life.html">농가 일상</a></li>
+                            <li><a href="../../sub1_intro/price.html">이용 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">차림메뉴<span>&gt;</span></a>
+                        <ul class="subMenu2 sm">
+                            <li><a href="../../sub2_food/food1.html">메인 음식</a></li>
+                            <li><a href="../../sub2_food/food2.html">반찬</a></li>
+                            <li><a href="../../sub2_food/food3.html">후식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">계절소식<span>&gt;</span></a>
+                        <ul class="subMenu3 sm">
+                            <li><a href="../../sub3_news/notice.html">새소식</a></li>
+                            <li><a href="../../sub3_news/event.html">행사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../sub4_store/coexmall/coexmall.html">매장안내<span>&gt;</span></a>
+                    </li>
+                    <li>
+                        <a href="#">제휴혜택<span>&gt;</span></a>
+                        <ul class="subMenu5 sm">
+                            <li><a href="../../sub5_benefit/affiliatecard/affiliatecard.html">제휴카드</a></li>
+                            <li><a href="../../sub5_benefit/giftcard/giftcard.html">기프트카드</a></li>
+                            <li><a href="../../sub5_benefit/giftType/giftType.html">상품권</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="quickMenuList">
+                    <li><a href="../../login/login.html">로그인</a></li>
+                    <li><a href="../../register/join.html">회원가입</a></li>
+                    <li><a href="../../cscenter/cscenter.html">고객센터</a></li>
+                </ul>
+            </div><!-- mobileSideMenu -->
+        </header>
+
+        <main class="main">
+            <div class="confix">
+                <div class="contentMenuBox">
+                    <h2>매장안내</h2>
+                    <ul class="contentMenuBar">
+                        <li class="menu1 cMenu"><a href="../coexmall/coexmall.html">코엑스몰점</a></li>
+                        <li class="menu2 cMenu"><a href="../dongtan/dongtan.html">동탄점</a></li>
+                        <li class="menu3 cMenu"><a href="../hanam/hanam.html">하남미사점</a></li>
+                        <!-- <li class="menu4 cMenu"><a href="#">메뉴4</a></li> -->
+                    </ul><!-- contentMenuBar -->
+                </div><!-- contentMenuBox -->
+            </div><!-- confix -->    
+            
+            <section class="dongtan">
+                <h2>dongtan</h2>
+                <div class="confix">
+                    <div class="dtImg">
+                        <ul id="slide">
+                            <li><img src="./images/dt.jpg" alt="dongtan1"></li>
+                            <li><img src="./images/dtfood.jpg" alt="dongtan2"></li>
+                            <li><img src="./images/dtfood2.jpg" alt="dongtan3"></li>
+                        </ul>
+                    </div><!-- dtImg -->
+
+                    <div class="dtMapArea">
+                        <div class="dtMap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202766.7443201523!2d126.66286708096341!3d37.43166204626055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c82622881c01b%3A0xbe78ff91b17efde!2z6rOE7KCI67Cl7IOB!5e0!3m2!1sko!2skr!4v1633969108228!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div><!-- dtMap -->
+                        <div class="dtTxt">
+                            <h3>동탄점</h3>
+                            <ul>
+                                <li>
+                                    <h4><img src="./images/map.png" alt="map" class="icon"><strong>위치</strong></h4>
+                                    <span class="info">경기 화성시 동탄 원천로 338 - 7</span>
+                                </li>
+
+                                <li>
+                                    <h4><img src="./images/call.png" alt="call" class="icon"><strong>전화번호</strong></h4>
+                                    <span class="info">연중무휴 11:00 - 21:00</span>
+                                </li>
+
+                                <li>
+                                    <h4><img src="./images/clock.png" alt="clock" class="icon"><strong>영업시간</strong></h4>
+                                    <span class="info">031 - 8015 - 4071
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <h4><img src="./images/parking.png" alt="parking" class="icon"><strong>주차여부</strong></h4>
+                                    <span class="info">가능</span>
+                                </li>
+                            </ul>
+                        </div> <!-- dtTxt -->
+                    </div> <!-- dtMapArea -->
+                </div><!-- confix -->
+            </section>
+        </main>
+
+        <footer class="footer vBox">
+            <div class="footerArea confix">
+                <div class="footerLogo">
+                    <a href="../../../index.html"><img src="images/main/footer_logo.png" alt="footerLogo"></a>
+                </div><!-- footerLogo -->
+
+                <div class="footInfoSnsBox">
+                    <div class="flexBox">
+                        <nav class="footMenu">
+                            <ul>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이메일 무단수집거부</a></li>
+                            </ul>
+                        </nav><!-- footMenu -->
+        
+                        <div class="footerInfoBox">
+                            <span class="companyName">(주)계절밥상</span>
+                            <address class="adr_pc">
+                                대표 : 김하경 사업자등록번호 : 305-81-70958 TEL : 1833-9299<br>
+                                서울사업본부 : 서울시 송파구 중대로 97 효원빌딩 6층 13층 TEL : 02-6959-1086<br>
+                                대전사무실 : 대전광역시 중구 산서로 53번길 11 TEL : 042-274-3060
+                            </address>
+                            <address class="adr_mobile">
+                                서울시 송파구 중대로 97 효원빌딩 6층 13층<br>
+                                TEL : 02-6959-1086
+                            </address>
+                            <p class="copyright">
+                                Copyright© 2021 Isaacs. All Rights Reserved.<br>
+                                Created By Masstige.
+                            </p>
+                        </div><!-- footerInfoBox -->
+                    </div><!-- flexBox -->
+    
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="https://instagram.com/seasonstable?utm_medium=copy_link" target="_blank"><img src="images/main/footer_instagram.png" alt="footer_instagram"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC2Gh8mkR5KyrOITJ7SUU9gw" target="_blank"><img src="images/main/footer_youtube.png" alt="footer_youtube"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/seasonstable" target="_blank"><img src="images/main/footer_facebook.png" alt="footer_facebook"></a>
+                            </li>
+                            <li>
+                                <a href="http://pf.kakao.com/_PrCxaM" target="_blank"><img src="images/main/footer_kakaotalk.png" alt="footer_kakaotalk"></a>
+                            </li>
+                        </ul>
+                    </div><!-- sns -->
+                </div><!-- footInfoSnsBox -->
+            </div><!-- footerArea -->
+        </footer>
+    </div><!-- wrap -->
+</body>
+</html>

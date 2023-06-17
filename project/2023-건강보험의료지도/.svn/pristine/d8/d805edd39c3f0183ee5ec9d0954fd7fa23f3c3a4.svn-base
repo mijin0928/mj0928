@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* 서비스 소개
+========================================================================== */
+/* 의료이용지표 개요 */
+.list-procedure {display:flex; justify-content:center; list-style-type:none; margin:0; padding:0;}
+.list-procedure > li {position:relative; width:312px; text-align:center;}
+.list-procedure > li::before {content:''; position:absolute; top:64px; left:-16px; display:block; width:32px; height:32px; background-image:url('../images/common/ico/ico-procedure-arr.png'); background-size:100%;}
+.list-procedure > li:first-child::before {display:none;}
+.list-procedure > li .ico {display:inline-block; width:160px; height:160px; padding:29px 0 0; margin:0; border-radius:50%; background-color:#f6f6f6;}
+.list-procedure > li .ico.bg-green {background-color:#e4f2e4;}
+.list-procedure > li .ico.bg-pink {background-color:#ffeae0;}
+.list-procedure > li .txt {display:block; margin:10px 0 0;}
+
+
+/* 고객센터
+========================================================================== */
+/* 자주하는 질문 */
+.faq-list {list-style-type:none; padding:0; margin:0; border-top:2px solid #44465b;}
+.faq-list > li {margin:0; padding:0; border-bottom:1px solid #e2e3e7;}
+.faq-list > li .tit-area .tit {display:block; position:relative; width:100%; margin:0; padding:30px 92px; border:0; font-size:18px; line-height:1.4; color:#3a3a4a; font-weight:500; text-align:left; background-color:#fff;}
+.faq-list > li .tit-area .tit .ico-faq-q {position:absolute; left:40px; top:30px;}
+.faq-list > li .tit-area .tit .ico-toggle-arr {position:absolute; right:30px; top:50%; margin-top:-16px;}
+.faq-list > li .cont-area {display:none; position:relative; padding:30px 50px 30px 92px; font-size:16px; line-height:1.75; border-top:1px solid #e2e3e7; background-color:#fff6f2;}
+.faq-list > li .cont-area .ico-faq-a {position:absolute; left:40px; top:30px;}
+
+/* 온라인 설문조사 목록 */
+.list-survey p {margin:0; padding:0;}
+.list-survey ul {list-style-type:none; margin:0 0 0 -40px; padding:0;}
+.list-survey ul:before,
+.list-survey ul:after {content:''; display:block;}
+.list-survey ul:after {clear:both;}
+.list-survey ul li {float:left; width:calc(50% - 40px); margin:0 0 0 40px; padding:0;}
+.list-survey ul li:nth-child(2) ~ li {margin-top:40px;}
+.list-survey ul li .box {display:block; position:relative; width:100%; height:220px; padding:30px 240px 30px 40px; border-radius:24px; border:1px solid rgba(255,255,255,0); transition:box-shadow 0.2s;}
+.list-survey ul li .box:hover {border:1px solid #bec2c8; text-decoration:none; box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+.list-survey ul li .box:hover .tit {text-decoration:underline;}
+.list-survey ul li .box .state {overflow:hidden; position:absolute; right:40px; top:30px; z-index:2; width:60px; height:31px; line-height:30px; border-radius:12px; text-align:center; color:#fff; background-color:#44465b;}
+.list-survey ul li .box .img {position:absolute; right:60px; top:50px; width:120px; height:120px; font-size:0; line-height:0;}
+.list-survey ul li .box .tit {overflow:hidden; height:60px; font-size:22px; color:#3a3a4a; font-weight:700;  line-height:1.3; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.list-survey ul li .box .period {margin-top:12px; line-height:1.1; letter-spacing:0; font-family:'Roboto', sans-serif;}
+.list-survey ul li .box .count {position:absolute; left:40px; bottom:30px; margin:0; line-height:1.1; letter-spacing:0; font-family:'Roboto', sans-serif;}
+.list-survey ul li .box .count .iconset {margin-right:6px;}
+.list-survey ul li:nth-child(3n) .box {background-color:#f4f5f7;}
+.list-survey ul li:nth-child(3n - 1) .box {background-color:#e5fbf2;}
+.list-survey ul li:nth-child(3n - 2) .box {background-color:#ffeae0;}
+
+/* 온라인 설문조사 보기 */
+.tit-board-survey {margin:0; padding:0; font-size:32px; font-weight:700; text-align:center;}
+.txt-board-survey {margin:0; padding:20px; font-size:16px; text-align:center;}
+
+.box-survey-result {position:relative; min-height:88px; padding:30px 180px 30px 40px; border:1px solid #e2e3e7; border-radius:12px; background-color:#fff6f2;}
+.box-survey-result.v1 {min-height:60px; padding:20px 0; text-align:center;}
+.box-survey-result .list-dot {margin:0;}
+.box-survey-result .list-dot li {display:inline-block; margin-left:40px; margin-top:0;}
+.box-survey-result .list-dot li:first-child {margin-left:0;}
+.box-survey-result .button {position:absolute; right:40px; top:50%; margin:-24px 0 0 0;}
+
+.box-survey-result-list {display:block; margin:20px 0 0 0; padding:0 30px; border:1px solid #e2e3e7; border-radius:12px;}
+.box-survey-result-list p {margin:0; padding:0;}
+.box-survey-result-list .list {list-style-type:none; margin:0; padding:0;}
+.box-survey-result-list .list > li {padding:30px 0; border-bottom:1px solid #e1e3e6;}
+.box-survey-result-list .list > li:last-child {border:0;}
+.box-survey-result-list .list > li .tit {position:relative; margin:0; padding:0 0 0 52px; font-size:16px; font-weight:500; color:#3a3a4a; line-height:1.5;}
+.box-survey-result-list .list > li .tit .tagset {position:absolute; left:0; top:1px; width:42px; font-family:'Roboto',sans-serif;}
+.box-survey-result-list .list > li .txt {font-size:15px; margin:20px 0 0; padding:0 0 0 56px;}
+
+.box-survey-result-list .survey-graph {display:block; margin:30px 0 0; padding-left:54px;}
+.box-survey-result-list .survey-graph dl {display:flex; flex-wrap:wrap; align-items:center; margin-bottom:12px; font-size:15px;}
+.box-survey-result-list .survey-graph dl:last-child {margin-bottom:0;}
+.box-survey-result-list .survey-graph dt {width:150px; padding-right:10px; color:#555; line-height:1.5;}
+.box-survey-result-list .survey-graph dd {position:relative; margin:0; padding:5px 180px 5px 0; width:calc(100% - 150px);}
+.box-survey-result-list .survey-graph dd span.bar {position:relative; display:inline-block; width:auto; height:16px; border-radius:0 16px 16px 0; background:#67caa8;}
+.box-survey-result-list .survey-graph dd em {position:absolute; display:inline-block; margin-left:30px; line-height:18px; word-break: keep-all;}
+
+
+
+
+/* 이용가이드
+========================================================================== */
+
+
+
+
+
+
+/* 썸네일형 목록 */
+.thumbs-list ul {list-style-type:none; overflow:hidden; margin:-40px 0 0 -40px; padding:0;}
+.thumbs-list ul:after {content:''; display:block; clear:both}
+.thumbs-list ul li {float:left; width:400px; margin:40px 0 0 40px;}
+.thumbs-list ul li a {display:block;}
+.thumbs-list ul li .thumbs-area {width:100%; height:260px; margin:0; overflow:hidden; position:relative; border-radius:24px; border:1px solid #e1e3e6; transition:0.2s;}
+.thumbs-list ul li .thumbs-area img {width:100%; height:100%;}
+.thumbs-list ul li .subject {overflow:hidden; margin:20px 0 0; color:#3a3a4a; font-size:18px; font-weight:500; line-height:1.44; height:55px; line-height: 1.7; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.thumbs-list ul li .data {margin:20px 0 0;}
+.thumbs-list ul li .data span {position:relative; padding:0 0 0 24px; color:#555; font-size:16px;}
+.thumbs-list ul li .data span:first-child {padding:0;}
+.thumbs-list ul li .data span:first-child:before {display:none;}
+.thumbs-list ul li .data span:before {content:''; display:block; position:absolute; top:50%; left:12px; width:1px; height:14px; margin-top:-6px; background-color:#bec2c8;}
+.thumbs-list ul li.no-img a .thumbs-area {background-color:#f4f5f7; color:#999; font-size:18px; font-weight:700; text-align:center; line-height:260px;}
+.thumbs-list ul li.no-img:hover .thumbs-area {opacity: 0.8;}
+.thumbs-list ul li:hover a {text-decoration:none;}
+.thumbs-list ul li:hover .thumbs-area {border:1px solid #bec2c8; box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+
+
+
+/* 지표 이용 가이드 */
+.indicator-guide-list {list-style-type:none; margin:-40px 0 0 -40px; padding:0;}
+.indicator-guide-list:after {content:''; display:block; clear:both}
+.indicator-guide-list > li {position:relative; float:left; width:620px; height:220px; padding:30px 40px; margin:40px 0 0 40px; border:1px solid rgba(255,255,255,0); background-color:#f4f5f7; border-radius:24px; transition:0.2s;}
+.indicator-guide-list > li:hover {border:1px solid #bec2c8;  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+.indicator-guide-list > li .tit {margin:0; padding:0; color:#3a3a4a; font-size:22px; font-weight:700; line-height:1.36;}
+.indicator-guide-list > li .button {margin-top:40px;}
+.indicator-guide-list > li .iconset {position:absolute; top:50px; right:60px;}

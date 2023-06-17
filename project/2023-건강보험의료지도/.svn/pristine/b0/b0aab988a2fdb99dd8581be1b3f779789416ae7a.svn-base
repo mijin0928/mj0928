@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>지표 이용 가이드 | 이용가이드 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/guide_jh.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu">
+		layout.html 참고
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<!-- id : contents -->
+		<div id="contents">
+			<ul class="indicator-guide-list">
+				<li>
+					<a class="open-modal" aria-controls="layer_indicatorGuide">
+						<p class="tit">지역/사업장 지표 조회<br>이용가이드</p>
+						<i class="iconset ico-indicator-guide01"></i>
+					</a>
+				</li>
+				<li>
+					<a class="open-modal" aria-controls="layer_indicatorGuide">
+						<p class="tit">지역/사업장 지표 비교<br>이용가이드</p>
+						<i class="iconset ico-indicator-guide02"></i>
+					</a>
+				</li>
+				<li>
+					<a class="open-modal" aria-controls="layer_indicatorGuide">
+						<p class="tit">연도별 지표 추이<br>이용가이드</p>
+						<i class="iconset ico-indicator-guide03"></i>
+					</a>
+				</li>
+				<li>
+					<a class="open-modal" aria-controls="layer_indicatorGuide">
+						<p class="tit">지역/사업장 지표 순위<br>이용가이드</p>
+						<i class="iconset ico-indicator-guide04"></i>
+					</a>
+				</li>
+			</ul>
+
+			<div class="layer-modal" id="layer_indicatorGuide" role="dialog" aria-modal="true">
+				<div class="wrap" tabindex="0">
+					<div class="tit-area">
+						<p class="tit">지표 이용 가이드</p>
+					</div>
+					
+					<div class="cont">
+						<div class="slick-use-guide">
+							<button type="button" class="btn-slick-control prev">이전 슬라이더</button>
+							<button type="button" class="btn-slick-control next">다음 슬라이더</button>
+							
+							<ul class="tab-list-full filter use-guide-paging">
+								<li class="on"><button type="button">지역(사업장) 지표 조회</button></li>
+								<li><button type="button">지역(사업장) 지표 비교</button></li>
+								<li><button type="button">연도별 지표 추이</button></li>
+								<li><button type="button">지역(사업장) 지표 순위</button></li>
+							</ul>
+							
+							<div class="wrap">
+								<div class="slide">슬라이드1</div>
+								<div class="slide">슬라이드2</div>
+								<div class="slide">슬라이드3</div>
+								<div class="slide">슬라이드4</div>
+							</div>
+						</div>
+						
+						<div class="button-group mgt30">
+							<button type="button" class="button navy close-layer">닫기</button>
+						</div>
+					</div>
+					
+					<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+				</div>
+			</div>
+
+			
+			</div>
+		</div>
+		<!--// id : contents -->
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

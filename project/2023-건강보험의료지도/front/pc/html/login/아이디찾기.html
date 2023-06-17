@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아이디찾기 | 로그인 정보 찾기 | 회원가입 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+
+		<div id="contents">
+			<h2 class="title-2">로그인 정보 찾기</h2>
+
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<ul class="tab-list-full round">
+					<li class="on"><a href="">아이디 찾기</a></li>
+					<li><a href="">비밀번호 찾기</a></li>
+				</ul>
+
+				<!-- find-id-pwd -->
+				<div class="find-id-pwd">
+					<div class="wrap">
+						<p class="req-info"><span title="필수 입력 항목" class="req">*</span> 은 필수 입력항목입니다.</p>
+
+						<ul class="list-form">
+							<li>
+								<p class="label">이름<span title="필수 입력 항목" class="req">*</span></p>
+								<input type="text" class="input-text" placeholder="이름" title="이름 입력">
+							</li>
+
+							<li>
+								<p class="label">휴대전화번호<span title="필수 입력 항목" class="req">*</span></p>
+								<input type="tel" class="input-text" placeholder="‘-’없이 붙여서 입력해주세요" title="‘-’없이 붙여서 휴대전화번호 입력">
+							</li>
+
+							<li>
+								<p class="label">이메일<span title="필수 입력 항목" class="req">*</span></p>
+								<input type="email" class="input-text" placeholder="이메일" title="이메일 입력">
+							</li>
+						</ul>
+
+						<div class="box-right">
+							<button type="button" class="button large red open-modal" aria-controls="layerModal_01">아이디 찾기</button>
+						</div>
+					</div>
+				</div>
+				<!-- // find-id-pwd -->
+
+				<div class="layer-modal medium" id="layerModal_01" role="dialog" aria-modal="true">
+					<div class="wrap" tabindex="0">
+						<p class="tit">ID 확인</p>
+						
+						<div class="cont">
+
+							<!-- 2023-04-26 p > span 태그수정 -->
+							<span>
+								입력하신 정보로 찾은 회원 ID는 다음과 같습니다.<br>
+								아래 정보로도 기억이 나지 않으면 공단으로 문의해 주세요.
+							</span>
+
+							<div class="wrap-privacy">
+								<p class="txt">9959</p>
+							</div>
+
+							<div class="button-group mgt30">
+								<button type="button" class="button navy close-layer">확인</button>
+							</div>
+						</div>
+						
+						<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+					</div>
+				</div>
+				
+			</div>
+			<!-- // inner-wrap -->
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

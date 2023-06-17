@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* =======================
+	fonts style 
+======================= */
+
+/* w01_빵꾸똥꾸문구야_04매장안내_02오픈공지 부분 Segoe UI 저작권확인 */
+
+/* normal:400 , bold:700 */
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: normal;
+	src: local('NanumSquareRoundR'), url('../fonts/NanumSquareRoundR.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: bold;
+	src: local('NanumSquareRoundB'), url('../fonts/NanumSquareRoundB.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumSquareRound';
+	font-style: normal;
+	font-weight: 800;
+	src: local('NanumSquareRoundEB'), url('../fonts/NanumSquareRoundEB.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Pretendard-Regular') url('../fonts/Pretendard-Regular.otf');
+	src: url('../fonts/Pretendard-Regular.woff') format('woff'),
+		url('../fonts/Pretendard-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Pretendard-Mideum') url('../fonts/Pretendard-Medium.otf');
+	src: url('../fonts/Pretendard-Medium.woff') format('woff'),
+		url('../fonts/Pretendard-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Pretendard-Bold') url('../fonts/Pretendard-Bold.otf');
+	src: url('../fonts/Pretendard-Bold.woff') format('woff'),
+		url('../fonts/Pretendard-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Pretendard-SemiBold') url('../fonts/Pretendard-SemiBold.otf');
+	src: url('../fonts/Pretendard-SemiBold.woff') format('woff'),
+		url('../fonts/Pretendard-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'FredokaOne';
+	font-style: normal;
+	font-weight: normal;
+	src: local('FredokaOne'), url('../fonts/FredokaOne.ttf') format('truetype');
+}

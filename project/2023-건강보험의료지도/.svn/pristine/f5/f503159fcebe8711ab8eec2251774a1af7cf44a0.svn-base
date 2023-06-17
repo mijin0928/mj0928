@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		<a href="#gnb">주 메뉴 바로가기</a>
+		<a href="#contents">본문 바로가기</a>
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		<h1 class="logo"><a href=""><em>국민건강보험</em> <strong>의료이용지표</strong></a></h1>
+		
+		<nav id="gnb">
+			<ul>
+				<li><a href=""><span>서비스 소개</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">의료이용지표 개요</a></li>
+							<li><a href="">전체 지표목록</a></li>
+							<li><a href="">지표 이용현황</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>의료이용지표</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지역 지표</a>
+								<ul class="depth-3">
+									<li><a href="">지역 내 지표 조회</a></li>
+									<li><a href="">지역 간 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">지역 간 지표 순위</a></li>
+								</ul>
+							</li>
+							<li><a href="">사업장 지표</a>
+								<ul class="depth-3">
+									<li><a href="">사업장 지표 조회</a></li>
+									<li><a href="">사업장 지표 비교</a></li>
+									<li><a href="">연도별 지표 추이</a></li>
+									<li><a href="">사업장 지표 순위</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>이용 가이드</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">지표 이용 가이드</a></li>
+							<li><a href="">지표 활용 우수사례</a></li>
+							<li><a href="">오픈 API</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><span>고객센터</span></a>
+					<div class="depth">
+						<ul class="depth-2">
+							<li><a href="">공지사항</a></li>
+							<li><a href="">자주하는 질문</a></li>
+							<li><a href="">온라인 설문조사</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="header-util">
+			<div class="wrap">
+				<!-- 로그인 전 -->
+				<a href="" class="btn"><i class="iconset ico-profile">로그인</i></a>
+				<!--// 로그인 전 -->
+				
+				<!-- 로그인 후 -->
+				<p class="name"><strong>홍길동</strong>님 안녕하세요!</p>
+				
+				<!-- 2023-03-28 : 마이페이지 아이콘 클래스 수정 -->
+				<!-- 
+					ico-profile ==> ico-profile-my
+				 -->
+				<a href="" class="btn"><i class="iconset ico-profile-my">마이페이지</i></a>
+				<!--// 로그인 후 -->
+				
+				<button type="button" class="btn open-modal" aria-controls="layerModal_allMenu"><i class="iconset ico-all-menu">전체 메뉴</i></button>
+			</div>
+		</div>
+	</header>
+	<!-- // header -->
+	
+	<!-- layer modal : 전체메뉴 : 2023-03-28 추가 -->
+	<div class="layer-modal all-menu" id="layerModal_allMenu" role="dialog" aria-modal="true">
+		<div class="wrap" tabindex="0">
+			<p class="tit">전체 메뉴</p>
+			
+			<div class="cont">
+				<nav class="all-menu-navi">
+					<ul>
+						<li><a href=""><span>서비스 소개</span></a>
+							<ul class="depth-2">
+								<li><a href="">의료이용지표 개요</a></li>
+								<li><a href="">전체 지표목록</a></li>
+								<li><a href="">지표 이용현황</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>의료이용지표</span></a>
+							<ul class="depth-2">
+								<li><a href="">지역 지표</a>
+									<ul class="depth-3">
+										<li><a href="">지역 내 지표 조회</a></li>
+										<li><a href="">지역 간 지표 비교</a></li>
+										<li><a href="">연도별 지표 추이</a></li>
+										<li><a href="">지역 간 지표 순위</a></li>
+									</ul>
+								</li>
+								<li><a href="">사업장 지표</a>
+									<ul class="depth-3">
+										<li><a href="">사업장 지표 조회</a></li>
+										<li><a href="">사업장 지표 비교</a></li>
+										<li><a href="">연도별 지표 추이</a></li>
+										<li><a href="">사업장 지표 순위</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href=""><span>이용 가이드</span></a>
+							<ul class="depth-2">
+								<li><a href="">지표 이용 가이드</a></li>
+								<li><a href="">지표 활용 우수사례</a></li>
+								<li><a href="">오픈 API</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>고객센터</span></a>
+							<ul class="depth-2">
+								<li><a href="">공지사항</a></li>
+								<li><a href="">자주하는 질문</a></li>
+								<li><a href="">온라인 설문조사</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>마이페이지</span></a>
+							<ul class="depth-2">
+								<li><a href="">회원정보 수정</a></li>
+								<li><a href="">나의 신청 현황</a></li>
+								<li><a href="">나의 이용 현황</a></li>
+								<li><a href="">1:1 문의 현황</a></li>
+								<li><a href="">1:1 문의 등록</a></li>
+								<li><a href="">회원 탈퇴</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>회원가입</span></a>
+							<ul class="depth-2">
+								<li><a href="">로그인</a></li>
+								<li><a href="">로그인 정보 찾기</a>
+									<ul class="depth-3">
+										<li><a href="">아이디 찾기</a></li>
+										<li><a href="">비밀번호 찾기</a></li>
+									</ul>
+								</li>
+								<li><a href="">회원가입</a></li>
+								<li><a href="">이용약관</a></li>
+								<li><a href="">개인정보처리방침</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>메뉴 추가시 1줄에 6칸입니다.</span></a>
+							<ul class="depth-2">
+								<li><a href="">test1 test1 test1 test1 test1 test1 test1</a>
+									<ul class="depth-3">
+										<li><a href="">test2</a></li>
+										<li><a href="">test2</a></li>
+									</ul>
+								</li>
+								<li><a href="">test1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+		</div>
+	</div>
+	<!--// layer modal : 전체메뉴 : 2023-03-28 추가 -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1뎁스</p>
+			<p>2뎁스</p>
+			<p>현재페이지</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">페이지 타이틀</h2>
+			<p class="txt-page">페이지 설명 문구</p>
+			
+			<div class="inner-wrap">
+				콘텐츠
+				
+				<div class="header-toggle">
+					<button type="button" class="btn-toggle-header">header 영역 <span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="inner-wrap">
+			<p class="logo-footer">국민건강보험</p>
+			
+			<nav class="footer-link">
+				<ul>
+					<li class="privacy"><a href="">개인정보처리방침</a></li>
+					<li><a href="">이용약관</a></li>
+				</ul>
+			</nav>
+			
+			<p class="tel">고객상담문의 : 1577-1000</p>
+			
+			<address class="address">(26464) 강원도 원주시 건강로 32(반곡동) 국민건강보험공단</address>
+			
+			<p class="copy">&copy; 2023 National Health Insurance Service All rights reserved.</p>
+		</div>
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

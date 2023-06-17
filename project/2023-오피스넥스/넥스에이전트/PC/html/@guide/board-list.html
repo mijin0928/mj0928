@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>넥스에이전트 퍼블리싱 가이드 | board-list</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">board-list</h2>
+		<div class="desc-guide">
+			
+		</div>
+
+		<h3 class="tit-guide">board-list</h3>
+		<h4 class="tit-guide">default</h4>
+		<div class="source">
+			<div class="copy">
+				<div class="board-list">
+					<table>
+						<caption>게시판 목록 제목</caption>
+						<colgroup>
+							<col style="width:100px;" />
+							<col />
+							<col style="width:300px;" />
+							<col />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">NO</th>
+								<th scope="col">계약고객명</th>
+								<th scope="col">담당 넥스에이전트</th>
+								<th scope="col">월 매출액</th>
+								<th scope="col">지역</th>
+								<th scope="col">계약시기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td class="link ellipsis"><a href="">링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때 링크일때</a> </td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>삼성전자</td>
+								<td>김**</td>
+								<td class="a-r">30,500,500원</td>
+								<td>경기도 수원</td>
+								<td>2023-03-12</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">list-data</h3>
+		<h4 class="tit-guide">default</h4>
+		<div class="source">
+			<div class="copy">
+				<ul class="list-data">
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="tit">차별화된 서비스 정신으로<br />오피스넥스를 정상으로 이끌어요.오피스넥스를 정상으로 이끌어요.</p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="tit">차별화된 서비스 정신으로<br />오피스넥스를 정상으로 이끌어요.오피스넥스를 정상으로 이끌어요.</p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="tit">차별화된 서비스 정신으로<br />오피스넥스를 정상으로 이끌어요.</p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure> 
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<h4 class="tit-guide">서브타이틀 있는 경우</h4>
+		<div class="source">
+			<div class="copy">
+				<ul class="list-data">
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="channel">홍보채널</p>
+									<p class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. </p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="channel">홍보채널</p>
+									<p class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. </p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<figure class="fig">
+								<div class="img">
+									<img src="../../static/images/contents/img/img-list-example.png" alt="" />
+								</div>
+
+								<figcaption class="wrap-title">
+									<p class="channel">홍보채널</p>
+									<p class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. </p>
+									<p class="date">2023.05.25</p>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">list-interview</h3>
+		<div class="source">
+			<div class="copy">
+				
+				<ul class="list-interview">
+					<li>
+						<a href="">
+							<i class="iconset ico-interview"></i>
+							<p class="tit">서울강남지역 넥스에이전트<br />김** 인터뷰</p>
+							<p class="date">2023.05.25</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<i class="iconset ico-interview"></i>
+							<p class="tit">서울강남지역 넥스에이전트<br />김** 인터뷰</p>
+							<p class="date">2023.05.25</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							<i class="iconset ico-interview"></i>
+							<p class="tit">서울강남지역 넥스에이전트<br />김** 인터뷰</p>
+							<p class="date">2023.05.25</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

@@ -1,0 +1,6 @@
+$(function() {
+	// 오픈 API 목록
+	$(document).on('click', '.button-sort', function() {
+		$(this).addClass('on').siblings('.button-sort').removeClass('on');
+	});
+});

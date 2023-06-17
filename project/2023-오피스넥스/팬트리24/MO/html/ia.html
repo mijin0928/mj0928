@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>팬트리24 MO IA</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no" />
+
+<script src="../static/js/jquery-3.6.0.js"></script>
+
+<style>
+	* {box-sizing:border-box;}
+	
+	html, body {margin:0; padding:0;}
+	body {font-size:14px; line-height:1.45; letter-spacing:-0.025em; font-family:'Malgun Gothic', 'Noto Sans KR', '맑은 고딕', Dotum, '돋움', sans-serif;}
+	img {border:0;}
+	
+	table {width:100%; table-layout:fixed; empty-cells:show; border-collapse:collapse;}
+	
+	#wrap {overflow:hidden; width:100%; min-width:1000px; padding-bottom:10px;}
+	
+	#header {overflow:hidden; position:relative; width:100%; height:100px; margin:0; padding:15px 30px;}
+	#header .tit-area {display:flex; justify-content:space-between; margin:0; padding:0 0 10px 0; border-bottom:2px solid #000;}
+	#header .tit-area h1 {margin:0; padding:0; font-size:24px; font-family:'Roboto', sans-serif; line-height:1.1;}
+	#header .tit-area p {margin:0; padding:0;}
+	#header .tit-area p span {margin:0 0 0 20px;}
+	
+	.skip-marking {padding:7px 0 0 0;}
+	.skip-marking a {display:inline-block; padding:5px 8px; margin:0 15px 0 0; color:#000; text-decoration:none;}
+	.skip-marking a:hover {background-color:#ddd;}
+	.skip-marking a.on {color:#fff; font-size:1.142em; font-weight:bold; background-color:#000;}
+	
+	#contents {overflow:hidden; padding:0 0 0 30px;}
+	#contents h2 {font-size:16px; margin-bottom:12px; color:#000;}
+	
+	.table-ia {overflow:hidden; overflow-y:auto; width:100%; height:calc(100vh - 110px); padding-right:15px; border-bottom:2px solid #000;}
+	.table-ia table {border-collapse:collapse; table-layout:fixed; border:0;}
+	.table-ia table thead tr th {padding:5px; text-align:center; font-weight:400; color:#fff; background-color:#000;
+		 position: sticky;
+		 top: 0px;
+	}
+	
+	.table-ia table tbody tr th {padding:0 5px; text-align:left; font-weight:400; color:#000; background-color:#fff;}
+	.table-ia table tr td {padding:5px; border:1px solid #ccc; text-align:left; color:#444; word-break:break-all;}
+	.table-ia table tr td.a-c {padding:5px; text-align:center !important;}
+	.table-ia table tr td.a-c b {display:block;}
+	.table-ia table tr td.alert {color:#fff !important; background-color:#c00000 !important;}
+	.table-ia table tr td:first-child {font-weight:900; color:#000; font-size:18px;}
+	
+	.table-ia table tr.remove td {text-decoration:line-through; color:#666 !important; background-color:#ccc;}
+	.table-ia table tr.remove td * {pointer-events:none !important; text-decoration:line-through; color:#999 !important;}
+	.table-ia table tr.remove td:last-child {text-decoration:none;}
+	.table-ia table tr.section td {border-top:7px solid #444;}
+	
+	.table-ia table tr:hover td {background-color:#eee;}
+	
+	.color-red {color: #ff0000;}
+</style>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header">
+			<div class="tit-area">
+				<h1>팬트리24 MO IA</h1>
+
+				<p>
+					<span>HTML5 / utf-8</span>
+					<span>웹표준 : w3c validation</span>
+					<span>웹호환성 : Eage, Firefox, Chrome</span>
+				</p>
+			</div>
+
+			
+			<div class="skip-marking">
+			</div>
+		</header>
+		<!--// header -->
+
+		<!-- section -->
+		<section id="contents">
+
+			<!-- 메뉴 구조도 -->
+			<div class="table-ia">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:8%"/><!-- 1depth -->
+						<col style="width:12%"/><!-- 2depth -->
+						<col style="width:8%"/><!-- 3depth -->
+						<col style="width:7%"/><!-- 4depth -->
+						<col style="width:7%"/><!-- 5depth -->
+						<col style="width:13%"/><!-- 화면 ID -->
+						<col style="width:13%"/><!-- URL -->
+						<col style="width:5%"/><!-- 작업자 -->
+						<col style="width:5%"/><!-- 완료날짜 -->
+						<col style="width:5%"/><!-- 진행상태 -->
+						<col><!-- 기타사항 -->
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col">4depth</th>
+							<th scope="col">5depth</th>
+							<th scope="col">화면 ID</th>
+							<th scope="col">URL</th>
+							<th scope="col" class="a-c">작업자</th>
+							<th scope="col" class="a-c">완료날짜</th>
+							<th scope="col" class="a-c">진행상태</th>
+							<th scope="col">기타사항</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="5">퍼블리싱 마크업 가이드</td><!-- 1depth -->
+							<td>guide.html</td><!-- 화면 ID -->
+							<td><a href="../html/@guide/guide.html" target="_blank" title="새창으로 열기">guide.html</a></td><!-- URL -->
+							<td class="a-c">김미진</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr>
+							<td colspan="5">layout</td><!-- 1depth -->
+							<td>layout.html</td><!-- 화면 ID -->
+							<td><a href="../html/@layout/layout.html" target="_blank" title="새창으로 열기">layout.html</a></td><!-- URL -->
+							<td class="a-c">김미진</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td colspan="5">main</td><!-- 1depth -->
+							<td>OPN_PANTRY24_MO_M.html</td><!-- 화면 ID -->
+							<td><a href="../html/page/main/OPN_PANTRY24_MO_M.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_M.html</a></td><!-- URL -->
+							<td class="a-c">나지현<br />김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td>2023-04-11 : <br>
+								홍보 동영상 추가<br>
+								2023-04-21 : <br>
+								gnb 에 상담성과 추가</td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>회사소개</td><!-- 1depth -->
+							<td>회사소개</td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_introduce</td><!-- 화면 ID -->
+							<td><a href="../html/page/introduce/OPN_PANTRY24_MO_introduce.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_introduce.html</a></td><!-- URL -->
+							<td class="a-c">김미진</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr>
+							<td></td><!-- 1depth -->
+							<td>사업영역</td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_
+								business_area</td><!-- 화면 ID -->
+							<td><a href="../html/page/introduce/OPN_PANTRY24_MO_
+								business_area.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_
+								business_area.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr>
+							<td></td><!-- 1depth -->
+							<td>취급품목</td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_product</td><!-- 화면 ID -->
+							<td><a href="../html/page/introduce/OPN_PANTRY24_MO_product.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_product.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>프로세스</td><!-- 1depth -->
+							<td></td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_process</td><!-- 화면 ID -->
+							<td><a href="../html/page/process/OPN_PANTRY24_MO_process.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_process.html</a></td><!-- URL -->
+							<td class="a-c">나지현</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>상담신청</td><!-- 1depth -->
+							<td></td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_consultation</td><!-- 화면 ID -->
+							<td><a href="../html/page/consultation/OPN_PANTRY24_MO_consultation.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_consultation.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>설비종류</td>
+							<td></td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_facility</td><!-- 화면 ID -->
+							<td><a href="../html/page/facility/OPN_PANTRY24_MO_facility.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_facility.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>커뮤니티</td><!-- 1depth -->
+							<td>보도자료</td><!-- 2depth -->
+							<td>목록</td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_news_list</td><!-- 화면 ID -->
+							<td><a href="../html/page/community/OPN_PANTRY24_MO_news_list.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_news_list.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td>2023-04-21 : <br>
+										상담성과 페이지 추가에 의한 상단 .tab-area 추가</td><!-- 기타사항 -->
+						</tr>
+						<tr>
+							<td></td><!-- 1depth -->
+							<td></td><!-- 2depth -->
+							<td>상세보기</td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_news_detail</td><!-- 화면 ID -->
+							<td><a href="../html/page/community/OPN_PANTRY24_MO_news_detail.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_news_detail.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr>
+							<td></td><!-- 1depth -->
+							<td>상담성과</td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_consultation_achieve</td><!-- 화면 ID -->
+							<td><a href="../html/page/community/OPN_PANTRY24_MO_consultation_achieve.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_consultation_achieve.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">2023-04-21</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+						<tr class="section">
+							<td>etc</td><!-- 1depth -->
+							<td>개인정보처리방침</td><!-- 2depth -->
+							<td></td><!-- 3depth -->
+							<td></td><!-- 4depth -->
+							<td></td><!-- 5depth -->
+							<td>OPN_PANTRY24_MO_terms</td><!-- 화면 ID -->
+							<td><a href="../html/page/etc/OPN_PANTRY24_MO_terms.html" target="_blank" title="새창으로 열기">OPN_PANTRY24_MO_terms.html</a></td><!-- URL -->
+							<td class="a-c">김승연</td><!-- 작업자 -->
+							<td class="a-c">03-31</td><!-- 완료날짜 -->
+							<td class="a-c">완료</td><!-- 진행상태 -->
+							<td></td><!-- 기타사항 -->
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--// 메뉴 구조도 -->
+
+		</section>
+		<!--// section -->
+
+	</div>
+	<!--// wrap -->
+
+
+	<script>
+		
+		$(function() {
+			$("table tbody tr.section:not('.remove')").find("td:first-child").each(function(i){
+				str = '<a href="#depth2_'+i+'">'+$(this).text()+'</a>'
+				$(".skip-marking").append(str); 
+				$(this).closest('tr').attr("id", "depth2_"+i); 
+			});
+			
+			$('.skip-marking a').on('click', function(e){
+				e.preventDefault();
+				
+				var targetId = $(this).attr('href').split('#')[1];
+				var _this = $('#' + targetId);
+				var $top = $(_this).position().top;
+				
+				$(this).addClass('on').siblings().removeClass('on');
+				$('.table-ia').animate({scrollTop : $top - 30 }, 150);
+			})
+		}); 
+	</script>
+</body>
+</html>

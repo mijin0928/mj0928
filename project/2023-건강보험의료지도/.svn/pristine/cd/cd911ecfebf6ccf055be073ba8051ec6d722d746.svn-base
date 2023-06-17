@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전체 지표목록 | 서비스 소개 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">전체 지표목록</h2>
+			
+			<p class="txt-page">
+				의료이용지표는 크게 기본특성, 의료자원, 의료이용,  건강검진, 만성질환 및 직무관련질환, 환경성질환, 건강결과, 장기요양의 8가지 영역으로 구성되어 있습니다.<br />
+				자세한 지표 설명은 <i class="iconset ico-tooltip">툴팁</i> 버튼을 클릭하여 확인하실 수 있습니다.
+			</p>
+			
+			<div class="inner-wrap">
+				<ul class="tab-list filter">
+					<!--
+						활성화
+						<li class="on">
+						
+						비활성화
+						<li>
+					-->
+					<li class="on"><button type="button">전체</button></li>
+					<li><button type="button">기본특성</button></li>
+					<li><button type="button">의료지원</button></li>
+					<li><button type="button">의료이용</button></li>
+					<li><button type="button">건강검진</button></li>
+					<li><button type="button">만성질환 및 직무관련질환</button></li>
+					<li><button type="button">환경성질환</button></li>
+					<li><button type="button">건강결과</button></li>
+					<li><button type="button">장기요양</button></li>
+				</ul>
+				
+				<!--
+					filter 해서 보일때
+					<div class="bundle-indicators" style="display:block;">
+					
+					안보일때
+					<div class="bundle-indicators" style="display:none;">
+				-->
+				<div class="bundle-indicators" style="display:block;">
+					<h3 class="title-3">기본특성</h3>
+					
+					<div class="table-data">
+						<table>
+							<!--
+								to : 개발
+								
+								웹접근성
+								"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+								
+								예)
+								의료이용지표 - 기본특성 표
+								의료이용지표 - 만성질환 및 직무관련질환 표
+							-->
+							<caption>의료이용지표 - 기본특성 표</caption>
+							<colgroup>
+								<col style="width:540px" />
+								<col style="width:540px" />
+								<col style="width:200px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">중분류</th>
+									<th scope="col">소분류</th>
+									<th scope="col">지표설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>인구</td>
+									<td>인구수</td>
+									<td>
+										<!-- 
+											to : 개발
+											data-tooltip-content 의 값과 
+											tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+											
+											예)
+											data-tooltip-content="#tooltip-cont-1"
+											<div id="tooltip-cont-1">
+											
+											data-tooltip-content="#tooltip-cont-2"
+											<div id="tooltip-cont-2">
+										 -->
+										<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-1"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+ 
+										<div class="tooltip-contents">
+											<div id="tooltip-cont-1">
+												<div class="tit-tool">툴팁 타이틀 툴팁 타이틀 툴팁 타이틀 툴팁 타이틀 툴팁 타이틀 툴팁 타이틀 툴팁 타이틀</div>
+												
+												<div class="cont-tool">
+													툴팁 내용<br>
+													툴팁 내용<br>
+													툴팁 내용
+												</div>
+												
+												<button type="button" class="tooltip-close">툴팁 닫기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<!-- bundle-indicators -->
+				<div class="bundle-indicators" style="display:block;">
+					<h3 class="title-3">의료자원</h3>
+					
+					<div class="table-data">
+						<table>
+							<!--
+								to : 개발
+								
+								웹접근성
+								"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+								
+								예)
+								의료이용지표 - 기본특성 표
+								의료이용지표 - 만성질환 및 직무관련질환 표
+							-->
+							<caption>의료이용지표 - 의료자원 표</caption>
+							<colgroup>
+								<col style="width:540px" />
+								<col style="width:540px" />
+								<col style="width:200px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">중분류</th>
+									<th scope="col">소분류</th>
+									<th scope="col">지표설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>요양기관</td>
+									<td>요양기관수</td>
+									<td>
+										<!-- 
+											to : 개발
+											data-tooltip-content 의 값과 
+											tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+											
+											예)
+											data-tooltip-content="#tooltip-cont-1"
+											<div id="tooltip-cont-1">
+											
+											data-tooltip-content="#tooltip-cont-2"
+											<div id="tooltip-cont-2">
+										 -->
+										<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-2"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+ 
+										<div class="tooltip-contents">
+											<div id="tooltip-cont-2">
+												<div class="tit-tool">툴팁 타이틀2</div>
+												
+												<div class="cont-tool">
+													툴팁 내용2
+												</div>
+												
+												<button type="button" class="tooltip-close">툴팁 닫기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2">주요시설</td>
+									<td>전문병상수</td>
+									<td>
+										<!-- 
+											to : 개발
+											data-tooltip-content 의 값과 
+											tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+											
+											예)
+											data-tooltip-content="#tooltip-cont-1"
+											<div id="tooltip-cont-1">
+											
+											data-tooltip-content="#tooltip-cont-2"
+											<div id="tooltip-cont-2">
+										 -->
+										<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-3"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+ 
+										<div class="tooltip-contents">
+											<div id="tooltip-cont-3">
+												<div class="tit-tool">툴팁 타이틀3</div>
+												
+												<div class="cont-tool">
+													툴팁 내용3
+												</div>
+												
+												<button type="button" class="tooltip-close">툴팁 닫기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>허가병상수</td>
+									<td>
+										<!-- 
+											to : 개발
+											data-tooltip-content 의 값과 
+											tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+											
+											예)
+											data-tooltip-content="#tooltip-cont-1"
+											<div id="tooltip-cont-1">
+											
+											data-tooltip-content="#tooltip-cont-2"
+											<div id="tooltip-cont-2">
+										 -->
+										<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-4"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+ 
+										<div class="tooltip-contents">
+											<div id="tooltip-cont-4">
+												<div class="tit-tool">툴팁 타이틀4</div>
+												
+												<div class="cont-tool">
+													툴팁 내용4
+												</div>
+												
+												<button type="button" class="tooltip-close">툴팁 닫기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--// bundle-indicators -->
+				
+				<!-- bundle-indicators -->
+				<div class="bundle-indicators" style="display:none;">
+					<h3 class="title-3">의료이용</h3>
+					
+					<div class="table-data">
+						<table>
+							<!--
+								to : 개발
+								
+								웹접근성
+								"의료이용지표 - 기본특성 표" 글자에서 위 filter 탭의 텍스트와 조합해서 caption 값을 출력해야 합니다.
+								
+								예)
+								의료이용지표 - 기본특성 표
+								의료이용지표 - 만성질환 및 직무관련질환 표
+							-->
+							<caption>의료이용지표 - 의료이용 표</caption>
+							<colgroup>
+								<col style="width:540px" />
+								<col style="width:540px" />
+								<col style="width:200px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">중분류</th>
+									<th scope="col">소분류</th>
+									<th scope="col">지표설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>의료이용1</td>
+									<td>의료이용2</td>
+									<td>
+										<!-- 
+											to : 개발
+											data-tooltip-content 의 값과 
+											tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+											
+											예)
+											data-tooltip-content="#tooltip-cont-1"
+											<div id="tooltip-cont-1">
+											
+											data-tooltip-content="#tooltip-cont-2"
+											<div id="tooltip-cont-2">
+										 -->
+										<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-5"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+ 
+										<div class="tooltip-contents">
+											<div id="tooltip-cont-5">
+												<div class="tit-tool">툴팁 타이틀5</div>
+												
+												<div class="cont-tool">
+													툴팁 내용5
+												</div>
+												
+												<button type="button" class="tooltip-close">툴팁 닫기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

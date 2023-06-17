@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>본인 가입 여부 확인 | 추가이용신청 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">추가이용신청</h2>
+			
+			<div class="inner-wrap">
+				<div class="title-wrap">
+					<h3 class="title-3">본인가입여부확인</h3>
+					
+					<p class="req-info">
+						<span title="필수 입력 항목" class="req">*</span> 은 필수 입력 항목입니다.
+					</p>
+				</div>
+					
+				<div class="board-form">
+					<table>
+						<caption>본인 가입 여부 확인 표</caption>
+						<colgroup>
+							<col style="width:240px"/>
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">이름 <span title="필수 입력 항목" class="req">*</span></th>
+								<td><input type="text" placeholder="이름을 입력해 주세요" title="이름 입력" class="input-text"></td>
+							</tr>
+							<tr>
+								<th scope="row">휴대전화번호 <span title="필수 입력 항목" class="req">*</span></th>
+								<td><input type="tel" placeholder="'-' 없이 휴대전화번호를 입력하세요." title="'-' 없이 휴대전화번호를 입력" class="input-text"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="button-group">
+					<a href="" class="button large">메인페이지</a>
+					<a href="" class="button large">로그인</a>
+					<a href="" class="button large red">다음</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

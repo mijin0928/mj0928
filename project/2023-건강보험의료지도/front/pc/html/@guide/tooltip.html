@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>tooltip | 건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">tooltip</h2>
+		
+		<h3 class="tit-guide">default</h3>
+		<div class="guide-block">
+			<div class="copy">
+<!-- 
+	to : 개발
+	data-tooltip-content 의 값과 
+	tooltip-contents 바로 밑의 div id 값이 매칭 되어야 합니다.
+	
+	예)
+	data-tooltip-content="#tooltip-cont-1"
+	<div id="tooltip-cont-1">
+	
+	data-tooltip-content="#tooltip-cont-2"
+	<div id="tooltip-cont-2">
+ -->
+<a href="" class="tool-tip" data-tooltip-content="#tooltip-cont-1"><i class="iconset ico-tooltip">툴팁 레이어 열기</i></a>
+
+<div class="tooltip-contents">
+	<div id="tooltip-cont-1">
+		<div class="tit-tool">툴팁 타이틀</div>
+		
+		<div class="cont-tool">
+			툴팁 내용<br>
+			툴팁 내용<br>
+			툴팁 내용
+		</div>
+		
+		<button type="button" class="tooltip-close">툴팁 닫기</button>
+	</div>
+</div>
+			</div>
+		</div>
+		
+		<div class="desc-guide">
+		</div>
+	</div>
+</body>
+</html>

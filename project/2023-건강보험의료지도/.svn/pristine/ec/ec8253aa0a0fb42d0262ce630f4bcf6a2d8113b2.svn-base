@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공지사항 목록 | 고객센터 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">공지사항</h2>
+			
+			
+			<div class="inner-wrap">
+				<div class="board-util">
+					<div class="util">
+						<select title="카테고리 선택">
+							<option>전체</option>
+							<option>지표 DB 관련</option>
+							<option>서비스 이용</option>
+							<option>홍보 및 교육</option>
+							<option>설문조사</option>
+							<option>기타</option>
+						</select>
+						
+						<input type="search" title="검색어 입력" placeholder="" class="input-text">
+						<button type="button" class="button navy">검색</button>
+					</div>
+				</div>
+
+				<!-- 데이터 있는 경우 -->
+				<div class="board-list">
+					<ul>
+						<li>
+							<a href="">
+								<p class="num"><i class="iconset ico-notice-red">중요 공지</i></p>
+								<p class="cate">전체</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="num">999</p>
+								<p class="cate">지표 DB 관련</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다. 국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="num">999</p>
+								<p class="cate">서비스 이용</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="num">999</p>
+								<p class="cate">홍보 및 교육</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="num">999</p>
+								<p class="cate">설문조사</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="num">1</p>
+								<p class="cate">기타</p>
+								<p class="tit">국민건강보험 빅데이터로 알아본 한국인의 고혈압 발간 소식입니다.</p>
+								<p class="date">2023-12-12</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="pagination">
+					<a href="" class="control first">처음으로</a>
+					<a href="" class="control prev">이전으로</a>
+					<strong title="현재 페이지" class="active">1</strong>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<a href="" class="control next">다음으로</a>
+					<a href="" class="control last">마지막으로</a>
+				</div>
+				<!--// 데이터 있는 경우 -->
+				
+				
+				<!-- 데이터 없는 경우 -->
+				<div class="no-data">
+					등록된 게시물이 없습니다.
+				</div>
+				<!--// 데이터 없는 경우 -->
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

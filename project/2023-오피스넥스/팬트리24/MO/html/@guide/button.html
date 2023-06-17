@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>팬트리24 퍼블리싱 가이드 | button</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">button</h2>
+		<div class="desc-guide">
+			@@ button size default settings @@
+			<br />
+			padding:0 74px; / min-width:248px; / height:60px; / font-size:17px; / font-weight:400; / border-radius:30px;
+			<br /><br />
+
+			@@ button(small) + icon size default settings @@
+			<br />
+			padding:0 20px 0 24px; / border-radius:39px;
+			<br />
+			이외 동일
+		</div>
+
+		<h3 class="tit-guide">default</h3>
+		<div class="source">
+			<div class="copy">
+				<button type="button" class="button">button 태그</button>
+				<a href="" class="button">a 태그</a>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">disabled</h3>
+		<div class="source">
+			<div class="copy">
+				<button type="button" class="button" disabled="disabled">button 태그</button>
+				<a href="" class="button disabled">a 태그</a>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">더보기 버튼</h3>
+		<div class="source">
+			<div class="copy">
+				<button type="button" class="button more">button 태그</button>
+				<a href="" class="button more">a 태그</a>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">size</h3>
+		<div class="source">
+			<div class="copy">
+				<!-- button 태그 -->
+				<a href="" class="button small">small</a>
+				<a href="" class="button">default</a>
+
+				<br />
+				<br />
+
+				<!-- a 태그 -->
+				<button type="button" class="button small">small</button>
+				<button type="button" class="button">default</button>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">color</h3>
+		<h4 class="tit-guide">default</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- button 태그 -->
+				<a href="" class="button">defualt</a>
+				<a href="" class="button blue">blue</a>
+
+				<br />
+				<br />
+
+				<!-- a 태그 -->
+				<button type="button" class="button">default</button>
+				<button type="button" class="button blue">blue</button>
+			</div>
+		</div>
+		
+		<h4 class="tit-guide">배경 색 있을 경우</h4>
+		<div class="source">
+			<div class="copy" style="padding:10px; background-color:#000;">
+				<!-- button 태그 -->
+				<button type="button" class="button bg">background-color:transparent;</button>
+				<button type="button" class="button bg white">white</button>
+
+				<br />
+				<br />
+				
+				<!-- a 태그 -->
+				<a href="" class="button bg">background-color:transparent;</a>
+				<a href="" class="button bg white">white</a>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">button + icon</h3>
+		<div class="source">
+			<div class="copy">
+				<!-- button 태그 -->
+				<button type="button" class="button small icon">ico-arr-white<i class="iconset ico-arr-white"></i></button>
+				<button type="button" class="button small blue icon">ico-arr-blue<i class="iconset ico-arr-blue"></i></button>
+
+				<br />
+				<br />
+				
+				<!-- a 태그 -->
+				<a href="" class="button small icon">ico-arr-white<i class="iconset ico-arr-white"></i></a>
+				<a href="" class="button small icon white blue">ico-arr-blue<i class="iconset ico-arr-blue"></i></a>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">button-group</h3>
+		<h4 class="tit-guide">중앙정렬</h4>
+		<div class="source">
+			<div class="copy">
+				<div class="button-group">
+					<a href="" class="button small">a 태그</a>
+					<button type="button" class="button small white">button 태그</button>
+				</div>
+			</div>
+		</div>
+
+		<h4 class="tit-guide">왼쪽정렬</h4>
+		<div class="source">
+			<div class="copy clearfix">
+				<div class="button-group left">
+					<a href="" class="button small">a 태그</a>
+					<button type="button" class="button small white">button 태그</button>
+				</div>
+			</div>
+		</div>
+
+		<h4 class="tit-guide">오른쪽정렬</h4>
+		<div class="source">
+			<div class="copy clearfix">
+				<div class="button-group right">
+					<a href="" class="button small">a 태그</a>
+					<button type="button" class="button small white">button 태그</button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

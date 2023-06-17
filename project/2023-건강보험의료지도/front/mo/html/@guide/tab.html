@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>tab | 건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">tab</h2>
+		
+		<h3 class="tit-guide">tab-list - 페이지 이동</h3>
+		<div class="guide-block">
+			<div class="copy">
+<ul class="tab-list">
+	<li><a href="">전체</a></li>
+	<li class="on"><a href="">기본특성</a></li>
+	<li><a href="">의료지원</a></li>
+	<li><a href="">의료이용</a></li>
+	<li><a href="">건강검진</a></li>
+	<li><a href="">만성질환 및 직무관련질환</a></li>
+	<li><a href="">환경성질환</a></li>
+	<li><a href="">건강결과</a></li>
+	<li><a href="">장기요양</a></li>
+</ul>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">tab-list - filter 기능</h3>
+		<div class="guide-block">
+			<div class="copy">
+<ul class="tab-list filter">
+	<li><button type="button">전체</button></li>
+	<li class="on"><button type="button">기본특성</button></li>
+	<li><button type="button">의료지원</button></li>
+	<li><button type="button">의료이용</button></li>
+	<li><button type="button">건강검진</button></li>
+	<li><button type="button">만성질환 및 직무관련질환</button></li>
+	<li><button type="button">환경성질환</button></li>
+	<li><button type="button">건강결과</button></li>
+	<li><button type="button">장기요양</button></li>
+</ul>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">tab-list - 레이어 이동</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="tab-area">
+	<ul role="tablist" class="tab-list">
+		<!-- 
+					to : 개발
+					
+					활성화
+					<li class="on">, role=[tab] 버튼의 aria-selected="true", tab-cont 의 hidden="hidden" 속성 제거
+
+					비활성화
+					<li>, role=[tab] 버튼의 aria-selected="false", tab-cont 의 hidden="hidden" 속성 추가
+
+					role=[tab] 버튼의 id 값과 매칭되는 tab-cont 의 aria-labelledby 값을 동일하게 해야 합니다.
+
+					role=[tab] 버튼의 aria-controls 값과 매칭되는 tab-cont 의 id 값을 동일하게 해야 합니다.
+			-->
+		<li><button type="button" role="tab" aria-selected="false" aria-controls="panel_01_01" id="tab_01_01">레이어1</button></li>
+		<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="panel_01_02" id="tab_01_02">레이어2</button></li>
+		<li><button type="button" role="tab" aria-selected="false" aria-controls="panel_01_03" id="tab_01_03">레이어3</button></li>
+		<li><button type="button" role="tab" aria-selected="false" aria-controls="panel_01_04" id="tab_01_04">레이어4</button></li>
+	</ul>
+
+	<div role="tabpanel" aria-labelledby="tab_01_01" id="panel_01_01" class="tab-cont" tabindex="0" hidden>
+		탭 콘텐츠 1
+	</div>
+
+	<div role="tabpanel" aria-labelledby="tab_01_02" id="panel_01_02" class="tab-cont" tabindex="0">
+		탭 콘텐츠 2
+	</div>
+
+	<div role="tabpanel" aria-labelledby="tab_01_03" id="panel_01_03" class="tab-cont" tabindex="0" hidden>
+		탭 콘텐츠 3
+	</div>
+
+	<div role="tabpanel" aria-labelledby="tab_01_04" id="panel_01_04" class="tab-cont" tabindex="0" hidden>
+		탭 콘텐츠 4
+	</div>
+</div>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">tab-list - 펼침 기능</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="hr-scroll">
+	<div class="scroll">
+		<ul class="tab-list filter">
+			<li class="on"><button type="button">전체</button></li>
+			<li><button type="button">기본특성</button></li>
+			<li><button type="button">의료지원</button></li>
+			<li><button type="button">의료이용</button></li>
+			<li><button type="button">건강검진</button></li>
+			<li><button type="button">만성질환 및 직무관련질환</button></li>
+			<li><button type="button">환경성질환</button></li>
+			<li><button type="button">건강결과</button></li>
+			<li><button type="button">장기요양</button></li>
+		</ul>
+	</div>
+	
+	<button type="button" aria-expanded="false" class="btn-hr-toggle">
+		<i class="iconset ico-hr-toggle down">카테고리<span>펼치기</span></i>
+	</button>
+</div>
+			</div>
+		</div>
+
+		
+		<h3 class="tit-guide">tab-list-line - 페이지 이동</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="tab-list-line">
+	<div class="scroll">
+		<ul class="list">
+			<li><a href="">아이디 찾기</a></li>
+			<li class="on"><a href="">비밀번호 찾기</a></li>
+			<li><a href="">메뉴명</a></li>
+			<li><a href="">메뉴명</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">tab-list-line - 레이어 이동</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="tab-area">
+	<div class="tab-list-line">
+		<div class="scroll">
+			<ul role="tablist" class="list">
+				<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="panel_02_01" id="tab_02_01">메뉴명1</button></li>
+				<li><button type="button" role="tab" aria-selected="false" aria-controls="panel_02_02" id="tab_02_02">메뉴명2</button></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div role="tabpanel" aria-labelledby="tab_02_01" id="panel_02_01" class="tab-cont" tabindex="0">
+		내용111
+	</div>
+	
+	<div role="tabpanel" aria-labelledby="tab_02_02" id="panel_02_02" class="tab-cont" tabindex="0" hidden>
+		내용22
+	</div>
+</div>
+			</div>
+		</div>
+
+		<div class="desc-guide">
+		</div>
+	</div>
+</body>
+</html>

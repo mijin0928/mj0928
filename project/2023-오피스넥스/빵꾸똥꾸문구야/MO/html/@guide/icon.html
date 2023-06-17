@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | FORM</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all">
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all">
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">ICON</h2>
+		
+		<h3 class="tit-guide">header</h3>
+		<div class="source">
+			<div class="copy">
+				<h1 class="logo"><a href="" class="ui-btn btn-logo">빵꾸똥구문구야</a></h1>
+				<a href="" class="ui-btn btn-mall">빵똥몰 바로가기</a>
+				<a href="" class="ui-btn btn-shopkeeper">점주님전용</a>
+				<button type="button" class="ui-btn btn-allmenu">전체메뉴 열기</button>
+				<button type="button" class="ui-btn btn-close">전체메뉴 열기</button>
+				<a href="" class="ui-btn btn-back">뒤로가기</a>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+		<h3 class="tit-guide">퀵 배너</h3>
+		<div class="source">
+			<div class="copy">
+				<a href="" class="ui-btn btn-kakaoch">카카오채널</a>
+				<a href="" class="ui-btn btn-top">상단으로 가기</a>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+		<h3 class="tit-guide">이모지</h3>
+		<div class="source">
+			<div class="copy">
+				&#128293; &#128184; &#x270C;
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide">etc</h3>
+		<div class="source">
+			<div class="copy">
+				<i class="iconset ico-blog"></i>
+				<i class="iconset ico-blog-white"></i>
+				<i class="iconset ico-more-view"></i>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>
