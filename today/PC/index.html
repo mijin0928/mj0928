@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="mijin">
+	<meta name="description" content="today">
+	<link rel="stylesheet" href="./css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="./css/index.css" type="text/css">
+	<title>TODAY</title>
+	<link rel="icon" href="./images/favicon.ico">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+</head>
+
+<body>
+	<div id="header">
+		<h1 class="title">TODAY IS ...</h1>
+
+		<div class="circle">
+			<span class="circle-01"></span>
+			<span class="circle-02"></span>
+			<span class="circle-03"></span>
+			<span class="circle-04"></span>
+			<span class="circle-05"></span>
+			<span class="circle-06"></span>
+			<span class="circle-07"></span>
+			<span class="circle-08"></span>
+			<span class="circle-09"></span>
+			<span class="circle-10"></span>
+			<span class="circle-11"></span>
+		</div>
+
+		<div class="img">
+			<img src="./images/scroll.png" alt="스크롤이미지">
+		</div>
+	</div>
+
+	<div class="gnb-nav">
+		<nav id="gnb">
+			<ul>
+				<li><a href="#" class="weather">날씨</a></li>
+				<li><a href="#" class="fortune-telling">운세</a></li>
+				<li><a href="#" class="to-do-list">할일</a></li>
+				<li><a href="#" class="menu-planner">식단</a></li>
+				<li><a href="#" class="question">질문</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="contents">
+		<div class="calender">
+			<div class="wrap">
+				<div class="wrap-title">
+					<p class="year"></p>
+					<svg width="480" height="200" viewBox="0 0 650 10">
+						<text text-anchor="middle" x="50%" class="month"></text>
+					</svg>
+				</div>
+
+				<div class="inner-wrap">
+					<div class="calender-table">
+						<table>
+							<caption>날짜를 보여주는 표</caption>
+							<colgroup>
+								<col style="width:154px">
+								<col style="width:154px">
+								<col style="width:154px">
+								<col style="width:154px">
+								<col style="width:154px">
+								<col style="width:154px">
+								<col style="width:154px">
+							</colgroup>
+							
+							<tr>
+								<th class="sun">Sun</th>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>		
+		</div>
+	
+		<div class="weather section">
+			<div class="wrap">
+				<div class="inner-wrap">
+					<h2 class="title-2">오늘의 날씨 <span class="dot"></span></h2>
+
+					<div class="info">
+						<div class="icon"></div>
+						
+						<div class="txt">
+							<strong class="name"></strong>
+							<strong class="temperature"></strong>
+							<span class="degree">&#8451;</span>
+							<p class="description"></p>
+						</div>
+					</div>
+
+					<div class="box">
+						<ul>
+							<li>
+								<img src="./images/low-temperature.png" alt="최저온도">
+								<p class="temp-min"></p><span>&#8451;</span>
+							</li>
+							<li>
+								<img src="./images/high-temperature.png" alt="최고온도">
+								<p class="temp-max"></p><span>&#8451;</span>
+							</li>
+							<li>
+								<img src="./images//humidity.png" alt="습도">
+								<p class="humidity"></p><span>&#37;</span>
+							</li>
+							<li>
+								<img src="./images/clouds.png" alt="구름">
+								<p class="clouds"></p><span>&#37;</span>
+							</li>
+							<li>
+								<img src="./images/wind.png" alt="바람">
+								<p class="wind"></p><span>m&#47;s</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+		</div>
+	
+		<div class="fortune-telling section">
+			<div class="wrap">
+				<div class="inner-wrap">
+					<h2 class="title-2">오늘의 운세 <span class="dot"></span></h2>
+
+					<div class="cont">
+						<div class="box-hand">
+							<div class="txt">
+								<p>손을 클릭하여</p>
+								<p>구슬을 문질러보세요</p>
+							</div>
+
+							<div class="img">
+								<img src="./images/hand.png" alt="손">
+							</div>
+						</div>
+
+						<div class="img">
+							<div class="ball">
+								<img src="./images/crystal-ball.gif" alt="마법구슬">
+							</div>
+							<div class="wizard">
+								<img src="./images/wizard.png" alt="마법사">
+							</div>
+						</div>
+
+						<div class="loading">
+							<img src="./images/loading.gif" alt="로딩">
+						</div>
+
+						<div class="result">
+							<p class="txt"></p>
+						</div>
+
+						<div class="reset">
+							<button type="button"><img src="./images/reset.png" alt="처음으로"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="img-move">
+				<img src="./images/hand.png" alt="손">
+			</div>
+		</div>
+	
+		<div class="to-do-list section">
+			<div class="wrap">
+				<div class="inner-wrap">
+					<h2 class="title-2">오늘의 할일 <span class="dot"></span></h2>
+
+					<div class="write">
+						<input type="text" placeholder="오늘의 할일을 입력해주세요" title="오늘의 할일을 입력해주세요">
+						<button type="button" class="enter-btn">입력</button>
+					</div>
+
+					<div class="cont"></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="menu-planner section">
+			<div class="wrap">
+				<div class="inner-wrap">
+					<h2 class="title-2">오늘의 식단 <span class="dot"></span></h2>
+
+					<div class="write">
+						<input type="text" placeholder="오늘 하루 먹은 or 먹을 음식을 입력해보세요" title="오늘 하루 먹은 or 먹을 음식을 입력해보세요">
+
+						<div class="box-select">
+							<button type="button" class="select-btn">선택<span class="arrow"></span></button>
+							
+							<ul class="select">
+								<li><button type="button">아침</button></li>
+								<li><button type="button">점심</button></li>
+								<li><button type="button">저녁</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-menu">
+						<div class="menu">
+							<strong class="tit">아침</strong>
+							<div class="cont-wrap breakfast"></div>
+						</div>
+
+						<div class="menu">
+							<strong class="tit">점심</strong>
+							<div class="cont-wrap lunch"></div>
+						</div>
+
+						<div class="menu">
+							<strong class="tit">저녁</strong>
+							<div class="cont-wrap dinner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="question section">
+			<div class="wrap">
+				<div class="inner-wrap">
+					<h2 class="title-2">오늘의 질문 <span class="dot"></span></h2>
+
+					<div class="wrap-tit">
+						<p class="tit"></p>
+					</div>
+
+					<div class="cont">
+						<div class="textarea">
+							<textarea title="내용 입력" placeholder="내용을 작성해주세요"></textarea>
+						</div>
+
+						<div class="btn-group">
+							<button type="button" class="enter">입력</button>
+							<button type="button" class="edit">수정</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
