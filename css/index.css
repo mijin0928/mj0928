@@ -218,7 +218,7 @@ section > .wrap.active {width:1116px; opacity:1;}
 .device-type .tit {margin:10px 0 0; font-size:28px; text-align:center;}
 
 @media screen and (max-width:1400px) {
-	section > .wrap {left:auto; right:calc(30 / 1400 * 100%); transform:translate(0,-50%); width:calc(100% - 180px); border:0; box-shadow:none; background-color:transparent;}
+	section > .wrap {left:auto; right:calc(30 / 1400 * 100%); transform:translate(0,-50%); width:calc(100% - 180px); border:0; box-shadow:none; opacity:1; background-color:transparent;}
 	section > .wrap.active {width:calc(100% - 180px);}
 	.inner-wrap {width:90%; transition:1s; opacity:0;}
 	.inner-wrap.active {transform:translateY(50px); opacity:1;}
