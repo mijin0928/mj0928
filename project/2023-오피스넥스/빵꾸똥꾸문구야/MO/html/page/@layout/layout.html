@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | layout</title>
+
+<link rel="stylesheet" href="../../../static/css/import.css" media="all" />
+
+<script src="../../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../../static/js/swiper.min.js"></script>
+<script src="../../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<!-- app -->
+	<div id="app">
+		<!-- ui-wrap -->
+		<div class="ui-wrap">
+			<!-- header -->
+			
+			<header>
+				<h1 class="logo"><a href="" class="ui-btn btn-logo">빵꾸똥구문구야</a></h1>
+				<div class="btn-group">
+					<a href="" class="ui-btn btn-mall">빵똥몰 바로가기</a>
+					<a href="" class="ui-btn btn-shopkeeper">점주님전용</a>
+					<button type="button" class="ui-btn btn-allmenu">전체메뉴 열기</button><!-- click 시 ui-allmenu class active 추가 -->
+				</div>
+
+			</header>
+			<!-- //header -->
+
+			<!-- ui-allmenu -->
+			<div class="ui-allmenu"><!-- 활성화시 class active 추가 -->
+				<h2 class="hidden">전체메뉴</h2>
+
+				<div class="btn-group">
+					<button type="button" class="ui-btn btn-close">전체메뉴 닫기</button><!-- click 시 ui-allmenu class active 삭제 -->
+				</div>
+
+				<div class="allmenu-cont">
+					<div class="menu-visual">
+						<p class="title">반갑습니다<br /><em class="bold">빵꾸똥꾸문구야</em> 입니다.</p>
+					</div>
+					
+					<div class="gnb-wrap">
+						<ul class="gnb-list">
+							<li class="depth1 active"><!-- 활성화시 class active 추가 -->
+								<a href="">회사소개</a>
+								<ul class="depth2">
+									<li><a href="">회사소개</a></li>
+									<li><a href="" class="line-height">프랜차이즈vs<br />개인문구점</a></li>
+									<li><a href="">브랜드 결정 TIP</a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<a href="">커뮤니티</a>
+								<ul class="depth2">
+									<li><a href="">영상센터</a></li>
+									<li><a href="">생생 매장 방문기</a></li>
+									<li><a href="">뉴스</a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<a href="">상품안내</a>
+								<ul class="depth2">
+									<li><a href="">Big Data 상품선정</a></li>
+									<li><a href="">TOP 200 상품안내</a></li>
+									<li><a href="">신상품 안내</a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<a href="">매장안내</a>
+								<ul class="depth2">
+									<li><a href="">오픈공지</a></li>
+									<li><a href="">매장안내</a></li>
+									<li><a href="">추천상권 안내</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<!-- //ui-allmenu -->
+			
+			<!-- container -->
+			<div class="container">
+
+				<!--tab-area -->
+				<div class="container-util tab-area">
+					<!-- tab-nav -->
+					<ul class="tab-nav" role="tablist">
+						<li class="active"><!-- 활성화시 class active 추가 -->
+							<button type="button" role="tab" aria-selected="true" aria-controls="tab-panel1-1" id="tab01-1">홈</button><!-- 활성화시 aria-selected true / 비활성화시 aria-selected false 를 넣어주세요 -->
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-2" id="tab01-2">경쟁력</button>
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-3" id="tab01-3">창업솔루션</button>
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-4" id="tab01-4">오픈매출</button>
+						</li>
+						<li>
+							<button type="button" role="tab" aria-selected="false" aria-controls="tab-panel1-5" id="tab01-5">오픈매출</button>
+						</li>
+					</ul>
+					<!-- //tab-nav -->
+				</div>
+				<!-- //tab-area -->
+
+				<!-- contents -->
+				<div class="contents">
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-1" id="tab-panel1-1">
+						contents1
+					</div>
+					<!-- //tab-contents -->
+
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-2" id="tab-panel1-2">
+						contents2
+					</div>
+					<!-- //tab-contents -->
+
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-3" id="tab-panel1-3">
+						contents3
+					</div>
+					<!-- //tab-contents -->
+
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-4" id="tab-panel1-4">
+						contents4
+					</div>
+					<!-- //tab-contents -->
+
+					<!-- tab-contents -->
+					<div class="tab-contents" role="tabpanel" aria-labelledby="tab01-5" id="tab-panel1-5">
+						contents5
+					</div>
+					<!-- //tab-contents -->
+				</div>
+				<!-- //contents -->
+			</div>
+			<!-- //container -->
+	
+			<!-- footer -->
+			<footer>
+				<p class="ft-logo">빵꾸똥꾸문구야</p>
+				<p class="txt">(주)오피스넥스</p>
+				<ul class="info-list">
+					<li><span class="txt">대표 조성우, 선장덕</span></li>
+					<li><span class="txt">서울시 강남구 언주로 134길 4, IB타워 7층</span></li>
+					<li><span class="txt">사업자등록번호 114-86-62046</span></li>
+					<li><span class="txt">대표번호 02.546.8250</span></li>
+					<li><span class="txt">FAX 02.546.4008</span></li>
+					<li><span class="txt">이메일 bbanggu&#64;officenex.co.kr</span></li>
+				</ul>
+
+				<p class="copy">Copyright by 빵꾸똥꾸문구야 All rights reserved.</p>
+			</footer>
+			<!-- //footer -->
+	
+			<div class="fix-area">
+				<a href="" class="ui-btn">창업<br />상담</a>
+
+				<div class="btn-group">
+					<a href="" class="ui-btn">상품제휴</a>
+					<a href="" class="ui-btn">오픈비용계산</a>
+					<a href="" class="ui-btn">공실매장소개</a>
+				</div>
+
+				<!-- !! 2023-03-03 퍼블리싱 수정 
+					to 개발 : ui-btn 예상오픈계산 -> 오픈비용계산
+				으로 변경 -->
+				<div class="common-list">
+					<a href="" class="ui-btn btn-kakaoch">카카오채널</a>
+					<a href="" class="ui-btn btn-top">상단으로 가기</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- ui-wrap -->
+
+	</div>
+	<!-- //app -->
+</body>
+</html>

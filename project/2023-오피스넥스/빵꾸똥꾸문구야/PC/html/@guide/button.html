@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | BUTTON</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">BUTTON</h2>
+
+		<h3 class="tit-guide">default</h3>
+		<div class="source">
+			<div class="copy">
+				<a href="" class="btn black round large">a 링크타입 btn</a>
+				<button type="button" class="btn black round large">버튼타입 btn</button>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+		
+		<h3 class="tit-guide">button size</h3>
+		<div class="source">
+			<div class="copy">
+				<p class="txt">medium min-width:130px height:60px line-height:58px</p>
+				<button type="button" class="btn black round medium">버튼 .medium</button>
+				<p class="txt">large min-width:200px height:60px line-height:58px</p>
+				<button type="button" class="btn black round large">버튼 .large</button>
+				<p class="txt">max width:100%;</p>
+				<button type="button" class="btn black round max">버튼 .medium</button>
+				<p class="txt">small min-width:90px height:56px</p>
+				<button type="button" class="btn black squre small">버튼 .small</button>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+		<h3 class="tit-guide">button color</h3>
+		<div class="source">
+			<div class="copy">
+				<button type="button" class="btn black round large">btn black</button>
+				<button type="button" class="btn yellow round large">btn yellow</button>
+				<button type="button" class="btn gray round large">btn gray</button>
+			</div>
+
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide">button align</h3>
+		<div class="source">
+			<div class="copy"></div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide">group</h3>
+		<div class="source">
+			<div class="copy">
+				<p class="txt">기본</p>
+				<div class="btn-group">
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+				</div>
+
+				<p class="txt">left</p>
+				<div class="btn-group left">
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+				</div>
+
+				<p class="txt">right</p>
+				<div class="btn-group right">
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+				</div>
+
+				<p class="txt">center</p>
+				<div class="btn-group center">
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+					<button type="button" class="btn round black large">버튼</button>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+		
+		
+		<div class="desc-guide mt30">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>

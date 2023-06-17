@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1:1 문의현황 | 마이페이지 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">마이페이지</h2>
+
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<ul class="tab-list-full round">
+					<li><a href="">나의 신청현황</a></li>
+					<li><a href="">나의 신청현황</a></li>
+					<li><a href="">나의 이용현황</a></li>
+					<li class="on"><a href="">1:1 문의현황</a></li>
+					<li><a href="">1:1 문의등록</a></li>
+					<li><a href="">회원탈퇴</a></li>
+				</ul>
+
+				<div class="board-util">
+					<div class="count">
+						총 <strong>450</strong>건
+					</div>
+					
+					<div class="util">
+						<select title="분류 선택">
+							<option>분류 선택</option>
+							<option>지표 의미/산출 기준</option>
+							<option>서비스 이용</option>
+							<option>홈페이지 오류</option>
+							<option>기타</option>
+						</select>
+						<input type="search" title="검색어 입력" placeholder="" class="input-text">
+						<button type="button" class="button navy">검색</button>
+					</div>
+				</div>
+
+				<!-- 데이터 있는 경우 -->
+				<div class="board-list">
+					<table>
+						<caption>번호, 분류, 제목, 상태, 등록일 항목을 가진 1:1 문의현황 표</caption>
+						<colgroup>
+							<col style="width:120px;">
+							<col style="width:240px;">
+							<col>
+							<col style="width:160px;">
+							<col style="width:120px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">NO</th>
+								<th scope="col">분류</th>
+								<th scope="col">제목</th>
+								<th scope="col">상태</th>
+								<th scope="col">등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="a-l">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>접수</td>
+								<td>2023-04-15</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="a-l">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>접수</td>
+								<td>2023-04-15</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="a-l">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>접수</td>
+								<td>2023-04-15</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="a-l">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>접수</td>
+								<td>2023-04-15</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="a-l">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>접수</td>
+								<td>2023-04-15</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td>건강검진코호트DB</td>
+								<td class="link">
+									<a href="">국가건강검진 수검률지표 일반1차검진수검률 문의입니다. 일반1차검진수검률 문의입니다. 일반1차검진수검률 문의입니다.</a>
+								</td>
+								<td>답변완료</td>
+								<td>2023-04-15</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 데이터 없는 경우 -->
+
+				<!-- pagination -->
+				<div class="pagination">
+					<a href="" class="control first">처음으로</a>
+					<a href="" class="control prev">이전으로</a>
+					<strong title="현재 페이지" class="active">1</strong>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<a href="" class="control next">다음으로</a>
+					<a href="" class="control last">마지막으로</a>
+				</div>
+				<!-- //pagination -->
+
+				<!-- 데이터 없는 경우 -->
+				<div class="no-data">
+					문의 내역이 없습니다.
+				</div>
+				<!--// 데이터 없는 경우 -->
+
+			</div>
+			<!-- // inner-wrap -->
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

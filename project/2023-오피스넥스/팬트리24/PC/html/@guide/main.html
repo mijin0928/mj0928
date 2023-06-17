@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>팬트리24 가이드</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js" ></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">DEFAULT</h2>
+
+		<h3 class="tit-guide">doctype, language</h3>
+		<div class="desc-guide">
+			html5, lang=ko, utf-8
+		</div>
+
+		<h3 class="tit-guide">css</h3>
+		<div class="desc-guide">
+			css2, css3
+		</div>
+
+		<h3 class="tit-guide">js</h3>
+		<div class="desc-guide">
+			jquery-3.6.0<br />
+			jquery-ui.1.12.1<br />
+			jquery.easing.1.4.1<br />
+			slick.js<br />
+			aos.js
+		</div>
+
+		<h3 class="tit-guide">standard browser</h3>
+		<div class="desc-guide">
+			MS Edge, Chrome, Firefox, Opera, Safari (mac, iphone, ipad)
+		</div>
+
+		<h3 class="tit-guide">font</h3>
+		<div class="desc-guide">
+			Noto Sans KR, Roboto, 맑은 고딕, 돋움, sans-serif; 
+		</div>
+
+		<h3 class="tit-guide">etc</h3>
+		<div class="desc-guide">
+			웹 표준<br />https://validator.w3.org<br /><br />
+			CSS 표준<br />https://jigsaw.w3.org/css-validator
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

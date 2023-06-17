@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | TEXT</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all">
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all">
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+
+		<h2 class="tit-guide">BOX</h2>
+		
+
+		<h3 class="tit-guide" style="text-align:left;">box</h3>
+		<div class="source">
+			<div class="copy" style="width:100%; background-color:gold; padding:30px;">
+				<div class="box">.box padding16px</div>
+				<div class="box yellow">.box padding:22px 16px background-color:#ffc400</div>
+				<div class="box blue">.box padding:16px background-color:#5281ef</div>
+				<div class="box gray">.box.gray padding16px background-color #f9f9f9</div><br />
+				<div class="box full gray">.box.full padding16px</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide" style="text-align:left;">box + line</h3>
+		<div class="source">
+			<div class="copy" style="width:100%; background-color:gold; padding:30px;">
+				<div class="box full gray">.box padding16px</div>
+				<div class="line">box full + line -> margin-top:24px;</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide" style="text-align:left;">box + text</h3>
+		<div class="source">
+			<div class="copy" style="width:100%; background-color:gold; padding:30px;">
+				<div class="box full gray">
+					<p class="desc">.desc color:#222; font-size:14px line-height:20px;</p>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide" style="text-align:left; margin-bottom:35px;">box + text</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="box full yellow-bg">
+					<div class="text-wrap">
+						<p class="tit">투명하고 정확한 <span class="color-red">창업솔루션</span></p>
+						<p class="desc">빵꾸똥꾸문구야의 오픈에 관한 모든 것을<br>투명하고 정확하게 공개합니다.</p>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide" style="text-align:left;">하단 박스+글자</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="box yellow">
+					<div class="info-area">
+						<p class="info-tit font30">합계<em class="fw600">51,300,000</em></p>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>

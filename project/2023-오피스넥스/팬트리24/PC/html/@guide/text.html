@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>팬트리24 퍼블리싱 가이드 | text</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js" ></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">text</h2>
+		<div class="desc-guide">
+			@@ default @@ <br />
+			font-size: 18px / letter-spacing: -0.005em / line-height: 1.5 / font-weight: 400 / font-family: 'Noto Sans KR', 'Roboto', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif / color: #000
+		</div>
+
+		<h3 class="tit-guide">font-color</h3>
+		<div class="source">
+			<div class="copy">
+				<p class="txt color-blue">color:#3870ff</p>
+				<p class="txt color-red">color:#ff4c37</p>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">req</h3>
+		<div class="source">
+			<div class="copy">
+				<p>가나다<span class="req" title="필수 입력 항목">*x</span></p>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">channel</h3>
+		<div class="source">
+			<div class="copy">
+				<p class="channel">보도자료 홍보채널 표시 color:#3870ff;</p>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

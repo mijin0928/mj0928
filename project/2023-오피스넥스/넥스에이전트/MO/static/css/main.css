@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* ==========================================================================
+	
+	main css
+	
+========================================================================== */
+.main .container {padding:0px 16px 0;}
+.main .button-group {margin:32px 0 0 0; overflow:hidden;}
+.main .txt-wrap {text-align:center;}
+.main .txt-wrap p.tit-main {margin:0; font-size:26px; font-weight:700; line-height:1.4;}
+.main .txt-wrap p.txt {margin:10px 0 0 0; font-size:18px; color:#666;}
+.main .tab-list {margin-top:10px;}
+
+/* 메인 헤더 */
+.main #header {background:#3870ff; transition:0.3s;}
+.main #header .a-link, .main #header .btn-group button {vertical-align:baseline;}
+.main #header h1.logo {min-width:103px; height:36px; background:url('../images/main/logo-white.png') no-repeat; background-size:103px 36px; transition:0.3s;}
+.main #header h1.logo .a-link {width:103px; height:36px;}
+.main #header .btn-mall {background:url('../images/main/btn-mall.png') no-repeat; background-size:28px auto; transition:0.3s;}
+.main #header .btn-gnb {background:url('../images/main/btn-gnb.png') no-repeat; background-size:28px auto; transition:0.3s;}
+.main #header.active {background:#fff;}
+.main #header.active h1.logo {min-width:103px; height:36px; background:url('../images/main/logo.png') no-repeat; background-size:103px 36px;}
+.main #header.active .btn-mall {background:url('../images/common/header/btn-mall.png') no-repeat; background-size:28px auto;}
+.main #header.active .btn-gnb {background:url('../images/common/header/btn-gnb.png') no-repeat; background-size:28px auto;}
+
+/* 메인 비주얼 */
+.main .visual.box {overflow:hidden; padding:100px 0 0 16px; background:#3870ff; color:#fff;}
+.main .visual .tit-main {margin:0; padding-top:0; font-size:32px; font-weight:700; line-height:1.4;}
+.main .visual .txt {margin:10px 0 0 0; font-size:16px; font-weight:500;}
+.main .visual .button {margin:32px 0 0 0; padding:0 30px; width:147px; height:54px; font-size:15px; font-weight:500; line-height:1.6;}
+.main .visual img {margin-top:16px; display:block; width:100%; height:100%; float:right;}
+
+/* 누구나 쉽게 */
+.main .easy {padding:56px 0 64px 0; margin:0 -8px}
+.main .easy-slide {width:100%;}
+.main .easy-slide .wrap {width:268px; height:auto; margin: 0 auto;}
+.main .easy-slide .slick-slide {position:relative; width:248px; margin:0 10px;}
+.main .easy .easy-slide .slick-slide .slide img {width:248px; height:164px;}
+.main .easy .easy-slide .slick-slide .slide::after {content:''; opacity:0; position:absolute; top:123px; transform:scale(0); transition:opacity 0.6s, transform 0.6s; transition-timing-function:cubic-bezier(0.93, -0.03, 0.16, 1.26);}
+.main .easy.aos-animate .easy-slide .slick-slide.slick-current .slide::after {opacity:1; transform:scale(1);}
+.main .easy .easy-slide .slick-slide .slide-01::after {width:234px; height:153px; background:url('../images/main/easy-01.png') no-repeat; background-size:234px 153px; left:0;}
+.main .easy .easy-slide .slick-slide .slide-02::after {width:234px; height:164px; background:url('../images/main/easy-02.png') no-repeat; background-size:234px 164px; left:0; top:125px;}
+.main .easy .easy-slide .slick-slide .slide-03::after {width:239px; height:134px; background:url('../images/main/easy-03.png') no-repeat; background-size:239px 134px; left:-8px;}
+.main .easy .easy-slide .slick-slide .slide-04::after {width:239px; height:128px; background:url('../images/main/easy-04.png') no-repeat; background-size:240px 128px; left:20px; top:125px;}
+.main .easy .easy-slide .slick-slide .slide-05::after {width:254px; height:156px; background:url('../images/main/easy-05.png') no-repeat; background-size:254px 156px; left:0px;}
+
+.main .easy-slide .slide {text-align:center;}
+.easy-slide .slide.slide-03 p.txt {letter-spacing:-0.044em;}
+.easy-slide .slide.slide-05 p.tit-main {letter-spacing:-0.03em;}
+.main .easy-slide .slide img {margin-top:22px;}
+
+/* 오피스넥스는? */
+.main .officenex.box {position:relative; background:#fff7db;}
+.main .officenex.box figure.fig img {position:relative; margin:32px auto 40px; display:block; width:200px; height:160px; z-index:1}
+.main .officenex.box figure.fig img.confetti {position:absolute; margin:0 auto; width:248px; height:264px; left:calc(50% - 125px); top:172px; z-index:0;}
+.main .officenex.box figcaption {overflow:hidden;}
+.main .officenex.box figcaption .block {margin-top:24px; background:url('../images/main/officenex-txt-bg.png') no-repeat center; background-size:178px; height:64px; text-align:center;}
+.main .officenex.box figcaption .block p.txt {margin:0; padding-top:5px; font-size:18px; font-weight:700; color:#987f5a;}
+
+/* 넥스에이전트 최고의 혜택 */
+.main .benefit {padding:56px 0 64px 0;}
+.main .benefit .tab-area.border {z-index:0;}
+.main .benefit .tab-cont .fig {margin-top:32px;}
+.main .benefit .tab-cont .fig img {display:block; width:230px; height:230px; margin:0 auto;}
+.main .benefit .tab-cont .txt {margin:24px 0 0 0; font-size:16px; color:#666;}
+.main .benefit .wrap-block {position:relative; width:248px; height:248px; margin:40px auto 0; display:flex; flex-wrap:wrap;}
+.main .benefit .wrap-block .block {position:absolute; width:132px; height:132px; padding:30px 0; border-radius:100%; left:0; top:0; font-size:16px; font-weight:500; color:#3870ff; text-align:center; background:#e6edff; mix-blend-mode:multiply;}
+.main .benefit .wrap-block .block:nth-of-type(2) {left:116px; background:#ccf2ff;}
+.main .benefit .wrap-block .block:nth-of-type(3) {top:116px; background:#fffbcc;}
+.main .benefit .wrap-block .block:nth-of-type(4) {top:116px; left:116px; background:#ffe6f6;}
+
+.main .benefit .wrap-block-v2 {width:248px; height:248px; margin:40px auto 0; display:flex; flex-wrap:wrap; justify-content:space-between;}
+.main .benefit .wrap-block-v2 .block {width:120px; height:120px; border-radius:100%; text-align:center; background:#ff8838; font-size:16px; color:#fff;}
+.main .benefit .wrap-block-v2 .block:nth-of-type(2) {background:#03bbe0;}
+.main .benefit .wrap-block-v2 .block:nth-of-type(3) {background:#0894fc;}
+.main .benefit .wrap-block-v2 .block:nth-of-type(4) {background:#3870ff;}
+.main .benefit .wrap-block-v2 .block span {padding-top:25px; margin:0; display:block; font-size:14px; font-weight:700; color:#fff238;}
+
+.main .benefit .sale-off {width:248px; margin:40px auto 0;}
+.main .benefit .sale-off p.txt {margin:0; color:#000;}
+.main .benefit .sale-off .cont {display:flex; justify-content:space-between;}
+.main .benefit .sale-off .cont .col {width:80px; height:137px; border-radius:46px; background:#03b8e0; font-size:14px; color:#fff; text-align:center;}
+.main .benefit .sale-off .cont .col:nth-child(even) {background:#0894fc;}
+.main .benefit .sale-off .cont .col .num {display:block; padding:17px 0; margin:10px auto 10px; width:64px; height:64px; border-radius:100%; background:#fff; font-size:16px; font-weight:700; color:#03b8e0;}
+.main .benefit .sale-off .cont .col:nth-child(even) .num {color:#0894fc;}
+
+.main .benefit .wrap-block.v3 .block {padding:42px 0;}
+
+.main .benefit .tab-cont .img {position:relative;}
+.main .benefit .tab-cont .img::before {content:''; display:block; position:absolute; opacity:0;}
+.main .benefit .tab-cont.cont-01 .img::before {width:253px; height:154px; background:url('../../static/images/main/benefit-01.png') no-repeat; background-size:253px 154px; top:20px; left:calc(50% - 135px);} 
+.main .benefit .tab-cont.cont-02 .img::before {width:269px; height:221px; background:url('../../static/images/main/benefit-02.png') no-repeat; background-size:269px 221px; top:20px; left:calc(50% - 135px);} 
+.main .benefit .tab-cont.cont-03 .img::before {width:235px; height:144px; background:url('../../static/images/main/benefit-03.png') no-repeat; background-size:224px 144px; top:65px; left:calc(50% - 135px);} 
+.main .benefit .tab-cont.cont-04 .img::before {width:258px; height:129px; background:url('../../static/images/main/benefit-04.png') no-repeat; background-size:258px 129px; top:55px; left:calc(50% - 135px);} 
+.main .benefit .tab-cont.cont-05 .img::before {width:245px; height:131px; background:url('../../static/images/main/benefit-05.png') no-repeat; background-size:245px 131px; top:49px; left:calc(50% - 135px);} 
+.main .benefit .aos-animate .tab-cont[tabindex="0"] .img::before {animation:ani-zoom cubic-bezier(0.93, -0.03, 0.16, 1.26) 0.6s; opacity:1;}
+
+@keyframes ani-zoom {
+	0% {transform:scale(0);}
+	100% {transform:scale(1);}
+}
+
+/* 고객이 오피스넥스를 믿고 선택한 이유가 있습니다 */
+.main .join-total.box {background:#ff4c37; color:#fff;}
+.main .join-total.box .button {padding:0 18px 0 22px; margin:32px 0 0 0; width:142px; height:48px; font-size:15px;}
+.main .join-total .inner-block {display:flex; width:100%; padding-top:40px; margin-bottom:32px;}
+.main .join-total .inner-block .block {width:50%; min-width:124px;}
+.main .join-total .block {font-size:14px; font-weight:500; text-align:center;}
+.main .join-total .block i.iconset {display:block; width:50px; height:50px; margin:0 auto;}
+.main .join-total .block i.ico-main-join {background:url('../images/common/ico/ico-join-white-01.png') no-repeat; background-size:50px;}
+.main .join-total .block i.ico-main-customer {background:url('../images/common/ico/ico-join-white-02.png') no-repeat; background-size:50px;}
+.main .join-total .block i.ico-main-sum {background:url('../images/common/ico/ico-join-white-03.png') no-repeat; background-size:50px;}
+.main .join-total .block p.txt {margin:16px 0 4px 0; font-size:14px;  color:#fff;}
+.main .join-total .block strong.num {font-size:26px; font-family:'Roboto'; font-weight:700; color:#fff238;}
+.main .join-total .block p.txt-unit {margin:4px 0 0 0; color:rgba(255, 255, 255, 0.8);}
+.main .join-total p.current {margin:24px 0 0 0; font-size:13px; font-weight:500; text-align:right; color:rgba(255, 255, 255, 0.8);}
+
+/* 국내 No.1 경쟁력 주문시스템 */
+.main .order {padding:56px 0 64px 0;}
+.main .order .tab-area.border {z-index:0;}
+.main .order .tab-cont .fig {margin-top:32px;}
+.main .order .tab-cont .fig img {display:block; width:230px; height:230px; margin:0 auto;}
+
+.main .order .tab-cont .img {position:relative;}
+.main .order .tab-cont .img::before {content:''; display:block; position:absolute; opacity:0;}
+.main .order .tab-cont.cont-01 .img::before {width:248px; height:139px; background:url('../../static/images/main/order-01.png') no-repeat; background-size:248px 139px; top:110px; left:calc(50% - 135px);} 
+.main .order .tab-cont.cont-02 .img::before {width:261px; height:239px; background:url('../../static/images/main/order-02.png') no-repeat; background-size:261px 239px; top:10px; left:calc(50% - 135px);} 
+.main .order .tab-cont.cont-03 .img::before {width:248px; height:45px; background:url('../../static/images/main/order-03.png') no-repeat; background-size:248px 45px; top:180px; left:calc(50% - 120px);} 
+.main .order .tab-cont.cont-04 .img::before {width:263px; height:205px; background:url('../../static/images/main/order-04.png') no-repeat; background-size:263px 205px; top:20px;left:calc(50% - 125px);} 
+.main .order .aos-animate .tab-cont[tabindex="0"] .img::before {animation:ani-zoom cubic-bezier(0.93, -0.03, 0.16, 1.26) 0.6s; opacity:1;}
+
+@keyframes ani-zoom {
+	0% {transform:scale(0);}
+	100% {transform:scale(1);}
+}
+
+.main .order .tab-cont .tit {margin:24px 0 0 0; font-size:22px; font-weight:500; line-height:1.4;}
+.main .order .tab-cont .txt {margin:16px 0 0 0; font-size:16px; color:#666;}
+.main .order .tab-cont ul, .main .order .tab-cont li {padding:0; margin:0; list-style:none;}
+.main .order .tab-cont ul.step {width:244PX; margin:40px auto 0; display:flex; flex-wrap:wrap; justify-content:center;}
+.main .order .tab-cont .step li i.iconset {display:block;}
+.main .order .tab-cont .step li {position:relative; text-align:center;}
+.main .order .tab-cont .step li:nth-child(odd) {margin-right:52PX;}
+.main .order .tab-cont .step li:nth-of-type(3),
+.main .order .tab-cont .step li:nth-of-type(4) {margin-top:52px;}
+.main .order .tab-cont .step li:nth-of-type(1)::after {content:''; position:absolute; display:block; width:20px; height:20px; background:url('../images/common/ico/ico-cabinet-arr.png') no-repeat; background-size:20px; top:50px; right:-36px;}
+.main .order .tab-cont .step li:nth-of-type(2)::after {content:''; position:absolute; display:block; width:20px; height:20px; background:url('../images/common/ico/ico-cabinet-arr.png') no-repeat; background-size:20px; top:134px; left:40px; transform:rotate(90deg);}
+.main .order .tab-cont .step li:nth-of-type(3)::after {content:''; position:absolute; display:block; width:20px; height:20px; background:url('../images/common/ico/ico-cabinet-arr.png') no-repeat; background-size:20px; top:50px; right:-36px; transform:rotate(180deg);}
+
+/* 국내 No.1 배송시스템 */
+.main .delivery.box {background:#fafafa; }
+.main .delivery-slide {width:100%; margin:32px 0 0 0;}
+.main .delivery-slide .wrap {width:248px; height:auto; margin: 0 auto;}
+.main .delivery-slide .slick-slide {width:248px; margin:0 10px;}
+.main .delivery-slide .slick-slide img {width:248px; height:174px;}
+.main .delivery a.button {padding: 0 18px 0 22px; width:142px; height:48px; font-size:15px; color:#000;}
+
+/* 오피스넥스를 만나 나는 이렇게 성공했어요 */
+.main .success {max-width:614px; margin:56px -16px 64px auto;}
+@media only screen and (min-width:650px) {
+	.main .success {margin:56px auto 64px;}
+}
+.main .success .success-slide {margin-top:32px;}
+.main .success .success-slide .wrap {max-width:650px; margin:0 auto;}
+.main .success .success-slide .slick-slide {width:195px; margin:0 8px;}
+.main .success .success-slide .slide {width:195px; height:275px; background:#fafafa; border-radius:16px;}
+.main .success a.button {padding: 0 18px 0 22px; width:142px; height:48px; font-size:15px;}
+
+.success .success-slide .txt-wrap {padding:20px; text-align:left;}
+.success .success-slide .tit-wrap {}
+.success .success-slide .txt-wrap p.tit,
+.success .success-slide .txt-wrap p.txt {display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+.success .success-slide .txt-wrap p.tit {margin:10px 0 0 0; max-height:54px; font-weight:500;}
+.success .success-slide .txt-wrap p.txt {margin:10px 0 0 0; max-height:48px; font-size:16px; color:#666;}
+.success .success-slide .txt-wrap p.date {margin:12px 0 0 0; font-size:14px; color:#666;}
+
+/* 가입 신청 */
+.main .join.box {background:#252937;}
+.main .join.box .txt {font-size:22px; font-weight:500; color:#fff; line-height:1.4; text-align:center;}
+.main .join.box  a.button {width:135px; height:48px; font-size:15px; padding:0 22px;}

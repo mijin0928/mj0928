@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.title-3 span.bg-txt {background:url('../images/contents/bg-txt.png') 0 100% repeat-x;}
+
+.login {padding:40px 220px 49px;}
+.login .title-3 {margin:0; line-height:1.33;}
+.login .title-3 + .txt-page {margin:20px 0 0 0; font-size:18px; line-height:normal;}
+.login .block {display:flex; justify-content:space-between; width:840px; padding:29px 0 21px 0;}
+.login .txt-area {margin:21px 0 0 0; position:relative; width:330px;}
+.login .txt-area p.title-3, .login .txt-area p.txt-page {padding-left:40px;}
+.login .txt-area img {width:271px; height:220px; float:right; display:block; margin:19px 0 41px 0;}
+.login .txt-area .line {content:''; position:absolute; display:block; width:1px; height:492px; background-image:linear-gradient(to top, rgba(237,237,237,0), #ddd, #ededed, rgba(237,237,237,0)); top:-21px; right:0;}
+.login .login-area {width:400px;}
+.login .login-area .button {width:100%;}
+.login .login-area .input-wrap input + input,
+.login .login-area .input-wrap input + button {margin-top:20px;}
+.login .login-area .input-wrap .alert-wrap {display:flex; margin:12px 0 18px 0;}
+.login .login-area .input-wrap p.txt {margin:0; color:#f6312b; word-break:keep-all;}
+.login .login-area .input-wrap .ico-alert {flex-shrink:0; margin:5px 5px 0;}
+.login .login-area .user-menu, .login .login-area .user-menu li {padding:0; list-style:none;}
+.login .login-area .user-menu {display:flex; justify-content:space-between; margin:20px 0 0 0; padding:0 12px;}
+.login .login-area .user-menu li {position:relative;}
+.login .login-area .user-menu li::after {content:''; position:absolute; display:block; width:1px; height:14px; background:#e1e3e6; top:8px; right:-15px;}
+.login .login-area .user-menu li:last-child::after {background:none;}
+.login .login-area .list-dot {margin-top:80px; padding:20px 55px 20px 30px; background:#f7f9fa; border-radius:12px;}
+
+.join {padding:70px 0; text-align:center;}
+.join .ico-block {width:160px; margin:0 auto;}
+.join .ico-block .ico-join {width:160px; height:160px; margin:0 auto; border-radius:100%; background-color:#f4f5f7; background-size:92px; background-position:center;}
+.join .title-3 {line-height:1.5; margin:20px 0 0 0;}
+.join p.txt {margin:14px 0 0 0;}
+.join a.button {padding:0 36px; height:56px; font-size:18px;}

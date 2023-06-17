@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 서비스 소개
+========================================================================== */
+/* 의료이용지표 개요 */
+
+
+/* 의료이용지표
+========================================================================== */
+/* 개요 */
+.box-procedure {padding:40px; border:1px solid #e1e3e6; border-radius:12px;}
+.list-procedure {list-style-type:none; margin:0; padding:0; text-align:center;}
+.list-procedure li {position:relative; margin-top:117px;}
+.list-procedure li::before {content:''; position:absolute; top:calc(100% - -35px); left:calc(50% - 16px); display:block; width:32px;height:32px; background-image:url('../images/common/ico/ico-procedure-arr.png'); background-size:100%;}
+.list-procedure li:first-child {margin-top:0;}
+.list-procedure li:last-child::before {display:none;}
+.list-procedure .icobox {width:160px; height:160px; margin:0 auto; padding:34px; border-radius:100%; background-color:#f6f6f6;}
+.list-procedure .icobox.bg-green {background-color:#e4f2e4;}
+.list-procedure p.txt {margin:20px 0 0 0;}
+
+/* 의료이용지표현황 */
+
+/* 이용가이드
+========================================================================== */
+/* 지표 이용 가이드 - 목록 */
+/* 오픈 API 목록 */
+/* 오픈 API 상세보기 */
+
+
+/* 고객센터
+========================================================================== */
+/* 자주하는 질문 */
+/* 온라인 설문조사 목록 */
+/* 온라인 설문조사 보기 */
+
+
+/* 로그인, 회원가입
+========================================================================== */
+/* 로그인 */
+/* 아이디찾기 */
+/* 비밀번호 찾기 */
+/* 회원가입 - 약관동의 */
+/* 회원정보 입력 - 레이어 : 부서, 사업장 찾기 */
+/* 회원가입 회원가입 완료 */
+
+
+/* 마이페이지
+========================================================================== */
+/* 나의 신청현황 아이콘 */
+
+
+/* 기타 - 이용약관, 개인처리방침
+========================================================================== */
+/* 이용약관 */
+/* 개인정보처리방침 */
+/* 아이콘 */

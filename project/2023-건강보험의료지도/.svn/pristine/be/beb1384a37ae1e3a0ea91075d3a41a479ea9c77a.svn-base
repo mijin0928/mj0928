@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지표 이용현황 | 서비스 소개 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">지표 이용현황</h2>
+			<p class="txt-page">전월 조회건수 기준 다빈도 지표 이용현황 및 지역별 지표 이용현황입니다.</p>
+			
+			<div class="inner-wrap">
+				<div class="title-wrap">
+					<h3 class="title-3">다빈도 지표 이용현황(상위 10개 지표)</h3>
+					
+					<div class="right">
+						<p class="txt-help">전월 조회건수 기준</p>
+					</div>
+				</div>
+				
+				<div class="box-gray">
+					<div>
+						차트영역
+					</div>
+				</div>
+
+				<h3 class="title-3">지역별 지표 이용현황(상위 5개 지역)</h3>	
+				<div class="box-wrap col-3">
+					<div class="box-gray">
+						<div>
+							차트영역
+						</div>
+					</div>
+					
+					<div class="box-gray">
+						<div>
+							차트영역
+						</div>
+					</div>
+					
+					<div class="box-gray">
+						<div>
+							차트영역
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>우리, 빵꾸똥꾸에서 만나! 빵꾸똥꾸 문구야｜공실 매장 소개</title>
+
+<link rel="stylesheet" href="../../../static/css/import.css" media="all" />
+
+<script src="../../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../../static/js/slick.js"></script>
+<script src="../../../static/js/swiper.min.js"></script>
+<script src="../../../static/js/aos.js"></script>
+<script src="../../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<header id="header">
+		<div class="inner-wrap">
+			<p class="color-red">layout.html 참고</p>
+		</div>
+	</header>
+
+	<div class="container">
+		<!-- container-util -->
+		<div class="container-util">
+			<div class="inner-wrap">
+				<ul class="location">
+					<li class="depth home"><a href="" class="btn-indent btn-home">HOME</a></li>
+					<li id="mainDepth2" class="depth"><a href="" class="active"><!-- 활성화시 class active 추가 -->공실매장소개</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container-util -->
+
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="title">공실매장소개</h2>
+	
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<div class="box round gray">
+					<p class="txt">부동산, 임대인 등이 자기 매장을 소개하는 페이지입니다.<br>매장 위치와 상권을 확인 후 빵꾸똥꾸문구야와 맞지 않을 경우 삭제될 수 있습니다.</p>
+				</div>
+				
+				<div class="table-area">
+					<table class="a-l quik-table">
+						<caption>소개자, 이름, 전화번호, 매장주소, 평, 권리금, 보증금, 임대료, 상권소개, 메모사항 값이 있는 표</caption>
+						<colgroup>
+							<col style="width:240px">
+							<col />
+						</colgroup>
+	
+						<tbody>
+							<tr>
+								<th scope="row" class="input-tit imp">소개자</th>
+								<td class="pd">
+									<div class="radio-area">
+										<div class="radio-block">
+											<div class="radio-inner-block">
+												<span class="radio-wrap">
+													<input type="radio" name="radio01" id="radio01_01">
+													<label for="radio01_01">부동산</label>
+												</span>
+											</div>
+						
+											<div class="radio-inner-block">
+												<span class="radio-wrap">
+													<input type="radio" name="radio01" id="radio01_02">
+													<label for="radio01_02">임대인</label>
+												</span>
+											</div>
+	
+											<div class="radio-inner-block">
+												<span class="radio-wrap">
+													<input type="radio" name="radio01" id="radio01_03">
+													<label for="radio01_03">점포양도</label>
+												</span>
+											</div>
+	
+											<div class="radio-inner-block">
+												<span class="radio-wrap">
+													<input type="radio" name="radio01" id="radio01_04">
+													<label for="radio01_04">분양사</label>
+												</span>
+											</div>
+	
+											<div class="radio-inner-block mgr00">
+												<span class="radio-wrap">
+													<input type="radio" name="radio01" id="radio01_05">
+													<label for="radio01_05">기타</label>
+												</span>
+											</div>
+										</div>
+										<div class="input-area">
+											<input type="text" class="input-text" title="기타 입력">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">이름</th>
+								<td><input type="text" class="input-text" placeholder="이름을 입력하세요" title="이름 입력"></td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">전화번호</th>
+								<td>
+									<div class="num-wrap">
+										<input type="text" class="input-text" title="휴대전화 첫번째 자리 입력">
+										<input type="text" class="input-text" title="휴대전화 두번째 자리 입력">
+										<input type="text" class="input-text" title="휴대전화 세번째 자리 입력">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">매장주소</th>
+								<td>
+									<div class="input-wrap">
+										<div class="address-select-wrap">
+											<select title="시/도 선택" class="input-select address">
+												<option selected="selected" disabled="disabled">시/도</option>
+												<option>서울특별시</option>
+												<option>인천광역시</option>
+												<option>경기도</option>
+											</select>
+											<select title="시/군/구 선택" class="input-select address">
+												<option selected="selected" disabled="disabled">시/군/구</option>
+												<option>강남구</option>
+												<option>동작구</option>
+												<option>서초구</option>
+											</select>
+										</div>
+										<input type="text" class="input-text address" placeholder="상세주소를 입력하세요" title="상세주소 입력">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">평</th>
+								<td><input type="text" class="input-text w142" title="평 입력"><span class="color-grey">평</span></td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">권리금</th>
+								<td>
+									<p class="float-l">
+										<span class="mgr16">현재 금액</span><input type="text" class="input-text w142" title="현재 금액 입력"><span class="color-grey mgr40">만원</span>
+									</p>
+									<p>
+										<span class="mgr16">제안 금액</span><input type="text" class="input-text w142" title="제안 금액 입력"><span class="color-grey">만원</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">보증금</th>
+								<td>
+									<p class="float-l"><span class="mgr16">현재 금액</span><input type="text" class="input-text w142" title="현재 금액 입력"><span class="color-grey mgr40">만원</span></p>
+									<p><span class="mgr16">제안 금액</span><input type="text" class="input-text w142" title="제안 금액 입력"><span class="color-grey">만원</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">임대료</th>
+								<td>
+									<p class="float-l"><span class="mgr16">현재 금액</span><input type="text" class="input-text w142" title="현재 금액 입력"><span class="color-grey mgr40">만원</span></p>
+									<p><span class="mgr16">제안 금액</span><input type="text" class="input-text w142" title="제안 금액 입력"><span class="color-grey">만원</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit imp">상권소개</th>
+								<td><textarea name="txtarea" title="타이틀 입력" class="txtarea w680px" placeholder="내용을 입력해주세요"></textarea></td>
+							</tr>
+							<tr>
+								<th scope="row" class="input-tit">메모사항</th>
+								<td><textarea name="txtarea" title="타이틀 입력" class="txtarea w680px" placeholder="내용을 입력해주세요"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- 01-30 개인정보 수집 및 이용 동의 수정 -->
+				<p class="privacy-txt font18 fw500">개인정보 수집 및 이용에 대한 동의 (필수)</p>
+				<textarea name="textarea" class="txtarea a-l" readonly="" title="개인정보 수집 및 이용에 대한 동의">오피스넥스 빵꾸똥꾸문구야 상품입점문의 페이지에서는 아래와 같이 개인정보를 수집합니다.&#10;&#10;1) 개인정보 제공에 대한 동의</textarea>
+				<div class="chk-agree float-r">
+					<input type="checkbox" name="chk" id="chk_agree">
+					<label for="chk_agree" class="font18">개인정보수집 및 이용에 동의합니다.</label>
+				</div>
+			
+				<div class="btn-group center">
+					<button type="button" class="btn round black large">공실 매장 등록</button>
+				</div>
+			</div>
+			<!-- //inner-wrap -->
+		</div>
+		<!-- //contents -->
+	</div>
+
+	<!-- <aside class="quick-area">
+		<p class="color-red">layout.html 참고</p>
+	</aside> -->
+
+	<footer id="footer">
+		<p class="color-red">layout.html 참고</p>
+	</footer>
+
+</body>
+</html>

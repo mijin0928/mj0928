@@ -1,0 +1,134 @@
+@charset "utf-8";
+.req {overflow:hidden; display:inline-block; width:4px; height:4px; margin:-16px 0 0 5px; font-size:0px; line-height:0; text-indent:-9999px; vertical-align:middle; border-radius:4px; background-color:#ee0700;}
+
+/* 아이디찾기 */
+.list-form, .list-form > li {list-style-type:none; margin:0; padding:0;}
+.find-wrap {margin-top:40px; padding:70px 0; border:1px solid #e1e3e6; border-radius:24px;}
+.find-wrap .wrap {overflow:hidden; width:681px; margin:0 auto;}
+.find-wrap .req-info {margin:0 0 20px; color:#717171; text-align:right; font-size:15px; line-height:1.1;}
+.find-wrap .list-form li {display:flex; flex-wrap:nowrap; align-items:center; margin-top:20px;}
+.find-wrap .list-form li:first-child {margin-top:0;}
+.find-wrap .list-form .inp-label {flex-shrink:0; width:130px; margin:0; color:#3a3a4a; font-weight:500;}
+.find-wrap .box-right {width:calc(100% - 130px); margin:20px 0 0 auto;}
+.find-wrap .box-right .button {width:100%}
+.layer-modal .wrap-privacy {padding:43px 0; text-align:center; background-color:#f4f5f7; border-radius:24px;}
+.layer-modal .wrap-privacy > .txt {margin:0; color:#3a3a4a; font-size:32px; font-weight:700;}
+
+/* 비밀번호 찾기 */
+/* 본인인증 (휴대전화번호, 이메일, 인증번호 등) */
+.check-tel, .check-email, .check-verify {display:inline-flex; flex-grow:1; width:100%;}
+.check-tel .button-group,
+.check-email .button-group,
+.check-verify .button-group {flex-shrink:0; margin:0 0 0 10px;}
+.check-tel .button-group .button,
+.check-email .button-group .button,
+.check-verify .button-group .button {margin:0;}
+.check-tel .button-group .button + .button,
+.check-email .button-group .button + .button,
+.check-verify .button-group .button + .button {margin-left:6px;}
+
+.wrap-limit {position:relative; width:100%; vertical-align: middle;}
+.wrap-limit .input-text {padding-right:94px;}
+.wrap-limit .time-limit {position:absolute; right:0; top:0; width:74px; height:100%; margin:0; font-family:'Roboto', sans-serif; font-size:14px; line-height:51px;}
+
+.box-bg-gray {padding:22px 30px 19px; border-radius:12px; background-color:#f7f9fa;}
+.find-wrap .box-bg-gray {margin-top:50px;}
+.find-wrap .box-bg-gray .list-dot li {margin-top:9px; color:#717171; font-size:15px; line-height:1.7;}
+.find-wrap .box-bg-gray .list-dot li:first-child {margin-top:0;}
+.find-wrap .box-bg-gray .list-dot li:before {top:11px;}
+
+/* 개인정보처리방침 */
+.list-privacy, .list-privacy > li, .list-terms, .list-terms > li {list-style-type:none; margin:0; padding:0;}
+.list-privacy {display:flex; flex-wrap:wrap; justify-content:center; margin:70px 0;}
+.list-privacy > li {margin-right:40px;}
+.list-privacy > li:nth-child(5n),
+.list-privacy > li:last-child {margin-right:0;}
+.list-privacy > li:nth-child(5) ~ li {margin-top:40px;} 
+.list-privacy > li a {display:block; width:224px; height:207px; padding:30px 0; text-align:center; border:1px solid #ddd; border-radius:24px; transition:box-shadow 0.3s;}
+.list-privacy > li a:hover,
+.list-privacy > li a:focus {text-decoration:none; background-color:#fff6f2; border:1px solid #bec2c8; box-shadow:0 8px 24px 0 rgba(0,0,0,0.08);}
+.list-privacy > li .tit {margin:15px 0 0; color:#333; font-weight:700; line-height:1.8;}
+.cont-tool.privacy .list-dot ol,
+.cont-tool.privacy .list-dot ol > li {list-style-type:none; margin:0; padding:0;}
+.cont-tool.privacy .list-dot ol,
+.cont-tool.privacy .list-dot ul {margin-top:10px;}
+
+.list-privacy + .board-util > .title-3 {margin:0;}
+.list-terms {border-top:2px solid #44465b;}
+.list-terms .tit-area .tit {position:relative; width:100%; min-height:92px; padding:33px 254px 32px 102px; color:#3a3a4a; font-size:18px; font-weight:500; text-align:left; line-height:1.1; background-color:#fff; border-bottom:1px solid #e2e3e7;}
+.list-terms .tit-area .tit .num {position:absolute; left:46px; top:50%; transform:translateY(-50%); margin:0; font-family:'Roboto', sans-serif;} 
+.list-terms .tit-area .tit .ico-toggle-arr,
+.list-terms .tit-area .tit .wrap-ico-privacy {position:absolute; top:50%; transform:translateY(-50%);}
+.list-terms .tit-area .tit .ico-toggle-arr {right:30px;}
+.list-terms .tit-area .tit .wrap-ico-privacy {overflow:hidden; right:92px; width:124px; height:48px;}
+.list-terms .tit-area .tit .wrap-ico-privacy .iconset {float:left; margin-right:2px;}
+.list-terms .tit-area .tit .wrap-ico-privacy .iconset:last-child {margin-right:0;}
+.list-terms .cont-area {display:none; padding:30px 102px; background-color:#fff6f2; border-bottom:1px solid #e2e3e7;}
+.list-terms .cont-area .txt {margin:10px 0 0;}
+.list-terms .cont-area .txt:only-of-type,
+.list-terms .cont-area .txt:first-child {margin:0;}
+.list-terms .cont-area .txt + ol {margin-top:10px;}
+.list-terms .cont-area ol,
+.list-terms .cont-area ol > li {list-style-type:none; padding:0; margin:0;}
+.list-terms .cont-area > ol > li + li {margin-top:10px;}
+.list-terms .cont-area ol > li {word-break:keep-all;}
+.list-terms .cont-area .list-kor > li {position:relative; padding-left:23px; word-break:keep-all;}
+.list-terms .cont-area .list-kor > li span {position:absolute; left:0; top:0;}
+.list-terms .cont-area li .button {margin-left:10px;}
+.list-terms .cont-area .list-dash li:before {top:14px;}
+.list-terms .cont-area .box-gray-white {margin:15px 0 30px; padding:20px 40px; border:1px solid #e2e3e7; background-color:#fff; border-radius:12px;}
+.list-terms .cont-area > .box-gray-white:last-child,
+.list-terms .cont-area li:last-child > .box-gray-white {margin-bottom:0;}
+.list-terms .cont-area .box-gray-white.icon {position:relative; padding:32px 40px 32px 107px;}
+.list-terms .cont-area .box-gray-white.icon .iconset {position:absolute; left:40px; top:50%; transform:translateY(-50%);}
+.list-terms .cont-area .box-gray-white.icon .iconset + em {display:inline-block; margin-left:10px;}
+.list-terms .cont-area .box-gray-white > ol > li + li {margin-top:10px;}
+.list-terms .cont-area .box-gray-white .tit {margin:0 0 10px; font-weight:700;}
+.list-terms .cont-area .img {margin:10px auto; width:688px;}
+.list-terms .cont-area .img img {display:block;}
+.list-terms .cont-area .img + .txt-help {width:668px; margin:0 auto;}
+.list-terms .cont-area .table-data {margin-top:10px;}
+.list-terms .cont-area .table-data table thead tr th {text-align:center;}
+.list-terms em {font-weight:700;}
+
+.txt-annotation {position:relative; padding-left:15px; margin:10px 0 0;}
+.txt-annotation:before {content:'*'; position:absolute; left:0; top:4px; width:19px; height:19px;}
+
+/* list-dot 안에 버튼(정렬) */
+.list-terms .cont-area .has-button > li {display:flex; align-items:center; position:static; padding-left:0;}
+.list-terms .cont-area .has-button > li:before {display:none;}
+.list-terms .cont-area .has-button > li > span {display:inline-block; position:relative; padding-left:10px;}
+.list-terms .cont-area .has-button > li > span:before {content:''; position:absolute; top:13px; left:0; width:4px; height:4px; background-color:#333; border-radius:2px;}
+.list-terms .cont-area .has-button .button {flex-shrink:0;}
+
+[class*='ico-privacy-'] {width:40px; height:48px; background-position:center; background-repeat:no-repeat;}
+.ico-privacy-01 {background-image:url('../images/contents/ico-privacy-01.png');}
+.ico-privacy-02 {background-image:url('../images/contents/ico-privacy-02.png');}
+.ico-privacy-03 {background-image:url('../images/contents/ico-privacy-03.png');}
+.ico-privacy-04 {background-image:url('../images/contents/ico-privacy-04.png');}
+.ico-privacy-05 {background-image:url('../images/contents/ico-privacy-05.png');}
+.ico-privacy-06 {background-image:url('../images/contents/ico-privacy-06.png');}
+.ico-privacy-07 {background-image:url('../images/contents/ico-privacy-07.png');}
+.ico-privacy-08 {background-image:url('../images/contents/ico-privacy-08.png');}
+.ico-privacy-09 {background-image:url('../images/contents/ico-privacy-09.png');}
+.ico-privacy-10 {background-image:url('../images/contents/ico-privacy-10.png');}
+.ico-privacy-11 {background-image:url('../images/contents/ico-privacy-11.png');}
+.ico-privacy-12 {background-image:url('../images/contents/ico-privacy-12.png');}
+.ico-privacy-13 {background-image:url('../images/contents/ico-privacy-13.png');}
+.ico-privacy-14 {background-image:url('../images/contents/ico-privacy-14.png');}
+.ico-privacy-15 {background-image:url('../images/contents/ico-privacy-15.png');}
+.ico-privacy-16 {background-image:url('../images/contents/ico-privacy-16.png');}
+
+[class*='ico-privacy-big'] {width:108px; height:108px; background-position:center; background-repeat:no-repeat;}
+.ico-privacy-big-01 {background-image:url('../images/contents/ico-privacy-big-01.png');}
+.ico-privacy-big-02 {background-image:url('../images/contents/ico-privacy-big-02.png');}
+.ico-privacy-big-03 {background-image:url('../images/contents/ico-privacy-big-03.png');}
+.ico-privacy-big-04 {background-image:url('../images/contents/ico-privacy-big-04.png');}
+.ico-privacy-big-05 {background-image:url('../images/contents/ico-privacy-big-05.png');}
+.ico-privacy-big-06 {background-image:url('../images/contents/ico-privacy-big-06.png');}
+.ico-privacy-big-07 {background-image:url('../images/contents/ico-privacy-big-07.png');}
+.ico-privacy-big-08 {background-image:url('../images/contents/ico-privacy-big-08.png');}
+.ico-privacy-big-09 {background-image:url('../images/contents/ico-privacy-big-09.png');}
+
+.ico-privacy-mark-01 {width:57px; height:40px; background:url('../images/contents/ico-privacy-mark-01.png') no-repeat 0;}
+.ico-privacy-mark-02 {width:40px; height:40px; background:url('../images/contents/ico-privacy-mark-02.png') no-repeat 0;}

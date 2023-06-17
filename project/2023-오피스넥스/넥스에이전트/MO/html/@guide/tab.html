@@ -1,0 +1,331 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>넥스에이전트 퍼블리싱 가이드 | tab</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide f ile -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">tab</h2>
+		<div class="desc-guide">
+			@@@@ default settings @@@@<br />
+			1. 양옆 여백 16px<br />
+			2. 탭 버튼영역 + 탭 콘텐츠 영역 사이 간격 40px<br />
+			3. 탭 영역 + 탭 영역 사이 간격 20px<br />
+			** 이외 여백이 다른 경우 다중 클래스로 처리해주세요.
+			<br />
+			<br />
+			- 탭 버튼의 aria-controls와 탭콘텐츠(tab-contents) 의 id 값을 일치시켜주세요<br />
+			- 탭 버튼의 id값과 탭콘텐츠의 aria-labelledby 값을 일치시켜주세요<br />
+			- 탭 버튼 활성화시 class active 추가, aria-selected true / 비활성화시 class active 제거, aria-selected false <br />
+			- 탭 콘텐츠 활성화시 속성 hidden="" 추가, tabindex="0" / 비활성화시 속성 hidden="" 제거, tabindex="-1"
+		</div>
+		<h3 class="tit-guide">depth-01</h3>
+		<h4 class="tit-guide">버튼형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area top border"><!-- tab-area 에 class top, border 추가 -->
+					<ul class="tab-list" role="tablist">
+						<li><button type="button" id="tab_01_01" role="tab" aria-selected="true" aria-controls="tabPanel_01_01" class="active">탭1</button></li>
+						<li><button type="button" id="tab_01_02" role="tab" aria-selected="false" aria-controls="tabPanel_01_02">탭2</button></li>
+						<li><button type="button" id="tab_01_03" role="tab" aria-selected="false" aria-controls="tabPanel_01_03">탭3</button></li>
+						<li><button type="button" id="tab_01_04" role="tab" aria-selected="false" aria-controls="tabPanel_01_04">탭4</button></li>
+						<li><button type="button" id="tab_01_05" role="tab" aria-selected="false" aria-controls="tabPanel_01_05">탭5</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_01_01" role="tabpanel" tabindex="0" aria-labelledby="tab_01_01" class="tab-cont">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_01_02" role="tabpanel" tabindex="-1" aria-labelledby="tab_01_02" class="tab-cont" hidden="">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_01_03" role="tabpanel" tabindex="-1" aria-labelledby="tab_01_03" class="tab-cont" hidden="">
+						콘텐츠3
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_01_04" role="tabpanel" tabindex="-1" aria-labelledby="tab_01_04" class="tab-cont" hidden="">
+						콘텐츠4
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_01_05" role="tabpanel" tabindex="-1" aria-labelledby="tab01_05" class="tab-cont" hidden="">
+						콘텐츠5
+					</div>
+					<!-- //tab-cont -->
+				</div>
+				<!-- //tab-area -->
+			</div>
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area top border"><!-- tab-area 에 class top, border 추가 -->
+					<ul class="tab-list">
+						<li><a href="" class="active">탭1</a></li>
+						<li><a href="">탭2</a></li>
+						<li><a href="">탭3</a></li>
+						<li><a href="">탭4</a></li>
+						<li><a href="">탭5</a></li>
+					</ul>
+				</div>
+				<!-- //tab-area -->
+
+				<div class="contents">
+					콘텐츠 내용
+				</div>
+			</div>
+		</div>
+			
+		<h3 class="tit-guide">depth-02</h3>
+		<h4 class="tit-guide">버튼형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area">
+					<ul class="tab-list-inner" role="tablist">
+						<li><button type="button" id="tab_02_01" role="tab" aria-selected="true" aria-controls="tabPanel_02_01" class="active">탭1</button></li>
+						<li><button type="button" id="tab_02_02" role="tab" aria-selected="false" aria-controls="tabPanel_02_02">탭2</button></li>
+						<li><button type="button" id="tab_02_03" role="tab" aria-selected="false" aria-controls="tabPanel_02_03">탭3</button></li>
+						<li><button type="button" id="tab_02_04" role="tab" aria-selected="false" aria-controls="tabPanel_02_04">탭4</button></li>
+						<li><button type="button" id="tab_02_05" role="tab" aria-selected="false" aria-controls="tabPanel_02_05">탭5</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_01" role="tabpanel" tabindex="0" aria-labelledby="tab_02_01" class="tab-cont">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_02" role="tabpanel" tabindex="-1" aria-labelledby="tab_02_02" class="tab-cont" hidden="">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_03" role="tabpanel" tabindex="-1" aria-labelledby="tab_02_03" class="tab-cont" hidden="">
+						콘텐츠3
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_04" role="tabpanel" tabindex="-1" aria-labelledby="tab_02_04" class="tab-cont" hidden="">
+						콘텐츠4
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_05" role="tabpanel" tabindex="-1" aria-labelledby="tab_02_05" class="tab-cont" hidden="">
+						콘텐츠5
+					</div>
+					<!-- //tab-cont -->
+				</div>
+				<!-- //tab-area -->
+			</div>
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-list-inner -->
+				<ul class="tab-list-inner">
+					<li><a href="" class="active">탭1</a></li>
+					<li><a href="">탭2</a></li>
+					<li><a href="">탭3</a></li>
+					<li><a href="">탭4</a></li>
+					<li><a href="">탭5</a></li>
+					<li><a href="">탭6</a></li>
+					<li><a href="">탭7</a></li>
+					<li><a href="">탭8</a></li>
+				</ul>
+				<!-- //tab-list-inner -->
+
+				콘텐츠 내용
+			</div>
+		</div>
+
+		<h3 class="tit-guide">콘텐츠 탭</h3>
+		<h3 class="tit-guide">type 01</h3>
+		<h4 class="tit-guide">버튼형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area border"><!-- tab-area 에 class border 추가 -->
+					<ul class="tab-list" role="tablist">
+						<li><button type="button" id="tab_03_01" role="tab" aria-selected="true" aria-controls="tabPanel_03_01" class="active">탭1</button></li>
+						<li><button type="button" id="tab_03_02" role="tab" aria-selected="false" aria-controls="tabPanel_03_02">탭2</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_03_01" role="tabpanel" tabindex="0" aria-labelledby="tab_03_01" class="tab-cont">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_03_02" role="tabpanel" tabindex="-1" aria-labelledby="tab_03_02" class="tab-cont" hidden="">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+				</div>
+				<!-- //tab-area -->
+			</div>
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area border"><!-- tab-area 에 class border 추가 -->
+					<ul class="tab-list">
+						<li><a href="" class="active">탭1</a></li>
+						<li><a href="">탭2</a></li>
+						<li><a href="">탭3</a></li>
+						<li><a href="">탭4</a></li>
+						<li><a href="">탭5</a></li>
+						<li><a href="">탭6</a></li>
+						<li><a href="">탭7</a></li>
+						<li><a href="">탭8</a></li>
+					</ul>
+				</div>
+				<!-- //tab-area -->
+
+				콘텐츠
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">type-03(선 없는 탭)</h3>
+		<h4 class="tit-guide"> 버튼형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area">
+					<ul class="tab-list" role="tablist">
+						<li><button type="button" id="tab_04_01" role="tab" aria-selected="true" aria-controls="tabPanel_04_01" class="active">탭1</button></li>
+						<li><button type="button" id="tab_04_02" role="tab" aria-selected="false" aria-controls="tabPanel_04_02">탭2</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_04_01" role="tabpanel" tabindex="0" aria-labelledby="tab_04_01" class="tab-cont">
+						콘텐츠1
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_04_02" role="tabpanel" tabindex="-1" aria-labelledby="tab_04_02" class="tab-cont" hidden="">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+				</div>
+				<!-- //tab-area -->
+			</div>
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area">
+					<ul class="tab-list">
+						<li><a href="" class="active">탭1</a></li>
+						<li><a href="">탭2</a></li>
+						<li><a href="">탭3</a></li>
+						<li><a href="">탭4</a></li>
+						<li><a href="">탭5</a></li>
+						<li><a href="">탭6</a></li>
+						<li><a href="">탭7</a></li>
+						<li><a href="">탭8</a></li>
+					</ul>
+				</div>
+				<!-- //tab-area -->
+
+				콘텐츠
+			</div>
+		</div>
+
+		<h3 class="tit-guide">tab + 데이터가 없을 경우(여백 80px)</h3>
+		<h4 class="tit-guide">버튼형</h4>
+
+		<div class="source">
+			<div class="copy">
+				<!-- tab-area -->
+				<div class="tab-area border">
+					<ul class="tab-list" role="tablist">
+						<li><button type="button" id="tab_05_01" role="tab" aria-selected="true" aria-controls="tabPanel_05_01" class="active">탭1</button></li>
+						<li><button type="button" id="tab_05_02" role="tab" aria-selected="false" aria-controls="tabPanel_05_02">탭2</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_05_01" role="tabpanel" tabindex="0" aria-labelledby="tab_05_01" class="tab-cont">
+						<div class="box-no-data">
+							<i class="iconset ico-no-data"></i>
+							<p class="txt">등록된 데이터가 없습니다.</p>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_05_02" role="tabpanel" tabindex="-1" aria-labelledby="tab_05_02" class="tab-cont" hidden="">
+						콘텐츠2
+					</div>
+					<!-- //tab-cont -->
+				</div>
+				<!-- //tab-area -->
+			</div>
+		</div>
+
+		<h4 class="tit-guide">링크형</h4>
+		<div class="source">
+			<div class="copy">
+				<!-- tab-list-inner -->
+				<ul class="tab-list-inner">
+					<li><a href="" class="active">탭1</a></li>
+					<li><a href="">탭2</a></li>
+				</ul>
+				<!-- //tab-list-inner -->
+				
+				<div class="box-no-data">
+					<i class="iconset ico-no-data"></i>
+					<p class="txt">등록된 데이터가 없습니다.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

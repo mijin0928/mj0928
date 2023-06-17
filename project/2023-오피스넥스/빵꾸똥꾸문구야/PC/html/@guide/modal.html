@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | FORM</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h3 class="tit-guide">모달창</h3>
+		<h4 class="tit-guide">버튼 + layer</h4>
+		<div class="source">
+			<div class="copy">
+				<button type="button" class="btn round max black btn-open-modal" aria-controls="layer-modal01">상세보기</button>
+
+				<div class="layer-modal" id="layer-modal01" role="dialog" aria-modal="true">
+					<div class="layer-wrap">
+						<p class="layer-tit">레이어 타이틀</p>
+
+						<div class="layer-contents">
+							<div class="badge-group">
+								<div class="badge-tit">
+									<span class="badge bg-pink">지역</span>
+									<p class="tit">000호점</p>
+								</div>
+
+								<span class="badge bg-yellow">오픈</span>
+							</div>
+
+							<p class="tit">오픈매장이름</p>
+							<p class="desc">
+								<i class="iconset ico-location"></i>
+								<span class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</span>
+							</p>
+
+							<div class="map-area">지도</div>
+
+							<p class="sub-tit">매장사진</p>
+
+							<p class="txt color-red">swiper 참고</p>
+						</div>
+
+						<button type="button" class="btn-close-modal">레이어닫기</button>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>

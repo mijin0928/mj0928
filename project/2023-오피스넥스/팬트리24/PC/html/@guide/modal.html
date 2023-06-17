@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>팬트리24 퍼블리싱 가이드 | layer-modal</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js" ></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">layer-modal</h2>
+		<div class="desc-guide">
+			
+		</div>
+		<h3 class="tit-guide">modal</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="button-group">
+					<button type="button" class="button btn-modal-open" aria-controls="layerModal_01">소개서 받기</button>
+				</div>
+				
+				<div class="layer-modal" id="layerModal_01" role="dialog" aria-modal="true" tabindex="0">
+					<div class="wrap">
+						<div class="layer-header">
+							<i class="iconset ico-pen"></i>
+							<p class="tit">소개서 받기</p>
+						</div>
+						
+						<div class="layer-body">
+							<p class="tit">회사명<span class="req" title="필수 입력 항목">*</span></p>
+							<div class="wrap-input">
+								<input type="text" title="회사명을 입력하세요" placeholder="회사명을 입력하세요" class="input-text" />
+							</div>
+
+							<p class="tit">사업장 주소<span class="req" title="필수 입력 항목">*</span></p>
+
+							<div class="wrap-input">
+								<select title="시/도를 선택해주세요">
+									<option>시/도</option>
+									<option>시/도1</option>
+									<option>시/도2</option>
+								</select>
+
+								<select title="시/군/구를 선택해주세요">
+									<option>시/군/구</option>
+									<option>시/군/구1</option>
+									<option>시/군/구2</option>
+								</select>
+
+								<select title="읍/면/동를 선택해주세요">
+									<option>읍/면/동</option>
+									<option>읍/면/동1</option>
+									<option>읍/면/동2</option>
+								</select>
+
+								<input type="text" title="소개서를 받으실 사업장 주소를 입력하세요." placeholder="소개서를 받으실 사업장 주소를 입력하세요." class="input-text">
+							</div>
+	
+							<p class="tit">담당자명<span class="req" title="필수 입력 항목">*</span></p>
+							<div class="wrap-input">
+								<input type="text" title="담당자명을 입력하세요" placeholder="담당자명을 입력하세요" class="input-text" />
+							</div>
+	
+							<p class="tit">직급<span class="req" title="필수 입력 항목">*</span></p>
+							<div class="wrap-input">
+								<input type="text" title="직급을 입력하세요" placeholder="직급을 입력하세요" class="input-text" />
+							</div>
+	
+							<p class="tit">연락처<span class="req" title="필수 입력 항목">*</span></p>
+							<div class="wrap-input">
+								<input type="number" title="연락처를 입력하세요" placeholder="연락처를 입력하세요" class="input-text" />
+							</div>
+	
+							<p class="tit">이메일<span class="req" title="필수 입력 항목">*</span></p>
+							<div class="wrap-input">
+								<input type="email" title="이메일을 입력하세요" placeholder="이메일을 입력하세요" class="input-text" />
+							</div>
+	
+							<p class="tit">개인정보수집 및 이용에 대한 동의(필수)</p>
+							<div class="box-agree">
+								<div class="agree-cont" tabindex="0">
+									방침내용
+								</div>
+	
+								<div class="agree-chk">
+									<span class="bg-chk">
+										<input type="checkbox" id="agree_01_01" />
+										<label for="agree_01_01">개인정보수집 및 이용에 동의합니다.</label>
+									</span>
+								</div>
+							</div>
+	
+							<div class="button-group">
+								<button type="button" class="button">소개서 신청하기</button>
+							</div>
+						</div>
+	
+						<button type="button" class="btn-modal-close">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

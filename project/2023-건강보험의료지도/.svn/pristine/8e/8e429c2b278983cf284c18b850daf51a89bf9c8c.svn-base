@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* ==========================================================================
+	
+	main css
+	
+========================================================================== */
+.on {display:block !important;}
+.off {display:none !important;}
+
+.bg-main {position:relative; padding-top:70px;}
+.bg-main::before {content:''; display:block; position:absolute; left:0; top:0; width:100%; height:690px; background-color:#ffeae0;}
+.bg-main .inner-wrap::before {content:''; display:block; clear:both;}
+.bg-main .txt-page {margin:0 0 8px; font-size:24px; color:#3a3a4a; line-height:1.38;}
+.bg-main .title-2 {margin:0 0 60px; font-size:38px; line-height:1.18; color:#3a3a4a;}
+
+.slick-container {float:left; position:relative; width:400px; height:590px; margin-right:40px; padding-top:42px; border-radius:48px 92px 48px 92px; background-image:linear-gradient(149deg, #04a887 7%, #1bc99f 97%);}
+.slick-container .wrap .slick-slide {height:548px;}
+.slick-container .wrap .slide {position:relative;}
+.slick-container .wrap .slide p {margin:0; padding-left:50px; color:#fff;}
+.slick-container .wrap .slide .tit {margin-bottom:15px; font-size:30px; font-weight:700; line-height:1.37;}
+.slick-container .wrap .slide .txt {font-size:19px; line-height:1.42;}
+.slick-container .wrap .slick-dots {list-style:none; margin:0; padding:0 0 0 50px; position:absolute; left:0; top:248px;}
+.slick-container .wrap .slick-dots li {float:left;}
+.slick-container .wrap .slick-dots li ~ li {margin-left:12px;}
+.slick-container .wrap .slick-dots li button {width:12px; height:12px; padding:0; border-radius:12px; text-indent:-9999px; border:2px solid #fff; background-color:transparent;}
+.slick-container .wrap .slick-dots .slick-active button {background-color:#fff;}
+.slick-container .wrap .img {position:absolute; left:0; top:300px; width:100%;}
+.slick-container .wrap .img img {width:100%; height:250px; border-radius:0 0 48px 92px;}
+
+.slick-container .control {position:absolute; left:130px; top:298px;}
+.slick-container .control button {position:absolute; left:0; top:0; width:16px; height:16px; text-indent:-9999px;}
+.slick-container .control .pause {display:none; background:url('../images/main/btn-pause.png') no-repeat;}
+.slick-container .control .play {background:url('../images/main/btn-play.png') no-repeat;}
+
+.box-main {display:flex; flex-wrap:wrap; width:840px;}
+.box-main .box {position:relative; width:400px; height:275px; margin-right:40px; padding:40px 50px 41px; border:1px solid #e2e3e7; border-radius:24px 48px 24px 24px; box-shadow:12px 24px 24px 0 rgba(0, 0, 0, 0.06); background-color:#fff;}
+.box-main .box:nth-child(2n) {margin-right:0;}
+.box-main .box:nth-child(2n) ~ .box {margin-top:40px;}
+.box-main .box p {margin:0;}
+.box-main .box .txt {font-size:16px;}
+.box-main .box .tit {margin:10px 0 46px; font-size:24px; font-weight:700; line-height:1.17; color:#3a3a4a;}
+.box-main .box .iconset.ico-arrow {width:50px; height:13px; background:url('../images/main/ico-arrow-01.png') no-repeat;}
+.box-main .box i[class*='ico-main-'] {width:80px; height:80px; position:absolute; right:50px; bottom:40px;}
+.box-main .box .iconset.ico-main-01 {background:url('../images/main/ico-main-01.png') no-repeat;}
+.box-main .box .iconset.ico-main-02 {background:url('../images/main/ico-main-02.png') no-repeat;}
+.box-main .box .iconset.ico-main-03 {background:url('../images/main/ico-main-03.png') no-repeat;}
+.box-main .box .iconset.ico-main-04 {background:url('../images/main/ico-main-04.png') no-repeat;}
+
+.list {position:relative;}
+.list ul {display:flex; justify-content:space-between; list-style-type:none; margin:0; padding:0;}
+.list li {width:400px; padding:40px; border-radius:24px; background-color:#f4f5f7;}
+.list li p {margin:0;}
+.list li .tit {overflow:hidden; line-height:1.12; font-weight:700; color:#3a3a4a; text-overflow:ellipsis; white-space:nowrap;}
+.list li .txt {overflow:hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; margin:20px 0; font-size:16px; line-height:1.75;}
+.list li .date {text-align:right; color:#717171;}
+.list .btn-more {display:block; position:absolute; top:-60px; right:0; width:32px; height:32px; text-indent: -9999px; background:url('../images/main/btn-more.png') no-repeat;}
+
+.list.notice {height:244px;}
+.list.notice ul .active {position:relative; background-color:#ffffeb;}
+.list.notice ul .active .tit {height:24px; padding-left:34px;}
+.list.notice ul .active .tit::before {content:''; display:block; position:absolute; left:40px; top:38px; width:24px; height:24px; background:url('../images/main/ico-fixed.png') no-repeat;}
+
+.list.qna li {position:relative; height:204px;}
+.list.qna li i {width:24px; height:24px; position:absolute; left:40px; top:38px;}
+.list.qna li .iconset.ico-faq-a {top:82px;}
+.list.qna li p {padding-left:34px;}
+.list.qna li .txt {margin-bottom:0;}
+
+.wrap-box {margin-top:80px;}
+.wrap-box .box {position:relative; float:left; width:620px; padding:34px 40px; border-radius:12px; background-color:#f4f5f7;}
+.wrap-box .box ~ .box {margin-left:40px;}
+.wrap-box .box a {display:flex; justify-content:space-between;}
+.wrap-box .box p {margin:0;}
+.wrap-box .box .tit {padding-left:42px; font-size:18px; font-weight:700; line-height:1.39; color:#3a3a4a;}
+.wrap-box .box i {width:32px; height:32px;}
+.wrap-box .box .iconset.ico-graph {position:absolute; left:40px; top:32px; background:url('../images/main/ico-graph.png') no-repeat;}
+.wrap-box .box .iconset.ico-write {position:absolute; left:40px; top:32px; background:url('../images/main/ico-write.png') no-repeat;}
+.wrap-box .box .iconset.ico-arrow {position:absolute; top:30px; right:40px; background:url('../images/main/ico-arrow-02.png') no-repeat;}
+.wrap-box .box .txt {padding-right:32px; font-size:16px; line-height:1.38;}

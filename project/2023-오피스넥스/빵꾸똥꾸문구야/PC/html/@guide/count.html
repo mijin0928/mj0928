@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | TEXT</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/aos.js"></script>
+<script src="../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<div class="desc-guide">
+			1. 숫자 카운팅을 사용하실 경우 숫자 영역의 width를 고정픽셀로 넣어주세요<br />1-1. 텍스트는 0으로 입력하며 속성에 data-count로 숫자를 입력해주세요<br />1-2. class 에 counting 을 넣어야 작동합니다.<br />1-3. .counting class의 스타일은 고정입니다. 다른 스타일을 넣으시려면 다른 class를 사용해주세요.<br />
+		</div>
+
+		<h3 class="tit-guide" style="text-align:left;">counting number</h3>
+		<div class="source">
+			<div class="copy">
+				<p class="counting" data-count="9">0</p>
+				<br />
+				<p class="counting" data-count="54">0</p>
+				<br />
+				<p class="counting" data-count="546">0</p>
+				<br />
+				<p class="counting" data-count="1234">0</p>
+				<br />
+				<p class="counting" data-count="12358">0</p>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+
+		$('.count-num').each(function() {
+			var _this = $(this),
+					 countTo = $(this).attr('data-count');
+
+			$({countNum: _this.text()}).animate({
+				countNum: countTo
+			},
+			{
+				duration:3000,
+				easing:'linear',
+				step: function() {
+					_this.text(Math.floor(this.countNum));
+				},
+				complete: function() {
+					_this.text(this.countNum)
+				}
+			})
+		})
+	</script>
+</body>
+</html>

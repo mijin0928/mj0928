@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* 서비스 소개
+========================================================================== */
+/* 의료이용지표 개요 */
+
+
+/* 의료이용지표
+========================================================================== */
+/* 개요 */
+.box-procedure {padding:40px; border:1px solid #e1e3e6; border-radius:12px;}
+.list-procedure {list-style-type:none; margin:0; padding:0; text-align:center;}
+.list-procedure li {position:relative; margin-top:117px;}
+.list-procedure li::before {content:''; position:absolute; top:calc(100% - -35px); left:calc(50% - 16px); display:block; width:32px;height:32px; background-image:url('../images/common/ico/ico-procedure-arr.png'); background-size:100%;}
+.list-procedure li:first-child {margin-top:0;}
+.list-procedure li:last-child::before {display:none;}
+.list-procedure .icobox {width:160px; height:160px; margin:0 auto; padding:34px; border-radius:100%; background-color:#f6f6f6;}
+.list-procedure .icobox.bg-green {background-color:#e4f2e4;}
+.list-procedure p.txt {margin:20px 0 0 0;}
+
+/* 의료이용지표현황 */
+
+/* 이용가이드
+========================================================================== */
+/* 지표 이용 가이드 - 목록 */
+/* 오픈 API 목록 */
+/* 오픈 API 상세보기 */
+
+
+/* 고객센터
+========================================================================== */
+/* 자주하는 질문 */
+/* 온라인 설문조사 목록 */
+/* 온라인 설문조사 상세 */
+.board-form .wrap {margin-top:24px;}
+.board-form .wrap + .wrap {margin-top:40px;}
+.board-form .wrap .tit {margin:0 0 16px; font-weight:500; line-height:1.18; color:#3a3a4a;}
+.line {display:block; width:100%; height:1px; background-color:#e2e3e7; margin-top:48px;}
+
+/* 온라인 설문조사 상세(종료) */
+.box-survey-result {padding:24px 20px; border:1px solid #e2e3e7; border-radius:12px; background-color:#fff6f2;}
+.box-survey-result .list-dot li + li {margin-top:9px;}
+.button.navy.open-modal {width:100%; margin-top:16px;}
+
+/* layer-modal */
+.layer-modal .wrap {padding:0 20px;}
+.layer-modal .wrap > .tit {position:relative; margin:0; padding:18px 0; font-weight:500; color:#222; line-height:1.18; text-align:left;}
+.layer-modal .wrap > .tit::after {content:''; display:block; position:absolute; left:-20px; bottom:0; width:calc(100% + 40px); height:1px; background-color:#e1e3e6;}
+.layer-modal .wrap > .title-3 {margin:30px 0 20px;}
+.layer-modal .box-survey-result.v1 {margin:20px 0 40px 0;}
+.layer-modal .box-survey-result-list {display:block; margin:20px 0 0 0;}
+.layer-modal .box-survey-result-list p {margin:0; padding:0;}
+.layer-modal .box-survey-result-list .list {list-style-type:none; margin:0; padding:0;}
+.layer-modal .box-survey-result-list .list li {position:relative; padding:24px 0; border-bottom:1px solid #e1e3e6;}
+.layer-modal .box-survey-result-list .list li:first-child {padding-top:0;}
+.layer-modal .box-survey-result-list .list li:last-child {border:0;}
+.layer-modal .box-survey-result-list .list li .tit {display:flex; margin:0 0 24px;}
+.layer-modal .box-survey-result-list .list li .tagset.navy.small {margin:2px 12px 0 0;} 
+
+
+.layer-modal .box-survey-result-list .survey-graph dl {margin:0;}
+.layer-modal .box-survey-result-list .survey-graph dt {line-height:1.65; font-weight:500;}
+.layer-modal .box-survey-result-list .survey-graph dt em {position:relative;padding-left:17px; font-weight:400; word-break:keep-all;}
+.layer-modal .box-survey-result-list .survey-graph dt em::after {content:''; display:block; position:absolute; left:8px; top:7px; width:1px; height:14px; background-color:#e1e3e6;}
+.layer-modal .box-survey-result-list .survey-graph dd {position:relative; margin:0; padding:0 180px 0 0; width:calc(100% - 150px);}
+.layer-modal .box-survey-result-list .survey-graph dd span.bar {position:relative; display:inline-block; width:auto; height:16px; border-radius:0 8px 8px 0; background:#67caa8;}
+/* 로그인, 회원가입
+========================================================================== */
+/* 로그인 */
+/* 아이디찾기 */
+/* 비밀번호 찾기 */
+/* 회원가입 - 약관동의 */
+/* 회원정보 입력 - 레이어 : 부서, 사업장 찾기 */
+/* 회원가입 회원가입 완료 */
+
+
+/* 마이페이지
+========================================================================== */
+/* 나의 신청현황 아이콘 */
+
+
+/* 기타 - 이용약관, 개인처리방침
+========================================================================== */
+/* 이용약관 */
+/* 개인정보처리방침 */
+/* 아이콘 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 슬비 */
+
+/* 로그인, 회원가입
+========================================================================== */
+/* 로그인 */
+.login-wrap {}
+.login-wrap .txt-area {position:relative;}
+.login-wrap .txt-area:after {content:''; display:block; position:absolute; top:0; right:-20px; width:150px; height:140px; background:url('../images/contents/img-login.png') no-repeat; background-size:100%; background-position:0 0; z-index:-1;}
+.login-wrap .txt-area .tit {padding:14px 0 0; margin:0; font-size:22px; font-weight:700; line-height:1.36;}
+.login-wrap .txt-area .txt-page {margin:20px 0 0 0; font-size:17px; line-height:normal;}
+.login-wrap .login-area {margin:24px 0 0;}
+.login-wrap .login-area .input-wrap .txt-alert {margin:12px 0 0 0;}
+.login-wrap .login-area .button {display:block; width:100%; height:56px; margin-top:20px; text-align:center;}
+.login-wrap .login-area .user-menu {display:flex; justify-content:center; list-style-type:none; margin:20px 0 24px; padding:0;}
+.login-wrap .login-area .user-menu li {position:relative; margin:0 0 0 10px; padding:0 0 0 10px;}
+.login-wrap .login-area .user-menu li::before {content:''; display:block; position:absolute; left:0; top:8px; width:1px; height:14px; background-color:#e1e3e6;}
+.login-wrap .login-area .user-menu li:first-child {margin:0; padding:0;}
+.login-wrap .login-area .user-menu li:first-child::before {display:none;}
+.login-wrap .login-area .list-dot {padding:24px 20px; margin:48px 0 0; background:#f7f9fa; border-radius:12px;}
+.login-wrap .login-area .list-dot li {line-height:1.63;}
+
+
+
+
+
+@media (max-width: 359px) {
+    #footer .address span {display:block;}
+
+    /* 로그인, 회원가입
+    ========================================================================== */
+    /* 로그인 */
+    .login-wrap .txt-area .tit {font-size:20px;}
+    .login-wrap .txt-area:after {right:-45px;}
+    .login-wrap .login-area .user-menu li {margin:0 0 0 5px; padding:0 0 0 5px; font-size:16px; letter-spacing:-0.5px;}
+}
+
+

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>넥스에이전트 퍼블리싱 가이드 | box</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" />
+
+<script src="../../static/js/jquery-3.6.0.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">box</h2>
+		<div class="desc-guide">
+			
+			@@@@ default settings @@@@<br />
+			1. .box padding:40px 16px 48px 16px;<br />
+			2. .box.full padding:40px 16px 150px 16px
+			<br />
+			<br />
+			<p class="color-red">** .tab-list-inner 바로 아래로 오는 .box 만 위 여백 20px</p>
+		</div>
+
+		<h3 class="tit-guide">box</h3>
+		<h4 class="tit-guide">default</h4>
+		<div class="source">
+			<div class="copy">
+				<div class="box">.box padding:40px 16px 48px;</div>
+			</div>
+		</div>
+
+		<h4 class="tit-guide">full (footer 와 box 사이 여백이 없을경우 사용)</h4>
+		<div class="source">
+			<div class="copy" style="padding:200px 0;">
+				<div class="box full bg-gray">.box.full margin-bottom:-150px; padding-bottom:150px;</div>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">color</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="box bg-gray">background-color:#fafafa;</div>
+			</div>
+		</div>
+
+		<h3 class="tit-guide">no data</h3>
+		<div class="source">
+			<div class="copy">
+				<div class="box-no-data">
+					<i class="iconset ico-no-data"></i>
+					<p class="txt">등록된 데이터가 없습니다.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source:not(".directly-code")').find('.xmp').html(_html);
+		});
+	</script>
+	<script src="../../static/js/guide.js"></script><!-- only guide file -->
+</body>
+</html>

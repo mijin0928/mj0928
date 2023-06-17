@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원정보입력 | 회원정보입력 | 회원가입 및 지표이용신청 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/sy2.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">회원가입 및 지표이용신청</h2>
+			
+			<div class="inner-wrap">
+			
+				<div class="step">
+					약관동의, 회원정보입력, 회원가입완료
+				</div>
+				
+				<div class="title-wrap">
+					<h3 class="title-3">회원정보입력</h3>
+					
+					<p class="req-info">
+						<span title="필수 입력 항목" class="req">*</span> 은 필수 입력 항목입니다.
+					</p>
+				</div>
+					
+				<div class="board-form">
+					<table>
+						<caption>회원정보입력 표</caption>
+						<colgroup>
+							<col style="width:240px"/>
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">아이디 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<input type="text" title="아이디 입력" class="input-text">
+									<p class="txt-help">한글, 특수문자 제외, 영문, 숫자혼합 6~10자로 입력해 주세요.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<input type="password" title="비밀번호 입력" class="input-text">
+									<p class="txt-help">9~20자리 이내, 특수문자(~!@#$%^&*), 숫자, 영문조합만 가능합니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호 확인 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<input type="password" title="비밀번호 확인 입력" class="input-text">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이름 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<input type="text" placeholder="이름을 입력해주세요." title="이름 입력" class="input-text">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대전화번호 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<input type="tel" placeholder="‘-’ 없이 휴대전화번호를 입력하세요." title="‘-’ 없이 휴대전화번호를 입력" class="input-text">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<div class="check-email">
+										<input type="email" placeholder="소속기관이나 회사 계정의 본인 이메일을 입력해 주세요." title="이메일 입력" class="input-text" >
+		
+										<div class="button-group">
+											<button type="button" class="button">본인인증</button>
+											<button type="button" class="button navy">재발송</button>
+										</div>
+									</div>
+									
+									<p class="txt-help">회원가입 시 등록한 이메일로 임시 비밀번호를 발송해 드립니다.</p>
+									<p class="txt-help">인증메일 미수신 시 스팸메일함이나 차단된 메일함을 확인해주세요.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일 인증번호 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<div class="check-verify">
+										<div class="wrap-limit">
+											<input type="text" placeholder="메일로 발송된 인증번호를 입력해 주세요." title="인증번호 입력" class="input-text" >
+											<p class="time-limit">00:00:59</p>
+										</div>
+	
+										<div class="button-group">
+											<button type="button" class="button">인증번호 확인</button>
+										</div>
+									</div>
+									
+									<p class="txt-help">
+										반드시 <em class="color-red">소속기관이나 회사 계정</em>의 <em class="color-red">본인 이메일</em>을 입력해 주세요. 예) nhiss@nhis.or.kr
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				
+				
+				
+				<div class="title-wrap">
+					<h3 class="title-3">소속정보입력</h3>
+					
+					<p class="req-info">
+						<span title="필수 입력 항목" class="req">*</span> 은 필수 입력 항목입니다.
+					</p>
+				</div>
+					
+				<div class="board-form">
+					<table>
+						<caption>소속정보입력 표</caption>
+						<colgroup>
+							<col style="width:240px"/>
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">소속구분 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<span class="bg-chk">
+										<input type="radio" id="radio_01_01" name="radio_01" />
+										<label for="radio_01_01">국민건강보험공단</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="radio" id="radio_01_02" name="radio_01" />
+										<label for="radio_01_02">지차체</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="radio" id="radio_01_03" name="radio_01" />
+										<label for="radio_01_03">사업장</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="radio" id="radio_01_04" name="radio_01" />
+										<label for="radio_01_04">일반</label>
+									</span>
+								</td>
+							</tr>
+							
+							
+							<!--
+								to : 개발
+								
+								라디오버튼 선택시 해당 tr 출력 여부 바뀜
+								
+								보일때
+								<tr> 혹은 <tr style="display:table-row;">
+								
+								안보일때
+								<tr style="display:none;">
+							-->
+							
+							<!-- 공단 소속 일때 -->
+							<tr>
+								<th scope="row">소속부서 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<div class="box-input-button">
+										<input type="text" title="소속부서 입력" readonly="readonly" class="input-text">
+										<button type="button" class="button open-modal" aria-controls="layerModal_part">소속부서찾기</button>
+									</div>
+								</td>
+							</tr>
+							
+							<!-- 공통 -->
+							<tr>
+								<th scope="row">이용목적 <span title="필수 입력 항목" class="req">*</span></th>
+								<td>
+									<span class="bg-chk">
+										<input type="checkbox" id="chk_01_01" />
+										<label for="chk_01_01">보건계획 수립 및 평가</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="checkbox" id="chk_01_02" />
+										<label for="chk_01_02">만성질환 예방 및 관리</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="checkbox" id="chk_01_03" />
+										<label for="chk_01_03">건강위험요인(흡연,음주 등) 관리</label>
+									</span>
+									
+									<span class="bg-chk">
+										<input type="checkbox" id="chk_01_04" />
+										<label for="chk_01_04">지역‧사업장 현황 파악</label>
+									</span>
+									
+									<div class="etc-chk-input">
+										<span class="bg-chk">
+											<input type="checkbox" id="chk_01_05" />
+											<label for="chk_01_05">기타</label>
+										</span>
+										
+										<input type="text" title="기타 이용목적 입력" disabled="disabled" class="input-text">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				
+				
+				<!-- 소속부서찾기 레이어 -->
+				<div class="layer-modal" id="layerModal_part" role="dialog" aria-modal="true">
+					<div class="wrap" tabindex="0">
+						<p class="tit">소속부서찾기</p>
+						
+						<div class="cont">
+							찾고자 하는 부서명을 입력해주세요.
+							
+							
+							
+							
+							
+							<div class="button-group mgt30">
+								<button type="button" class="button close-layer">취소</button>
+								<button type="button" class="button navy close-layer">선택</button>
+							</div>
+						</div>
+						
+						<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+					</div>
+				</div>
+				
+				
+				
+				<div class="button-group">
+					<a href="" class="button large">메인페이지</a>
+					<a href="" class="button large">로그인</a>
+					<a href="" class="button large red">다음</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

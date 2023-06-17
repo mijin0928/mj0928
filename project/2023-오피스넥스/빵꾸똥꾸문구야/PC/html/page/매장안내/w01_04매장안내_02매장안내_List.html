@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>우리, 빵꾸똥꾸에서 만나! 빵꾸똥꾸 문구야｜매장안내</title>
+
+<link rel="stylesheet" href="../../../static/css/import.css" media="all" />
+
+<script src="../../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../../static/js/slick.js"></script>
+<script src="../../../static/js/swiper.min.js"></script>
+<script src="../../../static/js/aos.js"></script>
+<script src="../../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<header id="header">
+		<div class="inner-wrap">
+			<p class="color-red">layout.html 참고</p>
+		</div>
+	</header>
+
+	<div class="container">
+		<!-- container-util -->
+		<div class="container-util">
+			<div class="inner-wrap">
+				<ul class="location">
+					<li class="depth home"><a href="" class="btn-indent btn-home">HOME</a></li>
+					<li id="mainDepth2" class="depth"><a href="">매장안내</a></li>
+					<li id="mainDepth3" class="depth"><a href="" class="active"><!-- 활성화시 class active 추가 -->매장안내</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container-util -->
+
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="title">매장안내</h2>
+
+			<!-- section -->
+			<div class="section map">
+				지도
+			</div>
+			<!-- //section -->
+
+			<!-- section -->
+			<div class="section">
+				<!-- inner-wrap -->
+				<div class="inner-wrap mgt40 a-c">
+					<div class="info-area">
+						<p class="info-tit font16"><em class="font24">총</em> <strong class="counting info-num-type02" data-count="244">0</strong><em class="font24">개</em>의 매장이 있습니다.</p>
+
+						<p class="info-tit"><em class="font24">직영점</em> <strong class="counting info-num-type01" data-count="19">0</strong><em class="font24">개</em></p>
+
+						<p class="info-tit"><em class="font24">가맹점</em> <strong class="counting info-num-type02" data-count="201">0</strong><em class="font24">개</em></p>
+						
+						<p class="info-tit"><em class="font24">오픈예정</em> <strong class="counting info-num-type01" data-count="24">0</strong><em class="font24">개</em></p>
+					</div>
+
+					<div class="search-bar mgt40 mgb50">
+						<select title="시/도 선택" class="input-select">
+							<option value="" selected="selected" disabled="disabled">시/도</option>
+							<option value="">서울</option>
+							<option value="">경기도</option>
+							<option value="">인천</option>
+						</select>
+						<span class="line"></span>
+						<select title="시/군/구 선택" class="input-select">
+							<option value="" selected="selected" disabled="disabled">시/군/구</option>
+							<option value="">서울</option>
+							<option value="">경기도</option>
+							<option value="">인천</option>
+						</select>
+						<span class="line"></span>
+						<input type="text" placeholder="매장명 또는 주소를 입력해주세요." class="input-select" title="매장명 또는 주소 입력">
+	
+						<button type="button" class="btn black squre small fw500">검색</button>
+					</div>
+
+					<ul class="cont-list col2">
+						<li>
+							<!-- card-wrap -->
+							<div class="card-wrap yellow">
+								<div class="badge-group">
+									<div class="badge-tit">
+										<span class="badge bg-pink">지역</span>
+										<p class="tit">000호점</p>
+									</div>
+
+									<span class="badge bg-yellow">오픈</span>
+								</div>
+
+								<p class="tit">오픈매장이름</p>
+								<p class="desc">
+									<i class="iconset ico-location"></i>
+									<span class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</span>
+								</p>
+
+								<button type="button" class="btn round max yellow btn-detail btn-open-modal" aria-controls="layer-modal01-1">상세보기</button>
+
+								<div class="layer-modal" id="layer-modal01-1" role="dialog" aria-modal="true">
+									<div class="layer-wrap">
+										<p class="layer-tit">매장 상세정보</p>
+
+										<div class="layer-contents">
+											<div class="badge-group">
+												<div class="badge-tit">
+													<span class="badge bg-pink">지역</span>
+													<p class="tit">000호점</p>
+												</div>
+
+												<span class="badge bg-yellow">오픈</span>
+											</div>
+
+											<p class="tit">오픈매장이름</p>
+											<p class="desc">
+												<i class="iconset ico-location"></i>
+												<span class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</span>
+											</p>
+
+											<div class="map-area">지도</div>
+
+											<p class="sub-tit">매장사진</p>
+
+											<!-- swiper -->
+											<div class="swiper-thumb">
+												<div class="swiper-container">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-2.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-3.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-4.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-5.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="swiper-nav">
+												<div class="swiper-container">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide nav-active">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-2.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-3.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-4.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-5.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //swiper -->
+										</div>
+
+										<button type="button" class="btn-close-modal">레이어닫기</button>
+									</div>
+								</div>
+							</div>
+							<!-- //card-wrap -->
+						</li>
+						<li>
+							<!-- card-wrap -->
+							<div class="card-wrap yellow">
+								<div class="badge-group">
+									<div class="badge-tit">
+										<span class="badge bg-pink">지역</span>
+										<p class="tit">000호점</p>
+									</div>
+
+									<span class="badge bg-yellow">오픈</span>
+								</div>
+
+								<p class="tit">오픈매장이름</p>
+								<p class="desc">
+									<i class="iconset ico-location"></i>
+									<span class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</span>
+								</p>
+
+								<button type="button" class="btn round max yellow btn-detail btn-open-modal" aria-controls="layer-modal01-2">상세보기</button>
+
+								<div class="layer-modal" id="layer-modal01-2" role="dialog" aria-modal="true">
+									<div class="layer-wrap">
+										<p class="layer-tit">매장 상세정보</p>
+
+										<div class="layer-contents">
+											<div class="badge-group">
+												<div class="badge-tit">
+													<span class="badge bg-pink">지역</span>
+													<p class="tit">000호점</p>
+												</div>
+
+												<span class="badge bg-yellow">오픈</span>
+											</div>
+
+											<p class="tit">오픈매장이름</p>
+											<p class="desc">
+												<i class="iconset ico-location"></i>
+												<span class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</span>
+											</p>
+
+											<div class="map-area">지도</div>
+
+											<p class="sub-tit">매장사진</p>
+
+											<!-- swiper -->
+											<div class="swiper-thumb">
+												<div class="swiper-container">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-2.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-3.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-4.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-5.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="swiper-nav">
+												<div class="swiper-container">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide nav-active">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-2.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-3.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-4.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-5.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+														<li class="swiper-slide">
+															<img src="../../../static/images/images/store01-1.png" alt="매장사진" />
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //swiper -->
+										</div>
+
+										<button type="button" class="btn-close-modal">레이어닫기</button>
+									</div>
+								</div>
+							</div>
+							<!-- //card-wrap -->
+						</li>
+
+						
+				<!-- !! 2023-03-03 퍼블리싱 수정 
+					to 개발 : 오픈예정 카드 ui 를 포함한 <li></li> 전체 제거 -->
+			
+
+					</ul>
+
+					<div class="pagination mgt70">
+						<ul>
+							<li class="control first disabled"><a href="" class="btn-indent">처음으로</a></li>
+							<li class="control prev disabled"><a href="" class="btn-indent">이전으로</a></li>
+							<!-- !! 2023-03-10 퍼블리싱 수정
+							to 개발 : disabled 클래스 추가 -->
+							<li><a href="" class="on">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+							<li><a href="">10</a></li>
+							<li class="control next"><a href="" class="btn-indent">다음으로</a></li>
+							<li class="control last"><a href="" class="btn-indent">마지막으로</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //inner-wrap -->
+			</div>
+			<!-- //section -->
+		</div>
+		<!-- //contents -->
+	</div>
+
+	<aside class="quick-area">
+		<p class="color-red">layout.html 참고</p>
+	</aside>
+
+	<footer id="footer">
+		<p class="color-red">layout.html 참고</p>
+	</footer>
+
+	<script>
+	</script>
+
+</body>
+</html>

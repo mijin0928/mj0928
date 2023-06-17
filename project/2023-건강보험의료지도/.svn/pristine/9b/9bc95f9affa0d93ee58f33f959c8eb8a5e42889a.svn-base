@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>게시판 보기 | 건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">board-view</h2>
+		
+		<h3 class="tit-guide">default</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="board-view">
+	<div class="tit-area">
+		<p class="tit">제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력.</p>
+		
+		<div class="data">
+			<p class="txt">기타항목 출력</p>
+			<p class="txt">기타항목 출력</p>
+			<p class="txt">기타항목 출력</p>
+		</div>
+	</div>
+	
+	<div class="cont-area">
+		내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력
+	</div>
+	
+	<div class="add-file-area">
+		<p class="tit">첨부파일</p>
+		
+		<div class="list">
+			<!-- 첨부파일 아이콘은 가이드 html 의 icon.html 파일 참조해주세요. -->
+			
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-pdf">pdf 파일</i> 2023 공모작 발표자료.pdf</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-doc">워드 파일</i> 2023 공모작 발표자료.doc</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-xls">엑셀 파일</i> 2023 공모작 발표자료.xls</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-ppt">파워포인트 파일</i> 2023 공모작 발표자료.ppt</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-hwp">한글 파일</i> 2023 공모작 발표자료.hwp</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-txt">메모장 파일</i> 2023 공모작 발표자료.txt</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-img">이미지 파일</i> 2023 공모작 발표자료.png</a>
+			<a href="" title="파일 내려받기"><i class="iconset ico-file-etc">기타 파일</i> 2023 공모작 발표자료.exe</a>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+		
+		
+		<h3 class="tit-guide">설문조사</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="board-view">
+	<div class="tit-area">
+		<p class="tit">제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력. 제목 출력.</p>
+		
+		<div class="data">
+			<p class="txt">기타항목 출력</p>
+			<p class="txt">기타항목 출력</p>
+			<p class="txt">기타항목 출력</p>
+			<p class="people"><i class="iconset ico-hand"></i> 참여자 : 120명</p>
+		</div>
+		
+		<div class="qr-code">
+			<img src="../../static/images/contents/img-qr.jpg" alt="QR CODE">
+		</div>
+	</div>
+	
+	<div class="cont-area">
+		내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력<br />내용 출력
+	</div>
+</div>
+			</div>
+		</div>
+		
+		
+		
+	
+		<div class="desc-guide">
+			불필요한 태그가 있으면 삭제 
+		</div>
+	</div>
+</body>
+</html>

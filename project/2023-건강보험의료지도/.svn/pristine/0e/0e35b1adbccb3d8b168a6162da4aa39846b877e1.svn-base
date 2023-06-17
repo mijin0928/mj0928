@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>개인정보 수집 &middot; 이용 동의 | 추가이용신청 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/terms_jh.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu">
+		layout.html 참고
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<!-- id : contents -->
+		<div id="contents">
+
+			<div class="step-join">
+				<div class="wrap">
+					<div class="box active" title="현재 페이지">
+						<span class="num">1</span>
+						<p class="tit">이용동의</p>
+					</div>
+			
+					<div class="box">
+						<span class="num">2</span>
+						<p class="tit">회원정보 입력</p>
+					</div>
+					
+					<div class="box">
+						<span class="num">3</span>
+						<p class="tit">회원가입 완료</p>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="title-3">개인정보 수집&middot;이용동의</h3>
+			<div class="box-line">
+				<div class="terms-agree">
+					<p class="tit">개인정보 수집 &middot; 이용 동의서 <strong>(필수)</strong></p>
+
+					<div class="cont">
+						<p class="tit-01">개인정보보호법 제15조에 의한 개인정보 수집·이용 동의</p>
+						<p class="txt-02">공단은 고객님의 개인정보를 아래와 같이 처리함을 알려드립니다.</p>
+
+						<ol class="list-desc">
+							<li>
+								개인정보의 수집·이용 목적
+								<ul>
+									<li>- 국민건강보험법 제 14조(업무 등) 관련 홈페이지 서비스를 위함</li>
+								</ul>
+							</li>
+							<li>
+								수집항목
+								<ul>
+									<li>- 회원가입 : 아이디, 비밀번호 및 확인, 성명, 이메일, 휴대전화번호</li>
+									<li>- 데이터신청 : 신청자 휴대전화번호, 신청자 이메일</li>
+								</ul>
+							</li>
+							<li style="font-size:120%; font-weight:700;">
+								개인정보의 보유 및 이용 기간
+								<ul>
+									<li>- 탈퇴시까지. 단, 탈퇴 내역은 회원탈퇴일로부터 5년 보유 후 삭제</li>
+									<li>※ 국민건강보험법 제14조(업무 등) 관련 홈페이지 서비스를 위함</li>
+								</ul>
+							</li>
+							<li>
+								동의를 거부할 권리가 있으며, 동의 거부에 따라 불이익(회원가입불가)이 있음
+								<p class="txt-02">개인정보보호법 제15조에 따라 위 각호 사항을 고지받고 개인정보 처리에 동의합니다.</p>
+							</li>
+						</ol>
+					</div>
+
+					<div class="box-radio">
+						<span class="bg-chk">
+							<input type="radio" id="radio_00_01" name="radio_00">
+							<label for="radio_00_01">동의하지 않습니다</label>
+						</span>
+
+						<span class="bg-chk">
+							<input type="radio" id="radio_00_02" name="radio_00">
+							<label for="radio_00_02">동의합니다</label>
+						</span>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="button-group">
+				<button type="button" class="button red">다음</button>
+			</div>
+		</div>
+		<!--// id : contents -->
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

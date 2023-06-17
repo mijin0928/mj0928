@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi">
+<meta name="format-detection" content="telephone=no">
+<title>회원정보 입력 | 추가이용신청 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		<a href="#gnb">주 메뉴 바로가기</a>
+		<a href="#contents">본문 바로가기</a>
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu" tabindex="0">
+		layout.html 참고
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<!-- id : contents -->
+		<div id="contents">
+			<div class="step-join">
+				<div class="wrap">
+					<div class="box done">
+						<span class="num">1</span>
+						<p class="tit">이용동의</p>
+					</div>
+			
+					<div class="box active" title="현재 페이지">
+						<span class="num">2</span>
+						<p class="tit">회원정보 입력</p>
+					</div>
+					
+					<div class="box">
+						<span class="num">3</span>
+						<p class="tit">신청 완료</p>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="title-3">추가이용신청 회원정보입력</h3>
+			<p class="req-info"><span class="req">*</span> 은 필수 입력 항목입니다.</p>
+
+			<div class="board-form">
+				<p class="tit">이름 <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="text" placeholder="이름을 입력해주세요." title="이름 입력" class="input-text">
+
+				<p class="tit">휴대전화번호  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="tel" placeholder="‘-’없이 입력해 주세요." title="‘-’없이 입력해 주세요." class="input-text">
+					<a href="" class="button">인증</a>
+				</div>
+
+				<p class="tit">이메일  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="email" placeholder="회사계정의 이메일을 입력하세요" title="소속기관이나 회사 계정의 본인 이메일 입력" class="input-text" >
+
+					<div class="button-group">
+						<button type="button" class="button">인증</button>
+					</div>
+				</div>
+				
+				<p class="txt-help">
+					반드시 <em class="color-red">소속기관이나 회사 계정</em>의 <em class="color-red">본인 이메일</em>을 입력해 주세요. 예) nhiss@nhis.or.kr
+				</p>
+
+				<p class="tit">이메일 인증번호  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<div class="wrap-limit">
+						<input type="text" placeholder="인증번호를 입력" title="인증번호 입력" class="input-text" >
+						<p class="time-limit">00:00:59</p>
+					</div>
+
+					<div class="button-group">
+						<button type="button" class="button">확인</button>
+					</div>
+				</div>
+				<div class="button-group mgt10">
+					<button type="button" class="button navy">재발송</button>
+				</div>
+				
+				<p class="txt-help">회원가입 시 등록한 이메일로 임시 비밀번호를 발송해 드립니다.</p>
+				<p class="txt-help">인증메일 미수신 시 스팸메일함이나 차단된 메일함을 확인해주세요.</p>
+
+				<p class="tit">소속구분  <span title="필수 입력 항목" class="req">*</span></p>
+				<span class="bg-chk">
+					<input type="radio" id="radio_01_01" name="radio_01" />
+					<label for="radio_01_01">국민건강보험공단</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="radio" id="radio_01_02" name="radio_01" />
+					<label for="radio_01_02">지차체</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="radio" id="radio_01_03" name="radio_01" />
+					<label for="radio_01_03">사업장</label>
+				</span>
+
+				<!-- 공단 소속 일때 -->
+				<p class="tit">소속부서  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="text" title="소속부서 입력" readonly="readonly" class="input-text">
+					<button type="button" class="button open-modal" aria-controls="layerModal_part">부서찾기</button>
+				</div>
+
+				<p class="tit">담당자 전화번호  <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="tel" title="‘-’없이 붙여서 담당자전화번호 입력" placeholder="지역번호 포함  ‘-’없이 입력해 주세요." class="input-text">
+				<!--// 공단 소속 일때 -->
+
+				<!-- 지차체 일때 -->
+				<p class="tit">소속기관  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-flex">
+					<select title="행정구역 시/도 선택">
+						<option>시/도</option>
+					</select>
+					
+					<select title="행정구역 시/군/구 선택">
+						<option>시/군/구</option>
+					</select>
+				</div>
+
+				<p class="tit">소속부서  <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="text" title="소속부서명 입력" placeholder="소속부서명을 입력해주세요." class="input-text">
+
+				<p class="tit">담당자 전화번호  <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="tel" title="‘-’없이 붙여서 담당자전화번호 입력" placeholder="지역번호 포함  ‘-’없이 입력해 주세요." class="input-text">
+				<!--// 지차체 일때 -->
+
+				<!-- 사업장 일때 -->
+				<p class="tit">사업장선택  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="box-input-button">
+					<input type="text" title="사업장 입력" readonly="readonly" class="input-text">
+					<button type="button" class="button open-modal" aria-controls="layerModal_office">찾기</button>
+				</div>
+
+				<p class="tit">사업자등록증 첨부  <span title="필수 입력 항목" class="req">*</span></p>
+				<div class="file-area txt">
+					<input type="file" id="file_upload_0" class="input-file">
+					<label for="file_upload_0" class="button">파일선택</label>
+				</div>
+
+				<p class="tit">담당자 전화번호  <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="tel" title="‘-’없이 붙여서 담당자전화번호 입력" placeholder="지역번호 포함  ‘-’없이 입력해 주세요." class="input-text">
+				<!--// 사업장 일때 -->
+
+				<p class="tit">이용목적  <span title="필수 입력 항목" class="req">*</span></p>
+				<span class="bg-chk">
+					<input type="checkbox" id="chk_01_01" />
+					<label for="chk_01_01">보건계획 수립 및 평가</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="checkbox" id="chk_01_02" />
+					<label for="chk_01_02">만성질환 예방 및 관리</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="checkbox" id="chk_01_03" />
+					<label for="chk_01_03">건강위험요인(흡연,음주 등) 관리</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="checkbox" id="chk_01_04" />
+					<label for="chk_01_04">지역‧사업장 현황 파악</label>
+				</span>
+				
+				<span class="bg-chk">
+					<input type="checkbox" id="chk_01_05" />
+					<label for="chk_01_05">기타</label>
+				</span>
+				
+				<input type="text" title="기타 이용목적 입력" disabled="disabled" class="input-text mgt10">
+				
+				<p class="txt-help">복수선택 가능</p>
+		
+			</div>
+
+			<div class="button-group">
+				<button type="button" class="button large">취소</button>
+				<button type="button" class="button red large">신청</button>
+			</div>
+
+			<!-- 소속부서 찾기 레이어 -->
+			<div class="layer-modal" id="layerModal_part" role="dialog" aria-modal="true">
+				<div class="wrap" tabindex="0">
+					<div class="tit-area">
+						<p class="tit">소속부서찾기</p>
+					</div>
+					
+					<div class="cont-area">
+						<div class="box-search">
+							<p class="tit">찾고자 하는 부서명을 입력해주세요</p>
+
+							<div class="util">
+								<input type="text" title="부서명 입력" placeholder="빅데이터전략본부" class="input-text">
+								<button type="button" class="button navy">검색</button>
+							</div>
+						</div>
+
+						<p class="title-3">소속부서를 선택해주세요</p>
+
+						<!-- 검색 결과 있을때 -->
+						<!-- 
+									to : 개발
+									
+									라디오 버튼의 id 값과 매칭되는 label 의 for 값을 동일하게 해야 합니다.
+							-->
+						<div class="board-form">
+							<span class="bg-chk">
+								<input type="radio" id="radio_office_00_1" name="radio_office_00" checked="">
+								<label for="radio_office_00_1">빅데이터전략본부</label>
+							</span>
+
+							<span class="bg-chk">
+								<input type="radio" id="radio_office_00_2" name="radio_office_00">
+								<label for="radio_office_00_2">건강민원실</label>
+							</span>
+
+							<span class="bg-chk">
+								<input type="radio" id="radio_office_00_3" name="radio_office_00">
+								<label for="radio_office_00_3">의료복지지원 사업부</label>
+							</span>
+						</div>
+						<!-- // 검색 결과 있을때 -->
+						
+						<!-- 검색 결과 없을때 -->
+						<div class="no-data">
+							조회된 부서가 없습니다.
+						</div>
+						<!-- // 검색 결과 없을때 -->
+
+						<div class="button-group">
+							<button type="button" class="button close-layer">취소</button>
+							<button type="button" class="button navy">선택</button>
+						</div>
+					</div>
+					
+					<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+				</div>
+			</div>
+			<!-- // 소속부서 찾기 레이어 -->
+
+			<!-- 사업장 찾기 레이어 -->
+			<div class="layer-modal" id="layerModal_office" role="dialog" aria-modal="true">
+				<div class="wrap" tabindex="0">
+					<div class="tit-area">
+						<p class="tit">사업장 찾기</p>
+					</div>
+					
+					<div class="cont-area">
+						<div class="tab-area">
+							<div class="tab-list-line filter">
+								<div class="scroll">
+									<ul role="tablist" class="list">
+										<!--
+											활성화
+											<li class="on">
+											
+											비활성화
+											<li>
+										-->
+										<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="panel_01_01" id="tab_01_01">사업장명 검색</button></li>
+										<li><button type="button" role="tab" aria-selected="false" aria-controls="panel_01_02" id="tab_01_02">사업장 코드 검색</button></li>
+									</ul>
+								</div>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="tab_01_01" id="panel_01_01" class="tab-cont" tabindex="0">
+								<div class="box-search">
+									<p class="tit">사업장명을 입력해주세요</p>
+		
+									<div class="util">
+										<input type="text" title="사업장명 입력" placeholder="(주)에이블유컴즈" class="input-text">
+										<button type="button" class="button navy">검색</button>
+									</div>
+								</div>
+		
+								<p class="title-3">사업장을 선택해주세요</p>
+		
+								<!-- 검색 결과 있을때 -->
+								<!-- 
+											to : 개발
+											
+											라디오 버튼의 id 값과 매칭되는 label 의 for 값을 동일하게 해야 합니다.
+									-->
+								<div class="board-form">
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_01_1" name="radio_office_01" checked="">
+										<label for="radio_office_01_1">[70119815] (주)에이블유컴즈</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_01_2" name="radio_office_01">
+										<label for="radio_office_01_2">[71138716] 에이블현대호텔앤 리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_01_3" name="radio_office_01">
+										<label for="radio_office_01_3">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_01_4" name="radio_office_01">
+										<label for="radio_office_01_4">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_01_5" name="radio_office_01">
+										<label for="radio_office_01_5">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+								</div>
+								<!-- // 검색 결과 있을때 -->
+								
+								<!-- 검색 결과 없을때 -->
+								<div class="no-data">
+									조회된 사업장이 없습니다.
+								</div>
+								<!-- // 검색 결과 없을때 -->
+		
+								<div class="button-group">
+									<button type="button" class="button close-layer">취소</button>
+									<button type="button" class="button navy">선택</button>
+								</div>
+							</div>
+	
+							<div role="tabpanel" aria-labelledby="tab_01_02" id="panel_01_02" class="tab-cont" tabindex="0" hidden>
+								<div class="box-search">
+									<p class="tit">사업장코드 8자리를 입력해주세요.</p>
+		
+									<div class="util">
+										<input type="number" title="사업장코드 8자리 입력" placeholder="70119815" class="input-text">
+										<button type="button" class="button navy">검색</button>
+									</div>
+								</div>
+		
+								<p class="title-3">사업장을 선택해주세요</p>
+		
+								<!-- 검색 결과 있을때 -->
+								<!-- 
+											to : 개발
+											
+											라디오 버튼의 id 값과 매칭되는 label 의 for 값을 동일하게 해야 합니다.
+									-->
+								<div class="board-form">
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_02_1" name="radio_office_02" checked="">
+										<label for="radio_office_02_1">[70119815] (주)에이블유컴즈</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_02_2" name="radio_office_02">
+										<label for="radio_office_02_2">[71138716] 에이블현대호텔앤 리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_02_3" name="radio_office_02">
+										<label for="radio_office_02_3">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_02_4" name="radio_office_02">
+										<label for="radio_office_02_4">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+	
+									<span class="bg-chk">
+										<input type="radio" id="radio_office_02_5" name="radio_office_02">
+										<label for="radio_office_02_5">[71138716] 에이블현대호텔앤
+											리조트주식회사선택</label>
+									</span>
+								</div>
+								<!-- // 검색 결과 있을때 -->
+	
+								<!-- 검색 결과 없을때 -->
+								<div class="no-data">
+									조회된 사업장코드가 없습니다.
+								</div>
+								<!-- // 검색 결과 없을때 -->
+	
+								<div class="button-group">
+									<button type="button" class="button close-layer">취소</button>
+									<button type="button" class="button navy">선택</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<button type="button" class="btn-close-modal close-layer">레이어 닫기</button>
+				</div>
+			</div>
+			<!-- // 사업장 찾기 레이어 -->
+
+		</div>
+		<!--// id : contents -->
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

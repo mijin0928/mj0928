@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>1:1문의등록 | 마이페이지 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- 전체 메뉴 -->
+	<div class="all-menu" tabindex="0">
+		layout.html 참고
+	</div>
+	
+	<!-- container -->
+	<div class="container">
+		<div id="contents">
+			<p class="req-info">
+				<span class="req">*</span> 는 필수 입력 항목입니다.
+			</p>
+
+			<div class="board-form">
+				<p class="tit">분류 <span title="필수 입력 항목" class="req">*</span></p>
+				<select title="분류 선택">
+					<option>분류선택</option>
+					<option>지표 의미/산출 기준</option>
+					<option>서비스 이용</option>
+					<option>홈페이지 오류</option>
+					<option>기타</option>
+				</select>
+
+				<p class="tit">제목 <span title="필수 입력 항목" class="req">*</span></p>
+				<input type="text" title="제목 입력" placeholder="제목을 입력해 주세요." class="input-text">
+
+				<p class="tit">문의내용 <span title="필수 입력 항목" class="req">*</span></p>
+				<textarea rows="5" cols="5" title="문의내용 입력" placeholder="input text" class="input-textarea"></textarea>
+
+				<p class="tit">파일첨부</p>
+				<div class="file-area w100pc">
+					<input type="file" id="file_upload_1" class="input-file">
+					<label for="file_upload_1" class="button">파일업로드</label>
+				</div>
+
+				<!-- 첨부파일 있는 경우. 없는 경우는 <div class="add-file-area"> 자체를 안나오게 해주세요 -->
+				<div class="add-file-area">
+					<div class="list has-del">
+						<!-- 첨부파일 아이콘은 가이드 html 의 icon.html 파일 참조해주세요. -->
+						<span>
+							<i class="iconset ico-file-pdf">pdf 파일</i> 2023 공모작 발표자료.pdf
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-doc">워드 파일</i> 2023 공모작 발표자료.doc
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-xls">엑셀 파일</i> 2023 공모작 발표자료공모작 발표자료.xls
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-ppt">파워포인트 파일</i> 2023 공모작 발표자료.ppt
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-hwp">한글 파일</i> 2023 공모작 발표자료.hwp
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-txt">메모장 파일</i> 2023 공모작 발표자료.txt
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-img">이미지 파일</i> 2023 공모작 발표자료.png
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+						<span>
+							<i class="iconset ico-file-etc">기타 파일</i> 2023 공모작 발표자료.exe
+							<button type="button" class="btn-del">파일 삭제</button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="button-group">
+				<button type="button" class="button large">목록</button>
+				<button type="button" class="button large red">등록</button>
+			</div>
+
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 신청현황 | 마이페이지 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/sy.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">마이페이지</h2>
+
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<ul class="tab-list-full round">
+					<li><a href="">나의 신청현황</a></li>
+					<li class="on"><a href="">나의 신청현황</a></li>
+					<li><a href="">나의 이용현황</a></li>
+					<li><a href="">1:1 문의현황</a></li>
+					<li><a href="">1:1 문의등록</a></li>
+					<li><a href="">회원탈퇴</a></li>
+				</ul>
+
+				<h3 class="title-3">신청상태</h3>
+
+				<div class="board-view02">
+					<ul>
+						<li>
+							<span class="tit">신청일</span>
+							<p class="txt">2023-03-06</p>
+							<span class="tit">처리결과</span>
+							<p class="txt">
+								<i class="iconset ico-companion"></i>반려
+							</p>
+						</li>
+						<li>
+							<span class="tit">반려사유</span>
+							<p class="txt">
+								사업장 담당자는 '사업장' 권한을 선택하셔야 하며, 사업자등록증을 첨부하여 주시기 바랍니다.사업장 담당자는 '사업장' 권한을 선택하셔야 하며, 사업자등록증을 첨부하여 주시기 바랍니다. 사업장 담당자는 '사업장' 권한을 선택하셔야 하며, 사업자등록증을 첨부하여 주시기 바랍니다. 사업장 담당자는 '사업장' 권한을 선택하셔야 하며, 사업자등록증을 첨부하여 주시기 바랍니다.
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<h3 class="title-3">신청정보</h3>
+
+				<div class="board-view02">
+					<ul>
+						<li>
+							<span class="tit">이름</span>
+							<p class="txt">홍길동</p>
+							<span class="tit">이메일</span>
+							<p class="txt">kkj0871@ableu.com</p>
+						</li>
+						<li>
+							<span class="tit">휴대전화번호</span>
+							<p class="txt">010-1234-5678</p>
+							<span class="tit">기관 전화번호</span>
+							<p class="txt">02-1234-5678</p>
+						</li>
+						<li>
+							<span class="tit">소속구분</span>
+							<p class="txt">사업장</p>
+							<span class="tit">소속기관</span>
+							<p class="txt">OOOOO회사</p>
+						</li>
+						<li>
+							<span class="tit">소속부서</span>
+							<p class="txt">OOOOO부</p>
+							<span class="tit">소속기관</span>
+							<p class="txt"><i class="iconset ico-file-img mgr08">이미지 파일</i> 2023 공모작 발표자료.jpg</p>
+						</li>
+						<li>
+							<span class="tit">이용목적</span>
+							<p class="txt">
+								보건계획 수립 및 평가, 만성질환 예방 및 관리
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-group">
+					<a href="" class="button">목록</a>
+					<a href="" class="button red">재신청</a>
+				</div>
+
+			</div>
+			<!-- // inner-wrap -->
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

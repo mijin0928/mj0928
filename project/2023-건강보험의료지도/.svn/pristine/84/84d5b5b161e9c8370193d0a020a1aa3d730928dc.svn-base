@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>온라인 설문조사 목록 | 고객센터 | 국민건강보험 의료이용지표</title>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/import.css">
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/tooltipster.bundle.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+	<nav class="skip">
+		layout.html 참고
+	</nav>
+
+	<!-- header -->
+	<header id="header">
+		layout.html 참고
+	</header>
+	<!-- // header -->
+	
+	<!-- container -->
+	<div class="container">
+		<nav class="location">
+			<p class="home"><a href="">홈</a></p>
+			<p>1 뎁스</p>
+			<p>2 뎁스</p>
+			<p>마지막 뎁스</p>
+		</nav>
+	
+		<div id="contents">
+			<h2 class="title-2">온라인 설문조사</h2>
+			
+			<!-- 2023-04-06 : 삭제 -->
+			<!--
+			<p class="txt-page">
+				국민의 의견을 수렴하여 더 좋은 서비스를 만들어 가겠습니다. 많은 참여 바랍니다.
+			</p>
+			-->
+			<!-- 2023-04-06 : 삭제 -->
+			
+			<div class="inner-wrap">
+				<div class="board-util">
+					<div class="count">
+						총 <strong>450</strong>건
+					</div>
+					
+					<div class="util">
+						<input type="search" title="검색어 입력" placeholder="" class="input-text">
+						<button type="button" class="button navy">검색</button>
+					</div>
+				</div>
+				
+				<div class="list-survey">
+					<ul>
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-01.png" alt="건강의료"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여 건강의료 고객만족도 관련 설문조사 참여 건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						
+						<!-- 종료 일때 -->
+						<li>
+							<a href="" class="box">
+								<p class="state">종료</p>
+								<p class="img"><img src="../../static/images/contents/ico-survey-02.png" alt="투표"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						<!--// 종료 일때 -->
+						
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-03.png" alt="호감도/만족도"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-04.png" alt="일반 설문지"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-05.png" alt="통계(그래프)"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-01.png" alt="건강의료"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여 건강의료 고객만족도 관련 설문조사 참여 건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-02.png" alt="투표"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+						<li>
+							<a href="" class="box">
+								<p class="img"><img src="../../static/images/contents/ico-survey-03.png" alt="호감도/만족도"></p>
+								<p class="tit">건강의료 고객만족도 관련 설문조사 참여</p>
+								<p class="period">2022-12-12 ~ 2022-12-12</p>
+								<p class="count"><i class="iconset ico-hand">참여자</i> 999,999</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="pagination">
+					<a href="" class="control first">처음으로</a>
+					<a href="" class="control prev">이전으로</a>
+					<strong title="현재 페이지" class="active">1</strong>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<a href="" class="control next">다음으로</a>
+					<a href="" class="control last">마지막으로</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		layout.html 참고
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

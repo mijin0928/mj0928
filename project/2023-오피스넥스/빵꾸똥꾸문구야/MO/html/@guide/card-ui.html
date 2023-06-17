@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>빵꾸똥꾸문구야 퍼블리싱 가이드 | BUTTON</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all">
+<!-- only guide file -->
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all">
+
+<script src="../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../static/js/swiper.min.js"></script>
+<script src="../../static/js/bgdg-mb-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">CARD UI</h2>
+		<h3 class="tit-guide">default</h3>
+		<h4 class="tit-guide">default</h4>
+		
+		<div class="source">
+			<div class="copy">
+				<div class="card-block">
+					<div class="card-tit">
+						<p class="sub">000호점
+							<span class="badge bg-gray">오픈예정</span>
+						</p>
+						<p class="name">오픈매장이름</p>
+						<div class="date-wrap">
+							<div class="date">
+								<i class="iconset ico-calender"></i>
+								<span class="sub">오픈</span>
+							</div>
+							<p class="sub-date">YYYY년 MM월 중</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+			
+		</div>
+
+		<h4 class="tit-guide">yellow</h4>
+		
+		<div class="source">
+			<div class="copy">
+				<div class="card-block open">
+					<div class="card-tit">
+						<p class="sub">000호점
+							<span class="badge bg-yellow">오픈</span>
+						</p>
+						<p class="name">오픈매장이름</p>
+						<div class="date-wrap">
+							<div class="date">
+								<i class="iconset ico-calender"></i>
+								<span class="sub">오픈</span>
+							</div>
+							<p class="sub-date">YYYY년 MM월 DD일</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+		</div>
+
+		<h3 class="tit-guide">매장안내(modal_map)</h3>
+		<h4 class="tit-guide">default</h4>
+		
+		<div class="source">
+			<div class="copy">
+				<div class="card-block open">
+					<div class="card-tit">
+						<p class="sub">서울시 / 000호점
+							<span class="badge bg-yellow">오픈</span>
+						</p>
+						<p class="name">오픈매장이름</p>
+						<p class="address">OO광역시 OO구 OOOO로 OOO길 0-00, OO빌딩 0층 000호</p>
+					</div>
+					<button type="button" class="detail-view modal-bt"></button>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+			
+		</div>
+
+		<h3 class="tit-guide">추천상권안내 (modal_detail-view)</h3>
+		<h4 class="tit-guide">default</h4>
+		
+		<div class="source">
+			<div class="copy">
+				<div class="card-block store">
+					<div class="card-txt">
+						<span class="badge bg-blue">공실매장</span>
+						<p class="store-add">00광역시 00구 0000로</p>
+						<p class="info">
+							<span>실평수 20평</span>
+							<span>보증금 5,000만원</span>
+						</p>
+						<p class="date">등록일: 0000.00.00</p>
+					</div>
+					<button type="button" class="detail-view modal-bt"></button>
+				</div>
+			</div>
+			
+			<button type="button" class="button source-view-toggle">소스보기</button>
+			<xmp class="xmp"></xmp>
+			
+		</div>
+		<div class="desc-guide mgt30">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on('click', '.source-view-toggle', function(){
+			$(this).closest('.source').toggleClass('on');
+			
+			_html = $(this).closest('.source').find('.copy').html()
+			$(this).closest('.source').find('.xmp').html(_html);
+		});
+	</script>
+</body>
+</html>

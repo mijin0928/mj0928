@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>table-data | 건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../static/js/slick.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+<body>
+
+	<div class="cont-guide">
+		<h2 class="tit-guide">table-data</h2>
+		
+		<h3 class="tit-guide">default</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="table-data">
+	<table>
+		<caption>가명정보 처리에 관한 사항 표</caption>
+		<colgroup>
+			<col >
+			<col >
+			<col >
+			<col >
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">가명정보 처리 업무명</th>
+				<th scope="col">처리목적</th>
+				<th scope="col">처리항목</th>
+				<th scope="col">보유 및 이용기간</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>국민건강정보DB제공</td>
+				<td>과학적연구</td>
+				<td>자격 및 보험료, 진료상세, 건강검진, 요양기관, 장기요양 정보 등</td>
+				<td>준영구</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+		</div>
+		
+		
+		<h3 class="tit-guide">scroll - 좌우 스크롤</h3>
+		<div class="guide-block">
+			<div class="copy">
+<div class="table-data scroll">
+	<table>
+		<caption>가명정보 처리에 관한 사항 표</caption>
+		<colgroup>
+			<col >
+			<col >
+			<col >
+			<col >
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">가명정보 처리 업무명</th>
+				<th scope="col">처리목적</th>
+				<th scope="col">처리항목</th>
+				<th scope="col">보유 및 이용기간</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>국민건강정보DB제공</td>
+				<td>과학적연구</td>
+				<td>자격 및 보험료, 진료상세, 건강검진, 요양기관, 장기요양 정보 등</td>
+				<td>준영구</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+		</div>
+		
+
+		<div class="desc-guide">
+			scroll 되는 table-data 에 class scroll 추가
+		</div>
+	</div>
+</body>
+</html>

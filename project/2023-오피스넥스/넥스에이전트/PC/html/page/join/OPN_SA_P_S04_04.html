@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>온라인상담 | 가입신청 | 넥스에이전트</title>
+
+<link rel="stylesheet" type="text/css" href="../../../static/css/import.css">
+
+<script src="../../../static/js/jquery-3.6.0.js"></script>
+<script src="../../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../../static/js/jquery.easing.1.4.1.js"></script>
+<script src="../../../static/js/slick.js"></script>
+<script src="../../../static/js/ui.common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<p class="color-red">layout.html 참고</p>
+	</header>
+	<!-- // Header -->
+
+	<!-- container -->
+	<div class="container"><div class="location">
+		<div class="depth">
+			<a href="" class="home">홈 바로가기</a>
+		</div>
+		<div class="depth">
+			<p>가입신청</p>
+		</div>
+		<div class="depth">
+			<p>온라인상담</p>
+		</div>
+	</div>
+
+		<div id="contents">
+			<h2 class="title-2">가입신청</h2>
+
+			<ul class="tab-list">
+				<li><a href="">가입절차</a></li>
+				<li><a href="">가입신청</a></li>
+				<li><a href="">자주하는 질문</a></li>
+				<li><a href="" class="active">온라인상담</a></li>
+			</ul>
+
+			<!-- inner-wrap -->
+			<div class="inner-wrap">
+				<!-- board-form -->
+				<div class="board-form">
+					<table>
+						<caption>온라인상담 표 입니다</caption>
+						<colgroup>
+							<col style="width:240px;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">
+									이름<span class="req" title="필수 입력 항목">*</span>
+								</th>
+								<td>
+									<div class="wrap-input">
+										<input type="text" title="이름을 입력하세요" placeholder="이름을 입력하세요" class="input-text" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									거주지역<span class="req" title="필수 입력 항목">*</span>
+								</th>
+								<td>
+									<!-- 2023-04-17 : 수정 -->
+									<div class="input-post">
+										<div class="post">
+											<input type="number" title="우편번호 입력" class="input-text">
+											<a href="" class="button">우편번호검색</a>
+										</div>
+										
+										<input type="text" title="주소를 입력하세요" placeholder="주소를 입력하세요" class="input-text">
+										<input type="text" title="상세주소를 입력하세요" placeholder="상세주소를 입력하세요" class="input-text">
+									</div>
+									
+									<!-- 2023-04-17 : 삭제 -->
+									<!-- 
+									<div class="input-address">
+										<select title="시/도를 선택해주세요">
+											<option>시/도</option>
+											<option>시/도1</option>
+											<option>시/도2</option>
+										</select>
+
+										<select title="시/군/구를 선택해주세요">
+											<option>시/군/구</option>
+											<option>시/군/구1</option>
+											<option>시/군/구2</option>
+										</select>
+									</div>
+									 -->
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									전화번호<span class="req" title="필수 입력 항목">*</span>
+								</th>
+								<td>
+									<div class="wrap-tel">
+										<input type="tel" title="전화번호를 입력해주세요" placeholder="예) 01056789876" class="input-text" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">문의사항</th>
+								<td>
+									<textarea rows="5" cols="5" title="문의사항을 입력하세요" placeholder="내용을 입력해 주세요" class="input-textarea"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //board-form -->
+
+				<p class="tit">개인정보수집 및 이용에 대한 동의(필수)</p>
+				<div class="box-agree">
+					<div class="agree-cont" tabindex="0">
+						방침내용
+					</div>
+
+					<div class="agree-chk">
+						<span class="bg-chk">
+							<input type="checkbox" id="agree_01_01" />
+							<label for="agree_01_01">개인정보수집 및 이용에 동의합니다.</label>
+						</span>
+					</div>
+				</div>
+
+				<div class="button-group">
+					<button type="button" class="button">상담신청하기</button>
+					<!-- a 태그 버튼인 경우
+						<a href="" class="button">상담신청하기</a> -->
+				</div>
+			</div>
+			<!-- //inner-wrap -->
+		</div>
+	</div>
+	<!-- // container -->
+
+	<!-- quick menu -->
+	<aside class="quick-area">
+		<p class="color-red">layout.html 참고</p>
+	</aside>
+	<!-- // quick-menu -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<p class="color-red">layout.html 참고</p>
+	</footer>
+	<!-- // footer -->
+</body>
+</html>

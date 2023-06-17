@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<title>건강보험공단 의료이용지표 Guide</title>
+
+<link rel="stylesheet" href="../../static/css/import.css" media="all" />
+<link rel="stylesheet" href="../../static/css/@guide.css" media="all" /><!-- 가이드 문서만 사용 -->
+
+<script src="../../static/js/jquery-3.6.4.js"></script>
+<script src="../../static/js/jquery-ui.1.12.1.js"></script>
+<script src="../../static/js/jquery.easing.1.4.1.js"></script>
+
+<script src="../../static/js/ui.guide.js" defer></script><!-- 퍼블리싱 가이드 html 에만 적용 -->
+<script src="../../static/js/ui.common.js" defer></script><!-- 퍼블리싱 js -->
+</head>
+</head>
+<body>
+
+	<div class="cont-guide">
+	
+		<h2 class="tit-guide">component</h2>
+		
+		<h3 class="tit-guide">text</h3>
+		<div class="guide-block">
+			<div class="copy">
+<input type="text" title="타이틀 입력" placeholder="default" class="input-text" />
+
+<br /><br />
+
+<input type="text" title="타이틀 입력" placeholder="readonly" readonly="readonly" class="input-text" />
+
+<br /><br />
+
+<input type="text" title="타이틀 입력" placeholder="disabled" disabled="disabled" class="input-text" />
+
+<br /><br />
+
+<input type="text" title="타이틀 입력" placeholder="에러일때 class err 추가" class="input-text err" />
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">password</h3>
+		<div class="guide-block">
+			<div class="copy">
+<input type="password" title="타이틀 입력" placeholder="default" class="input-text" />
+
+<br /><br />
+
+<input type="password" title="타이틀 입력" placeholder="readonly" readonly="readonly" class="input-text" />
+
+<br /><br />
+
+<input type="password" title="타이틀 입력" placeholder="disabled" disabled="disabled" class="input-text" />
+
+<br /><br />
+
+<input type="password" title="타이틀 입력" placeholder="에러일때 class err 추가" class="input-text err" />
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">textarea</h3>
+		<div class="guide-block">
+			<div class="copy">
+<textarea rows="5" cols="5" title="의미에 맞는 title 문구 입력" placeholder="default" class="input-textarea"></textarea>
+
+<br /><br />
+
+<textarea rows="5" cols="5" title="의미에 맞는 title 문구 입력" placeholder="readonly" readonly="readonly" class="input-textarea"></textarea>
+
+<br /><br />
+
+<textarea rows="5" cols="5" title="의미에 맞는 title 문구 입력" placeholder="disabled" disabled="disabled" class="input-textarea"></textarea>
+
+<br /><br />
+
+<textarea rows="5" cols="5" title="의미에 맞는 title 문구 입력" placeholder="에러일때 class err 추가" class="input-textarea err"></textarea>
+			</div>
+		</div>
+		
+		<h4 class="tit-guide">textarea - limit</h4>
+		<div class="guide-block">
+			<div class="copy">
+<div class="textarea-limit">
+	<textarea rows="5" cols="10" placeholder="내용을 입력해 주세요" class="input-textarea"></textarea>
+	
+	<div class="limit">200자</div>
+</div>
+			</div>
+		</div>
+		
+
+		<h3 class="tit-guide">checkbox</h3>
+		<div class="guide-block">
+			<div class="copy">
+<span class="bg-chk">
+	<input type="checkbox" id="chk_01" />
+	<label for="chk_01">체크박스 1</label>
+</span>
+
+<span class="bg-chk">
+	<input type="checkbox" id="chk_02" checked="checked" />
+	<label for="chk_02">체크박스 2</label>
+</span>
+
+<span class="bg-chk">
+	<input type="checkbox" id="chk_03" disabled="disabled" />
+	<label for="chk_03">체크박스 2</label>
+</span>
+
+<span class="bg-chk">
+	<input type="checkbox" id="chk_04" checked="checked" disabled="disabled" />
+	<label for="chk_04">체크박스 2</label>
+</span>
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">radio</h3>
+		<div class="guide-block">
+			<div class="copy">
+
+<span class="bg-chk">
+	<input type="radio" id="radio_01" name="radio_00" />
+	<label for="radio_01">라디오 1</label>
+</span>
+
+<span class="bg-chk">
+	<input type="radio" id="radio_02" name="radio_00" checked="checked" />
+	<label for="radio_02">라디오 2</label>
+</span>
+
+<span class="bg-chk">
+	<input type="radio" id="radio_03" name="radio_00" disabled="disabled" />
+	<label for="radio_03">라디오 3</label>
+</span>
+
+<span class="bg-chk">
+	<input type="radio" id="radio_04" name="radio_00" disabled="disabled" />
+	<label for="radio_04">라디오 3</label>
+</span>
+
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">select</h3>
+		<div class="guide-block">
+			<div class="copy">
+<select title="셀렉트박스 타이틀 입력">
+	<option>선택</option>
+	<option>선택 2</option>
+	<option>선택 3</option>
+</select>
+
+<select title="셀렉트박스 타이틀 입력">
+	<optgroup label="group1">
+		<option>옵션1</option>
+		<option>옵션2</option>
+	</optgroup>
+	<optgroup label="group2">
+		<option>옵션3</option>
+		<option>옵션4</option>
+	</optgroup>
+</select>
+
+<select title="셀렉트박스 타이틀 입력" disabled="disabled">
+	<option>선택</option>
+	<option>선택 2</option>
+	<option>선택 3</option>
+</select>
+			</div>
+		</div>
+		
+		
+		<h3 class="tit-guide">파일첨부</h3>
+		
+		<div class="guide-block">
+			<div class="copy">
+			</div>
+		</div>
+		
+		<h3 class="tit-guide">datepicker</h3>
+		
+		<div class="guide-block">
+			<div class="copy">
+<input type="text" class="datepicker">
+			</div>
+		</div>
+	
+	
+	
+
+	
+	
+		<div class="desc-guide">
+		</div>
+	</div>
+</body>
+</html>

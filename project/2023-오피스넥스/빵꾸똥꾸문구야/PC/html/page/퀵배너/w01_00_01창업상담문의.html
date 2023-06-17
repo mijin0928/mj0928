@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>우리, 빵꾸똥꾸에서 만나! 빵꾸똥꾸 문구야｜창업 상담 문의</title>
+
+<link rel="stylesheet" href="../../../static/css/import.css" media="all" />
+
+<script src="../../../static/js/jquery-1.12.4.min.js"></script>
+<script src="../../../static/js/slick.js"></script>
+<script src="../../../static/js/swiper.min.js"></script>
+<script src="../../../static/js/aos.js"></script>
+<script src="../../../static/js/bgdg-pc-common.js" defer></script><!-- 퍼블 작동확인 js입니다 -->
+</head>
+<body>
+
+	<header id="header">
+		<div class="inner-wrap">
+			<p class="color-red">layout.html 참고</p>
+		</div>
+	</header>
+
+	<div class="container">
+		<!-- container-util -->
+		<div class="container-util">
+			<div class="inner-wrap">
+				<ul class="location">
+					<li class="depth home"><a href="" class="btn-indent btn-home">HOME</a></li>
+					<li id="mainDepth2" class="depth"><a href="" class="active"><!-- 활성화시 class active 추가 -->창업상담문의</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container-util -->
+
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="title">창업 상담 문의</h2>
+
+			<div class="inner-wrap">
+				<div class="table-area">
+					<table class="a-l quik-table">
+						<caption>창업 상담에 필요한 내용을 입력하는 표</caption>
+						<colgroup>
+							<col style="width:240px;">
+							<col>
+							<col style="width:240px;">
+							<col style="width:330px;">
+						</colgroup>
+	
+						<tbody>
+							<tr>
+								<th scope="col" class="input-tit imp">이름</th>
+								<td colspan="3">
+									<input type="text" class="input-text" placeholder="이름을 입력하세요" title="이름 입력"></td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">연령</th>
+								<td colspan="3">
+									<select class="input-select" title="선택하세요">
+										<option value="" selected="selected" disabled="disabled">선택하세요</option>
+										<option value="">20대</option>
+										<option value="">30대</option>
+										<option value="">40대</option>
+										<option value="">50대</option>
+										<option value="">60대 이상</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">성별</th>
+								<td colspan="3">
+									<div class="radio-block">
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio01" id="radio01_01">
+												<label for="radio01_01">남</label>
+											</span>
+										</div>
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio01" id="radio01_02">
+												<label for="radio01_02">여</label>
+											</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">전화번호</th>
+								<td colspan="3">
+									<div class="num-wrap">
+										<input type="text" class="input-text" title="휴대전화 첫번째 자리 입력">
+										<input type="text" class="input-text" title="휴대전화 두번째 자리 입력">
+										<input type="text" class="input-text" title="휴대전화 세번째 자리 입력">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">개설희망지역</th>
+								<td colspan="3">
+									<div class="address-select-wrap">
+										<select class="input-select address" title="시/도 선택">
+											<option value="" selected="selected" disabled="disabled">시/도</option>
+											<option value="">서울특별시</option>
+											<option value="">인천광역시</option>
+											<option value="">경기도</option>
+										</select>
+										<select class="input-select address" title="시/군/구 선택">
+											<option value="" selected="selected" disabled="disabled">시/군/구</option>
+											<option value="">강남구</option>
+											<option value="">동작구</option>
+											<option value="">서초구</option>
+										</select>
+									</div>
+									<!-- 01-30 placeholder 내용 수정 -->
+									<input type="text" class="input-text address" placeholder="동/면/읍을 입력하세요" title="상세주소 입력">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">거주지 정보</th>
+								<td colspan="3">
+									<div class="address-select-wrap">
+										<select class="input-select address" title="시/도 선택">
+											<option value="" selected="selected" disabled="disabled">시/도</option>
+											<option value="">서울특별시</option>
+											<option value="">인천광역시</option>
+											<option value="">경기도</option>
+										</select>
+										<select class="input-select address" title="시/군/구 선택" >
+											<option value="" selected="selected" disabled="disabled">시/군/구</option>
+											<option value="">강남구</option>
+											<option value="">동작구</option>
+											<option value="">서초구</option>
+										</select>
+									</div>
+									<!-- 01-30 placeholder 내용 수정 -->
+									<input type="text" class="input-text address" placeholder="동/면/읍을 입력하세요" title="상세주소 입력">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit imp">문구점 경영경험</th>
+								<td colspan="3">
+									<!-- 03-03 퍼블 수정 : colspan="3" 추가됨 -->
+									<div class="radio-block">
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio02" id="radio02_01">
+												<label for="radio02_01">예</label>
+											</span>
+										</div>
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio02" id="radio02_02">
+												<label for="radio02_02">아니오</label>
+											</span>
+										</div>
+									</div>
+								</td>
+								<!-- 03-03 퍼블 수정 : 점포소유 영역 삭제 후 하단 새로운 tr로 영역 추가됨 -->
+							</tr>
+
+							<!-- 03-03 퍼블 수정 : 새로 추가된 tr -->
+							<!-- 소유한 점포 없을 경우  -->
+							<!-- <tr>
+								<th scope="col" class="input-tit imp">점포소유</th>
+								<td colspan="3">
+									<div class="radio-block">
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio03" id="radio03_01">
+												<label for="radio03_01">예</label>
+											</span>
+										</div>
+					
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio03" id="radio03_02" checked>
+												<label for="radio03_02">아니오</label>
+											</span>
+										</div>
+									</div>
+								</td>
+							</tr> -->
+							<!-- // 소유한 점포 없을 경우  -->
+
+							<!-- 소유한 점포 있을 경우 -->
+							<tr>
+								<th scope="col" class="input-tit imp">점포소유</th>
+								<td>
+									<div class="radio-block">
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio03-1" id="radio03_03" checked>
+												<label for="radio03_03">예</label>
+											</span>
+										</div>
+					
+										<div class="radio-inner-block">
+											<span class="radio-wrap">
+												<input type="radio" name="radio03-1" id="radio03_04">
+												<label for="radio03_04">아니오</label>
+											</span>
+										</div>
+									</div>
+								</td>
+								<th scope="col" class="input-tit imp">소유하신 점포 주소 입력</th>
+								<td>
+									<input type="text" class="input-text" title="소유하신 점포 주소 입력">
+								</td>
+							</tr>
+							<!-- // 소유한 점포 있을 경우 -->
+							<!--//  03-03 퍼블 수정 : 새로 추가된 tr -->
+							<tr>
+								<th scope="col" class="input-tit imp">빵꾸똥꾸문구야를<br> 알게 된 경로</th>
+								<td colspan="3">
+									<select class="input-select" title="선택하세요">
+										<option value="" selected="selected" disabled="disabled">선택하세요</option>
+										<option value="">검색</option>
+										<option value="">광고</option>
+										<option value="">지인소개</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" class="input-tit">질문사항</th>
+								<td colspan="3">
+									<textarea name="txtarea" class="txtarea w680px" placeholder="내용을 입력해주세요" title="질문사항 입력" ></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- 01-30 개인정보 수집 및 이용 동의 수정 -->
+				<p class="privacy-txt font18 fw500">개인정보 수집 및 이용에 대한 동의 (필수)</p>
+				<textarea name="textarea" class="txtarea a-l" readonly="" title="개인정보 수집 및 이용에 대한 동의">오피스넥스 빵꾸똥꾸문구야 상품입점문의 페이지에서는 아래와 같이 개인정보를 수집합니다.&#10;&#10;1) 개인정보 제공에 대한 동의</textarea>
+				<div class="chk-agree float-r">
+					<input type="checkbox" name="chk" id="chk_agree">
+					<label for="chk_agree" class="font18">개인정보수집 및 이용에 동의합니다.</label>
+				</div>
+
+				<div class="btn-group">
+					<button type="button" class="btn large round black">상담 신청하기</button>
+				</div>
+			</div>
+			<!-- // inner-wrap -->
+		</div>
+		<!-- //contents -->
+	</div>
+
+	<!-- <aside class="quick-area">
+		<p class="color-red">layout.html 참고</p>
+	</aside> -->
+
+	<footer id="footer">
+		<p class="color-red">layout.html 참고</p>
+	</footer>
+
+</body>
+</html>
