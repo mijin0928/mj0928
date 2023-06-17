@@ -147,7 +147,7 @@ section > .wrap.active {width:1116px; opacity:1;}
 .slide-container {overflow:hidden; width:100%;}
 .slide-container ul {list-style-type:none; margin:0; padding:0;}
 .slide-container .slide {display:flex; flex-wrap:nowrap;}
-.slide-container > .slide > li {position:relative; display:flex; align-items:center; justify-content:center; flex-shrink:0; width:100%; will-change:transform;}
+.slide-container > .slide > li {position:relative; display:flex; align-items:center; justify-content:center; flex-shrink:0; width:100%;}
 .slide-container > .slide > li:nth-child(1) .graph .bar {background:conic-gradient(#a28ed8 220deg, #f8f6f4 220deg)}
 .slide-container > .slide > li a {display:block;}
 .slide-container > .slide > li:nth-child(6) {position:relative;}
