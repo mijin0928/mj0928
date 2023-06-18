@@ -13,7 +13,7 @@ button,
 button {padding:0; border:0; background-color:transparent;}
 img {display:block;}
 
-section {position:relative; height:100vh; will-change:width;}
+section {position:relative; height:100vh;}
 section > .wrap {position:absolute; left:50%; top:50%; transform:translate(-48%,-50%); width:50%; padding:40px; border:3px solid #d6abf3; box-shadow:12px 12px 1px #cbc5dd5b, 5px 5px 1px rgba(191, 178, 229, 0.357); opacity:0; transition:width 1s, opacity 1s; background-color:#fff;}
 section > .wrap.active {width:1116px; opacity:1;}
 
@@ -173,7 +173,7 @@ section > .wrap.active {width:1116px; opacity:1;}
 .slide-container .cont p {margin:0; padding:0;}
 .slide-container .cont .tit {margin-bottom:10px; font-size:24px;}
 .slide-container .cont li .txt {margin-top:20px; font-size:20px;}
-.slide-container .cont .graph {position:absolute; top:30px; right:100px; width:130px; height:130px; border-radius:130px;}
+.slide-container .cont .graph {position:absolute; top:30px; right:50px; width:130px; height:130px; border-radius:130px;}
 .slide-container .cont .graph::after {content:''; display:block; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:90px; height:90px; border-radius:90px; background-color:#fff;}
 .slide-container .cont .graph .bar {display:block; width:inherit; height:inherit; border-radius:inherit;}
 .slide-container .cont .graph .percent {position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); z-index:1; text-align:center;}
@@ -214,18 +214,16 @@ section > .wrap.active {width:1116px; opacity:1;}
 .device-type {display:flex; align-items:center; justify-content:center; gap:130px;}
 .device-type button {overflow:hidden; text-indent:-9999px;}
 .device-type .btn-tablet {width:350px; height:255px; background:url('../images/version-tablet.png') no-repeat; background-size:100% 255px;}
-.device-type .btn-moblie {width:210px; height:400px; background:url('../images/version-mobile.png') no-repeat; background-size:100% 400px;}
+.device-type .btn-mobile {width:210px; height:400px; background:url('../images/version-mobile.png') no-repeat; background-size:100% 400px;}
 .device-type .tit {margin:10px 0 0; font-size:28px; text-align:center;}
 
 @media screen and (max-width:1400px) {
-	section > .wrap {left:auto; right:calc(30 / 1400 * 100%); transform:translate(0,-50%); width:calc(100% - 180px); border:0; box-shadow:none; opacity:1; background-color:transparent;}
-	section > .wrap.active {width:calc(100% - 180px);}
-	.inner-wrap {width:90%; transition:1s; opacity:0;}
+	section > .wrap {left:auto; transform:translate(0,-50%); width:90%; border:0; box-shadow:none; opacity:1; background-color:transparent;}
+	section > .wrap.active {width:90%;}
+	.inner-wrap {width:100%; transition:1s; opacity:0;}
 	.inner-wrap.active {transform:translateY(50px); opacity:1;}
-	#gnb {top:calc(50% - 270px);}
+	#gnb {display:none !important;}
 	.title-2 {position:relative; padding:10px; line-height:1.0; border-bottom:0; background-color:#fff;}
-
-	#gnb li:nth-child(5) {display:none;}
 
 	#introduce .inner-wrap > .cont {gap:0;}
 	#introduce .img-character img {width:100%;}
@@ -257,6 +255,7 @@ section > .wrap.active {width:1116px; opacity:1;}
 	#skill .list li .back {width:calc(240 / 1350 * 100vw); height:calc(240 / 1350 * 100vw);}
 
 	.slide-container .cont {padding:20px; border:3px solid #d6abf3; background-color:#fff;}
+	.slide-container .img-area .txt.on {visibility:hidden;}
 	.control {margin-top:10px;}
 
 	#project-my {display:none;}
@@ -265,6 +264,8 @@ section > .wrap.active {width:1116px; opacity:1;}
 
 @media screen and (max-width:1215px) {
 	#introduce .list-info > ul > li {width:50%;}
+	#introduce .list-info li .btn-tit {width:calc(200 / 1215 * 100vw);}
+	#introduce .list-info li:nth-child(2n) ~ li {margin-top:30px;}
 }
 
 @media screen and (max-width:1200px) {
@@ -305,7 +306,6 @@ section > .wrap.active {width:1116px; opacity:1;}
 	section {height:100%;}
 	section + section {margin-top:150px;}
 	section > .wrap {position:static; transform:translate(0,0); width:90%; margin:0 auto; padding:0;}
-	#gnb {display:none !important;}
 	.title-2 {position:relative; margin:40px 0; padding:5px; font-size:26px; line-height:1.0; border-bottom:0; background-color:#fff;}
 	
 	#introduce .inner-wrap > .cont {display:block;}

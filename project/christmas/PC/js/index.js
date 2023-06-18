@@ -18,8 +18,8 @@ for (let i = 0; i < 300; i++) {
   function snowMoving() {//눈 움직이기
     const snow = document.querySelectorAll('.bg-snow');
     const snowStyle = snow[i].style;
-    const x = Math.floor(Math.random() * window.innerWidth);
-    const y = Math.floor(Math.random() * window.innerHeight);
+    const x = Math.floor(Math.random() * screen.width);
+    const y = Math.floor(Math.random() * screen.height);
     const time = Math.floor(Math.random() * 35) + 5 + 's';
 
     snowStyle.position = 'fixed';

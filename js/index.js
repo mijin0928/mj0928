@@ -118,8 +118,8 @@ function bg(){ //배경 만들기
 
     for(let i = 0; i < 50; i++){ //1개
         const span = document.createElement('span');
-        const x = Math.floor(Math.random() * window.innerWidth);
-        const y = Math.floor(Math.random() * window.innerHeight);
+        const x = Math.floor(Math.random() * screen.width);
+        const y = Math.floor(Math.random() * screen.height);
         const time = Math.floor(Math.random() * 5) + 1 + 's';
         
         span.setAttribute('class','light single');
@@ -132,8 +132,8 @@ function bg(){ //배경 만들기
 
     for(let k = 0; k < 20; k++){ //4개
         const div = document.createElement('div');
-        const x = Math.floor(Math.random() * window.innerWidth);
-        const y = Math.floor(Math.random() * window.outerHeight);
+        const x = Math.floor(Math.random() * screen.width);
+        const y = Math.floor(Math.random() * screen.height);
         const time = Math.floor(Math.random() * 5) + 1 + 's';
 
         div.setAttribute('class','bg-light');
@@ -196,6 +196,16 @@ introduce();
 
 function gnbEffect(){ //메뉴 효과
 	const menu = document.querySelectorAll('#gnb li');
+	const project = document.querySelector('#gnb li:nth-child(3)');
+	const projectMy = document.querySelector('#gnb li:nth-child(4)');
+
+	project.addEventListener('click',()=>{
+		message(txt_01);
+	})
+
+	projectMy.addEventListener('click',()=>{
+		message(txt_02);
+	})
 
 	menu.forEach((menu)=>{
 		menu.addEventListener('mouseover',(e)=>{
@@ -459,7 +469,7 @@ function columnGraph(){ //막대 그래프
 
 function deviceShow(){ //이미지 클릭시 해당 디바이스 화면 띄우기
 	const imgtablet = document.querySelector('.device-type .tablet');
-	const imgMoblie = document.querySelector('.device-type .mobile');
+	const imgMobile = document.querySelector('.device-type .mobile');
 	const tablet = document.querySelector('.device .tablet');
 	const mobile = document.querySelector('.device .mobile');
 	const body = document.querySelector('body');
@@ -473,7 +483,7 @@ function deviceShow(){ //이미지 클릭시 해당 디바이스 화면 띄우�
 		div.classList.add('on');
 	})
 
-	imgMoblie.addEventListener('click',(e)=>{
+	imgMobile.addEventListener('click',(e)=>{
 		e.preventDefault();
 		mobile.classList.add('on');
 		div.classList.add('on');
