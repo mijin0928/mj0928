@@ -179,8 +179,8 @@ section > .wrap.active {width:1116px; opacity:1;}
 .slide-container .cont .graph .percent {position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); z-index:1; text-align:center;}
 .slide-container .cont .graph .percent .txt {font-size:20px;}
 
-.device .tablet {visibility:hidden; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:2; transition:visibility 0.5s, opacity 0.5s;}
-.device .mobile {visibility:hidden; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:2; transition:visibility 0.5s, opacity 0.5s;}
+.device .tablet {visibility:hidden; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition:visibility 0.5s, opacity 0.5s;}
+.device .mobile {visibility:hidden; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition:visibility 0.5s, opacity 0.5s;}
 .device .tablet::before {content:''; display:block; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:-1; width:970px; height:635px; background:url('../images/tablet.png') no-repeat; background-size:100% 635px;}
 .device .mobile::before {content:''; display:block; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:-1; width:380px; height:700px; background:url('../images/mobile.png') no-repeat; background-size:100% 700px;}
 .device .tablet.on {visibility:visible; opacity:1;} 
@@ -207,7 +207,7 @@ section > .wrap.active {width:1116px; opacity:1;}
 .device-txt {display:none; position:absolute; left:50%; top:50%; margin:0; padding:0 10px; text-align:center; border:1px solid #000; box-shadow:2px 2px 1px #0000007e; border-radius:10px; background-color:#fff;}
 .device-txt.on {display:block;}
 
-.dimed {visibility:hidden; opacity:0; position:fixed; left:0; top:0; z-index:1; width:100%; height:100%; transition:visibility 1s, opacity 1s; background-color:rgba(0, 0, 0, 0.7);}
+.dimed {visibility:hidden; opacity:0; position:fixed; left:0; top:0; width:100%; height:100%;  transition:visibility 1s, opacity 1s;}
 .dimed.on {visibility:visible; opacity:1;}
 
 /* version */
